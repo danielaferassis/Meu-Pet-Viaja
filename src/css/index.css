@@ -4,7 +4,7 @@
     font-family: 'Montserrat', sans-serif;
     
 }
-
+/**Navbar*/
 .logo{
     display: flex;
     justify-content: center;
@@ -69,7 +69,7 @@
 }
 /**Navbar*/
 
-/**Botões cores*/
+/**Botões cores
 .btn.btn-primary {
   background-color: #0097B2;
   border-color: #0097B2;
@@ -91,7 +91,7 @@
 }
 /**Botões cores*/
 
-/**Formulário*/
+/**Formulário
 .form-control {
   display: inline-block;
   width: 100%;
@@ -165,225 +165,3 @@ ul, ol {
     transition: .22s ease;
 }
 /**Footer*/
-
-/**Adaptação*/
-
-@media screen and (min-width: 901px) and (max-width: 1400px) {
-    body{
-        
-    }
-}
-@media screen and (min-width: 616px) and (max-width: 900px) {
-  .cards-wrap{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.card {
-  border-radius: 16px;
-  box-shadow: rgba(223, 233, 231, 0.35) 0px 5px 15px;
-  cursor: pointer;
-  width: 250px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  background-image: linear-gradient(#5f9ea0, #66989a);
-  transition: all .5s;
-  margin-left: 04px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-/**Depoimentos*/
-.locais-wrap{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.local {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  max-width: 350px;
-  text-align: center;
-  margin-top: 60px;
-  margin-left: 15px;
-  width: 360px;
-  margin-bottom: 15px;
-}
-}
-@media screen and (min-width: 240px) and (max-width: 615px) {
-  .logo img{
-    display: none;
-  }
-  .navigation-bar{
-    display: none;
-  }
-  .responsive-navbar{
-    display: inline;
-    
-  }
-  .nav-responsive li a{
-    border-radius: 25px;
-    transition: 0.3s;
-    color: black;
-}
-  /**carrosel*/
-.slider{
- 
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.slides{
-  width: 500%;
-  height: 300px;
-  display: flex;
-}
-
-.slides input{
-  display: none;
-}
-
-.slide{
-  width: 20%;
-  transition: 2s;
-}
-
-.slide img{
-  width: 100%;
-  height: 500px;
-}
-
-/*css for manual slide navigation*/
-
-.navigation-manual{
-  position: absolute;
-  width: 100%;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-
-.manual-btn{
-  border: 2px solid #40D3DC;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-  margin-right: 40px;
-}
-
-.manual-btn:hover{
-  background: #40D3DC;
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .first{
-  margin-left: -40%;
-}
-
-#radio4:checked ~ .first{
-  margin-left: -60%;
-}
-
-/*css for automatic navigation*/
-
-.navigation-auto{
-  position: absolute;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 460px;
-}
-
-.navigation-auto div{
-  border: 2px solid #40D3DC;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: #40D3DC;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: #40D3DC;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: #40D3DC;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: #40D3DC;
-}
-      
-  
-  .cards-wrap{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-  }
-  .card {
-    border-radius: 16px;
-    box-shadow: rgba(223, 233, 231, 0.35) 0px 5px 15px;
-    cursor: pointer;
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    background-image: linear-gradient(#5f9ea0, #66989a);
-    transition: all .5s;
-    margin-left: 04px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  /**Depoimentos*/
-  .locais-wrap{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .local {
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    max-width: 350px;
-    text-align: center;
-    margin-top: 60px;
-    margin-left: 15px;
-    width: 360px;
-    margin-bottom: 15px;
-  }
-}
-
-p {
-    padding: auto;
-    margin-left: 5%;
-}
-
-
-
-
-/**Adaptação*/

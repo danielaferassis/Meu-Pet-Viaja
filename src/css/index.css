@@ -165,3 +165,70 @@ ul, ol {
     transition: .22s ease;
 }
 /**Footer*/
+
+/**Adaptação*/
+
+@media screen and (min-width: 901px) and (max-width: 1400px) {
+    body{
+        
+    }
+  }
+  @media screen and (min-width: 616px) and (max-width: 900px) {
+        .cards-wrap{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .card {
+          border-radius: 16px;
+          box-shadow: rgba(223, 233, 231, 0.35) 0px 5px 15px;
+          cursor: pointer;
+          width: 250px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          overflow: hidden;
+          background-image: linear-gradient(#5f9ea0, #66989a);
+          transition: all .5s;
+          margin-left: 04px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        /**Depoimentos*/
+        .locais-wrap{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .local {
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          max-width: 350px;
+          text-align: center;
+          margin-top: 60px;
+          margin-left: 15px;
+          width: 360px;
+          margin-bottom: 15px;
+        }
+  }
+  @media screen and (min-width: 240px) and (max-width: 615px) {
+        .logo img{
+          display: none;
+        }
+        .navigation-bar{
+          display: none;
+        }
+        .responsive-navbar{
+          display: inline;
+          
+        }
+        .nav-responsive li a{
+          border-radius: 25px;
+          transition: 0.3s;
+          color: black;
+        }
+  }
+  
+  /**Adaptação*/

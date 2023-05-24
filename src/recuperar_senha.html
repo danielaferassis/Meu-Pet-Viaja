@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" type="text/css" href="css/cadastro_estabelecimento.css">
+  <link rel="stylesheet" type="text/css" href="css/cadastro_viajante.css">
 </head>
 
 <body>
@@ -90,108 +90,24 @@
 
     <div class="container">
 
-      <!--form start-->
-      <form id="cadastro_estabelecimento" method="post" class="needs-validation" novalidate>
-
-        <h1 class="text-center" id="titulo">Informações do Estabelecimento</h1>
-
-        <div class="form-group">
-          <label for="nome">Nome do Estabelecimento:</label>
-          <input type="text" class="form-control" id="nome" placeholder="Digite o nome do estabelecimento" required>
-          <div class="invalid-feedback">Preencha o nome!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="CNPJ">CNPJ:</label>
-          <input type="text" class="form-control" id="CNPJ" placeholder="Digite o CNPJ sem pontuação"
-            pattern="[0-9]{14}" required>
-          <div class="invalid-feedback">Preencha o CNPJ!</div>
-        </div>
+      <h1 class="text-center" id="titulo">Recuperar Senha</h1>
+      <form>
 
         <div class="form-group">
           <label for="email">E-mail:</label>
-          <input type="email" class="form-control" id="email" placeholder="Digite o e-mail" required>
+          <input type="text" class="form-control" id="email" placeholder="Digite o e-mail para recuperar senha" required><br>
           <div class="invalid-feedback">Preencha o e-mail!</div>
         </div>
 
-        <div class="form-group">
-          <label for="Telefone">Telefone:</label>
-          <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone com DDD" required>
-          <div class="invalid-feedback">Preencha seu telefone!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="endereco">Endereço:</label>
-          <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço" required>
-          <div class="invalid-feedback">Preencha seu endereço!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="cidade">Cidade:</label>
-          <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" required>
-          <div class="invalid-feedback">Preencha sua cidade!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="estado">Estado:</label>
-          <input type="text" class="form-control" id="estado" placeholder="Digite seu estado" required>
-          <div class="invalid-feedback">Preencha seu estado!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="cep">CEP:</label>
-          <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP sem pontuação" required
-            pattern="[0-9]{8}">
-          <div class="invalid-feedback">Preencha seu CEP!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="website">Website:</label>
-          <input type="text" class="form-control" id="website" placeholder="Digite o seu website">
-        </div>
-
-        <div class="form-group">
-          <label for="instagram">Instagram:</label>
-          <input type="text" class="form-control" id="instagram" placeholder="Digite o seu Instagram">
-        </div>
-
-        <div class="form-group">
-          <label for="senha">Senha:</label>
-          <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required><br>
-          <div class="invalid-feedback">Preencha sua senha!</div>
-          <input type="checkbox" id="checkbox" onclick="mostrarSenha()">Mostrar Senha
-        </div>
-
-        <div class="form-group">
-          <label for="descricao_estabelecimento">Descreva seu estabelecimento:</label>
-          <textarea class="form-control" id="descricao_estabelecimento" rows="3" required></textarea>
-          <div class="invalid-feedback">Preencha sua descrição!</div>
-        </div>
-
-        <div class="form-group">
-          <label class="fotoperfil" tabindex="0">Fotos do estabelecimento:
-            <input class="fotoperfil_input" type="file" id="fotoperfil" accept="image/*" />
-            <span class="fotoperfil_span">Selecione suas fotos</span>
-          </label>
-        </div>
-
-
-        <!--buttons start-->
         <div class="row">
           <div class="col text-center">
-            <button type="submit" class="btn btn-primary" id="enviar" onclick="validarFormulario()">Enviar</button>
-            <button type="button" class="btn btn-primary" id="cancelar" onclick="cancelarFormulario()">Cancelar</button>
+            <button type="submit" class="btn btn-primary" id="enviar" onclick="entrar()">Enviar</button>
           </div>
-          <!--buttons end-->
-
       </form>
-      <!--form end-->
-
-    </div>
 
   </main>
-  <footer class="section footer-classic context-dark bg-image"
-    style="background: linear-gradient(to right, #0097b2,#15eea3);">
+
+  <footer class="section footer-classic context-dark bg-image" style="background-color:#0097b2">
     <div class="container">
       <div class="row row-30">
         <div class="col-md-4 col-xl-5">
@@ -202,8 +118,8 @@
               úteis e dicas práticas para tornar sua viagem mais agradável e segura para você e seu animal de estimação.
             </p>
             <!-- Rights-->
-            <p class="rights"><span>©  </span><span class="copyright-year">2023</span><span> </span><span>Meu Pet
-                Viajá</span><span>. </span><span> All Rights Reserved.</span></p>
+            <p class="rights"><span>© </span><span class="copyright-year">2023</span><span></span><span>Meu Pet
+                Viaja</span><span>.</span><span> All Rights Reserved.</span></p>
           </div>
         </div>
         <div class="col-md-4">
@@ -249,7 +165,7 @@
     integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/14b399f147.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/cadastro_estabelecimento.js"></script>
+  <script type="text/javascript" src="js/cadastro_viajante.js"></script>
 </body>
 
 </html>

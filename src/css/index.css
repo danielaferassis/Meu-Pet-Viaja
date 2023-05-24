@@ -166,7 +166,18 @@ ul, ol {
 }
 /**Footer*/
 
-/**Adaptação*/
+.link-recuperar-senha {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Merriwheater', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  /**Adaptação*/
 
 @media screen and (min-width: 901px) and (max-width: 1400px) {
     body{

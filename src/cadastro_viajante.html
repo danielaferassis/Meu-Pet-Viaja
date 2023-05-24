@@ -91,8 +91,8 @@
     <div class="container">
       <!--image start-->
       <div class="row">
-        <div class="col">
-          <div class="img-fluid" id="imagem-pet">
+        <div class="col-md-8 col-lg-11 col-sm-3 col-xs-12">
+          <div class="img-responsive mx-auto" id="imagem-pet">
             <img src="imagens/viajar-com-cachorro.jpg" alt="Imagem Responsiva">
           </div>
         </div>
@@ -101,7 +101,7 @@
 
       <!--botões viajante e estabelecimento starts-->
       <div class="row">
-        <div class="col justify-content-center">
+        <div class="col text-center">
           <button type="button" class="btn btn-primary" id="viajante" onclick="cadastrarViajante()">Viajante</button>
           <button type="button" class="btn btn-primary" id="estabelecimento"
             onclick="cadastrarEstabelecimento()">Estabelecimento</button>
@@ -113,84 +113,84 @@
       <form id="cadastro_viajante" method="post" class="needs-validation" novalidate>
 
         <h1 class="text-center" id="titulo">Cadastro</h1>
-
-        <div class="form-group">
-          <label for="nome">Nome Completo:</label>
-          <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome Completo" required>
-          <div class="invalid-feedback">Preencha seu nome completo!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="CPF">CPF:</label>
-          <input type="text" class="form-control" id="CPF" placeholder="Digite seu CPF sem pontuação"
-            pattern="[0-9]{11}" required>
-          <div class="invalid-feedback">Preencha seu CPF!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="email">E-mail:</label>
-          <input type="email" class="form-control" id="email" placeholder="Digite seu E-mail" required>
-          <div class="invalid-feedback">Preencha seu e-mail!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="Telefone">Telefone:</label>
-          <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone com DDD" required>
-          <div class="invalid-feedback">Preencha seu telefone!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="endereco">Endereço:</label>
-          <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço" required>
-          <div class="invalid-feedback">Preencha seu endereço!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="cidade">Cidade:</label>
-          <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" required>
-          <div class="invalid-feedback">Preencha sua cidade!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="estado">Estado:</label>
-          <input type="text" class="form-control" id="estado" placeholder="Digite seu estado" required>
-          <div class="invalid-feedback">Preencha seu estado!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="cep">CEP:</label>
-          <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP sem pontuação" required
-            pattern="[0-9]{8}">
-          <div class="invalid-feedback">Preencha seu CEP!</div>
-        </div>
-
-        <div class="form-group">
-          <label for="nome_pet">Nome do Pet:</label>
-          <input type="text" class="form-control" id="nome_pet" placeholder="Digite o nome do seu pet">
-        </div>
-
-        <div class="form-group">
-          <label for="senha">Senha:</label>
-          <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required><br>
-          <div class="invalid-feedback">Preencha sua senha!</div>
-          <input type="checkbox" id="checkbox" onclick="mostrarSenha()">Mostrar Senha
-        </div>
-
-        <div class="form-group">
-          <label class="fotoperfil" tabindex="0">Foto:
-            <input class="fotoperfil_input" type="file" id="fotoperfil" accept="image/*" />
-            <span class="fotoperfil_span">Selecione sua foto</span>
-          </label>
-        </div>
-
-
-        <!--button start-->
-        <div class="row">
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary" id="enviar" onclick="validarFormulario()">Enviar</button>
-            <button type="button" class="btn btn-primary" id="cancelar" onclick="cancelarFormulario()">Cancelar</button>
+             <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome Completo" required>
+            <div class="invalid-feedback">Preencha seu nome completo!</div>
           </div>
-          <!--button end-->
+
+          <div class="form-group">
+            <label for="CPF">CPF:</label>
+            <input type="text" class="form-control" id="CPF" placeholder="Digite seu CPF sem pontuação"
+              pattern="[0-9]{11}" required>
+            <div class="invalid-feedback">Preencha seu CPF!</div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu E-mail" required>
+            <div class="invalid-feedback">Preencha seu e-mail!</div>
+          </div>
+
+          <div class="form-group">
+            <label for="Telefone">Telefone:</label>
+            <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone com DDD" required>
+            <div class="invalid-feedback">Preencha seu telefone!</div>
+          </div>
+
+          <div class="form-group">
+            <label for="endereco">Endereço:</label>
+            <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço" required>
+            <div class="invalid-feedback">Preencha seu endereço!</div>
+          </div>
+
+          <div class="form-group">
+            <label for="cidade">Cidade:</label>
+            <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" required>
+            <div class="invalid-feedback">Preencha sua cidade!</div>
+          </div>
+
+          <div class="form-group">
+            <label for="estado">Estado:</label>
+            <input type="text" class="form-control" id="estado" placeholder="Digite seu estado" required>
+            <div class="invalid-feedback">Preencha seu estado!</div>
+          </div>
+
+          <div class="form-group">
+            <label for="cep">CEP:</label>
+            <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP sem pontuação" required
+              pattern="[0-9]{8}">
+            <div class="invalid-feedback">Preencha seu CEP!</div>
+          </div>
+
+          <div class="form-group">
+            <label for="nome_pet">Nome do Pet:</label>
+            <input type="text" class="form-control" id="nome_pet" placeholder="Digite o nome do seu pet">
+          </div>
+
+          <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required><br>
+            <div class="invalid-feedback">Preencha sua senha!</div>
+            <input type="checkbox" id="checkbox" onclick="mostrarSenha()">Mostrar Senha
+          </div>
+
+          <div class="form-group">
+            <label class="fotoperfil" tabindex="0">Foto:
+              <input class="fotoperfil_input" type="file" id="fotoperfil" accept="image/*" />
+              <span class="fotoperfil_span">Selecione sua foto</span>
+            </label>
+          </div>
+
+
+          <!--button start-->
+          <div class="row">
+            <div class="col text-center">
+              <button type="submit" class="btn btn-primary" id="enviar" onclick="validarFormulario()">Enviar</button>
+              <button type="button" class="btn btn-primary" id="cancelar"
+                onclick="cancelarFormulario()">Cancelar</button>
+            </div>
+            <!--button end-->
 
       </form>
       <!--form end-->

@@ -1,8 +1,8 @@
 /**BODY*/
 #imagem-pet {
-    display: flexbox;
-    margin-left: 230px;
-    width: 100% \9;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
     }
 
 #viajante {
@@ -11,7 +11,6 @@
     margin-top: 40px;
     margin-bottom: 30px;
     align-content: center;
-    margin-left: 375px;
     background-color: #0097B2;
     min-width: 150px;
     font-size: 15px;
@@ -168,7 +167,6 @@ color:#FFFFFF
     margin-top: 30px;
     margin-bottom: 200px;
     align-content: center;
-    margin-left: 500px;
     min-width: 100px;
     font-size: 15px;
 }

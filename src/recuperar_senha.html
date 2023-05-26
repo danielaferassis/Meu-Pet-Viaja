@@ -15,7 +15,7 @@
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/cadastro_viajante.css">
 </head>
 
@@ -52,23 +52,23 @@
     <!--Responsive Navbars starts-->
     <div class="responsive-navbar">
       <div class="collapse" id="navbarToggleExternalContent">
-        <div class="p-4" style="background-color: black;">
+        <div class="p-4" style="background-color: #8cd4c8;">
           <h5 class="text-white h4">Meu Pet Viaja</h5>
           <ul class="nav-responsive">
             <li>
               <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="#">Sobre Nós</a>
+              <a href="sobre.html">Sobre Nós</a>
             </li>
             <li>
-              <a href="#">Transporte seu Pet</a>
+              <a href="transporte.html">Transporte seu Pet</a>
             </li>
             <li>
-              <a href="#">Destinos em MG</a>
+              <a href="destinos.html">Destinos em MG</a>
             </li>
             <li>
-              <a href="#">Entre</a>
+              <a href="entre.html">Entre</a>
             </li>
           </ul>
         </div>
@@ -88,35 +88,23 @@
 
   <main>
 
-
     <div class="container">
 
-      <h1 class="text-center" id="titulo">Entrar</h1>
+      <h1 class="text-center" id="titulo">Recuperar Senha</h1>
       <form>
 
         <div class="form-group">
-          <label for="username">E-mail/Usuário:</label>
-          <input type="email" class="form-control" id="email" placeholder="Digite o e-mail/usuário" required>
-          <div class="invalid-feedback">Preencha o e-mail/usuário!</div>
+          <label for="email">E-mail:</label>
+          <input type="text" class="form-control" id="email" placeholder="Digite o e-mail para recuperar senha" required><br>
+          <div class="invalid-feedback">Preencha o e-mail!</div>
         </div>
-
-        <div class="form-group">
-          <label for="password">Senha:</label>
-          <input type="password" class="form-control" id="senha" placeholder="Digite a senha" required>
-          <div class="invalid-feedback">Preencha a senha!</div>
-        </div>
-
-        <div class="link-recuperar-senha">
-        <a href="recuperar_senha.html">Esqueci minha senha</a> / <a href="cadastro_viajante.html">Criar conta</a>
-      </div>
 
         <div class="row">
           <div class="col text-center">
-            <button type="button" class="btn btn-primary" id="enviar" onclick="entrar()">Entrar</button>
+            <button type="submit" class="btn btn-primary" id="enviar" onclick="entrar()">Enviar</button>
           </div>
       </form>
 
-    </div>
   </main>
 
   <footer class="section footer-classic context-dark bg-image" style="background-color:#0097b2">

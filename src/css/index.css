@@ -165,3 +165,44 @@ ul, ol {
     transition: .22s ease;
 }
 /**Footer*/
+
+.link-recuperar-senha {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Merriwheater', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  /**Adaptação*/
+
+@media screen and (min-width: 901px) and (max-width: 1400px) {
+    body{
+        
+    }
+  }
+  @media screen and (min-width: 616px) and (max-width: 900px) {
+       
+  }
+  @media screen and (min-width: 240px) and (max-width: 615px) {
+        .logo img{
+          display: none;
+        }
+        .navigation-bar{
+          display: none;
+        }
+        .responsive-navbar{
+          display: inline;
+          
+        }
+        .nav-responsive li a{
+          border-radius: 25px;
+          transition: 0.3s;
+          color: white;
+        }
+  }
+  
+  /**Adaptação*/

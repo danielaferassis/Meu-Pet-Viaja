@@ -190,4 +190,12 @@ color:#FFFFFF
 
 /**BODY*/
 
+/**Responsividade*/
 
+@media screen and (min-width: 240px) and (max-width: 1200px) {
+    #imagem-pet {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        }
+    }

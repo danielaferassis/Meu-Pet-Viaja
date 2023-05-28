@@ -1,7 +1,7 @@
 /**BODY*/
 #imagem-pet {
     display: block;
-    margin: 0 auto;
+    margin: 0% auto;
     width: 60%;
     }
 
@@ -197,6 +197,15 @@ color:#FFFFFF
     #imagem-pet {
         display: flex;
         justify-content: center;
-        width: 40%;
+        width: 0% !important;
+        }
+    }
+
+@media screen and (min-width: 240px) and (max-width: 400px) {
+    #viajante {
+        margin-left: 40px;
+        display: flexbox;
+        align-content: center;
+        margin-bottom: 0%;
         }
     }

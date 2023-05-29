@@ -1,96 +1,160 @@
-@import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-.media-scroller {
-  --_spacer: var(--size-3);
-  display: grid;
-  gap: var(--_spacer);
-  grid-auto-flow: column;
-  grid-auto-columns: 21%;
+:root {
+    --cor0: #0097b2;
+    --cor1: #4ecdc4;
+    --cor2: #15eea3;
 
-  padding: 0 var(--_spacer) var(--_spacer);
-
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
+    --font-title: 'Montserrat', sans-serif;
+    --font-default: 'Roboto', sans-serif;  
 }
 
-.container-busca{
-  padding-inline-start: var(--size-6);
-  margin-block: var(--size-9) var(--size-3);
+main {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
 }
 
-.btn{
-  border: solid;
+main > h1 {
+    font-family: var(--font-title);
+    margin: 50px 0px;
 }
 
-.search{
-  border: solid #0097b2;
+main > h3 {
+    font-family: var(--font-title);
 }
 
-.media-scroller--with-groups {
-  grid-auto-columns: 80%;
+div > form {
+    margin: 20px auto;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    background-color: var(--cor1);
+    border-radius: 35px;
 }
 
-.media-group {
-  display: grid;
-  gap: var(--_spacer);
-  grid-auto-flow: column;
+div > form > p {
+    margin: 10px 0px;
 }
 
-.media-element {
-  display: grid;
-  grid-template-rows: min-content;
-  gap: var(--_spacer);
-  padding: var(--_spacer);
-  background: var(--surface-2);
-  border-radius: var(--radius-2);
-  box-shadow: var(--shadow-2);
+input[type=search] {
+    background-color: white;
+    min-width: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px rgb(118, 118, 118);
 }
 
-.media-element > img {
-  inline-size: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+input[type=search]:focus, select:focus {
+    outline: none;
 }
 
-.snaps-inline {
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: var(--_spacer, 1rem);
+div#resultados {
+    display: none;
 }
 
-.snaps-inline > * {
-  scroll-snap-align: start;
+div#resultados > p {
+    font-family: var(--font-default);
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
-/* general styling */
-
-.container {
-  inline-size: min(100% - 4rem, 70rem);
-  margin-inline: auto;
+.filter {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px rgb(118, 118, 118);    
 }
 
-.flow {
-  display: grid;
-  gap: var(--size-3);
+.button {
+    border: none;
+    border-radius: 10px;
+    font-family: var(--font-title);
+    padding: 10px;
+    box-shadow: 1px 1px 3px rgb(118, 118, 118);
 }
 
-.page-header {
-  padding-block: var(--size-9);
-  margin-block-end: var(--size-9);
-  background: #4ECDC4;
-  color: var(--gray-0);
-  box-shadow: var(--shadow-2);
+.button:hover {
+    cursor: pointer;
 }
 
-.page-title {
-  font-size: var(--font-size-fluid-3);
+#top-dest, #top-comp, #resultados {
+    text-align: left;
+    font-family: var(--font-title);
+    margin: 70px 0px 40px 40px;
 }
 
-.page-subtitle {
-  font-size: var(--font-size-fluid-1);
-}
+.container-est {
+    position: relative;
+    width: 40%;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 200px;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .image {
+    display: block;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+  }
+  
+  .container-est:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+  }
 
-.section-title {
-  padding-inline-start: var(--size-6);
-  margin-block: var(--size-9) var(--size-3);
+  div.estabelecimentos {
+    margin-bottom: 50px;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .text > a {
+    text-decoration: none;
+    color: white;
+  }
+
+@media screen and (min-width: 768px) {
+    div > form {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    input[type=search]{
+        width: 350px;
+    }
+    .container-est {
+        display: inline-block;
+        margin: 0px 15px;
+    }    
 }

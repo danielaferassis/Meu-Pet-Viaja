@@ -1,225 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/destinos.css">
-    <title>Meu Pet Viaja</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css"
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@800&display=swap" rel="stylesheet">
-
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Pet Viaja</title>
+  <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/destinos.css">
 </head>
+
 <body>
-    <header class="header">
-        <!--Logo -->
-        <div class="logo">
-            <img src="imagens/logo.png" width="26%">
-        </div>
-        <!--Logo -->
+  <header class="header">
+    <!--Logo starts -->
+    <div class="logo">
+      <img src="imagens/logo.png">
+    </div>
+    <!--Logo end -->
 
-        <!--Cabeçalho-->
-        <div class="navbar">
-            <ul>
-                <li>
-                    <a href="sobre.html">Sobre Nós</a>
-                    <a href="transporte.html">Transporte seu Pet</a>
-                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
-                    <a href="destinos.html">Destinos em MG</a>
-                    <a href="entre.html">Entre</a>
-                </li>
-            </ul>
-        </div>
-        <!--Cabeçalho-->
-    </header>
-    <main>
-        
-        <header class="page-header">
-            <div class="container flow">
-              <h1 class="page-title">Destinos</h1>
-              <p class="page-subtitle">Melhores destinos para você e seu melhor amigo(a)</p>
-            </div>
-        </header>
+    <!--Cabeçalho starts-->
+    <div class="navigation-bar">
+      <ul class="nav">
+        <li>
+          <a href="sobre.html">Sobre Nós</a>
+        </li>
+        <li>
+          <a href="transporte.html">Transporte seu Pet</a>
+        </li>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="destinos.html">Destinos em MG</a>
+        </li>
+        <li>
+          <a href="entre.html">Entre</a>
+        </li>
+      </ul>
+    </div>
+    <!--Cabeçalho end-->
 
-        <div class="container-busca">
-            <label for="site-search">Busque a cidade desejada:</label>
-            <input type="search" class="search" id="site-search" name="q">
-            <button class="btn">Buscar </button>
+    <!--Responsive Navbars starts-->
+    <div class="responsive-navbar">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4" style="background-color: black;">
+          <h5 class="text-white h4">Meu Pet Viaja</h5>
+          <ul class="nav-responsive">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="sobre.html">Sobre Nós</a>
+            </li>
+            <li>
+              <a href="transporte.html">Transporte seu Pet</a>
+            </li>
+            <li>
+              <a href="destinos.html">Destinos em MG</a>
+            </li>
+            <li>
+              <a href="entre.html">Entre</a>
+            </li>
+          </ul>
         </div>
-        <h2 class="section-title">Destinos mais buscados:</h2>
+      </div>
+      <nav class="navbar-responsive navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--Responsive Navbars end-->
+
+  <main>
+        <h1>Destinos</h1>
+        <h3><label for="ibusca">Para onde você deseja ir com o seu pet?</label></h3>
+        <div class="busca">
+            <form action="#" method="get">
+                <p>
+                    <input class="search" type="search" name="busca" id="ibusca" required placeholder="Digite aqui"   oninput="search_destino()">
+                </p>
+                <p>
+                    <label for="filtro">Filtrar por:</label>
+                    <select class="filter" name="filtro" id="filtro" onclick="setFilterType()">
+                      <option value="cidade" onclick="setFilterType()">Cidade</option>
+                      <option value="estabelecimento" onclick="setFilterType()">Estabelecimento</option>
+                    </select>
+                </p>
+            </form>
+        </div>
+          <h2 id="top-dest">Destinos:</h2>
+        <div id="wrapper-destinos">
+          <script src="js/destinos.js"></script>
           
-          <div class="media-scroller snaps-inline">
-            <div class="media-element">
-              <img src="imagens/destinos/BH.jpg" alt="">
-              <p class="title">Belo Horizonte</p>
-            </div>
-            <div class="media-element">
-              <img src="imagens/destinos/ouroPreto.jpg" alt="">
-              <p class="title">Ouro preto</p>
-            </div>
-            <div class="media-element">
-              <img src="imagens/destinos/pocosDeCaldas.jpg" alt="">
-              <p class="title">Poços de Caldas</p>
-            </div>
-            <div class="media-element">
-              <img src="imagens/destinos/SeteLagoas.jpg" alt="">
-              <p class="title">Sete Lagoas</p>
-            </div>
-            <div class="media-element">
-              <img src="imagens/destinos/BH.jpg" alt="">
-              <p class="title">Belo Horizonte</p>
-            </div>
-            <div class="media-element">
-              <img src="imagens/destinos/ouroPreto.jpg" alt="">
-              <p class="title">Ouro preto</p>
-            </div>
-            <div class="media-element">
-              <img src="imagens/destinos/pocosDeCaldas.jpg" alt="">
-              <p class="title">Poços de Caldas</p>
-            </div>
-            <div class="media-element">
-              <img src="imagens/destinos/SeteLagoas.jpg" alt="">
-              <p class="title">Sete Lagoas</p>
-            </div>
+          <div class="container-est" cidade="Belo Horizonte">
+              <img src="imagens/destinos/BH.jpg" alt="bh" class="image">
+              <div class="overlay">
+                <div class="text"><a href="#">Belo Horizonte</a></div>
+              </div>
           </div>
-          <h2 class="section-title">Estabelecimentos mais buscados:</h2>
-          <div class="media-scroller media-scroller--with-groups snaps-inline">
-          
-            <!--   Group 1 -->
-            <div class="media-group">
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400" alt="">
+          <div class="container-est" cidade="Ouro Preto">
+              <img src="imagens/destinos/ouro-preto.jpg" alt="ouro-preto" class="image">
+              <div class="overlay">
+                <div class="text"><a href="#">Ouro Preto</a></div>
               </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-            </div>
-          
-            <!-- Group 2   -->
-            <div class="media-group">
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-            </div>
-          
-            <!-- Group 3   -->
-            <div class="media-group">
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1642484865851-111e68695d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1642237778207-24985a0bf876?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-            </div>
-          
-            <!--  Group 4  -->
-            <div class="media-group">
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-              <div class="media-element">
-                <img src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-              </div>
-            </div>
-          
           </div>
-        
-        
-          
-    </main>
-    <footer class="section footer-classic context-dark bg-image" style="background: linear-gradient(to right, #0097b2,#15eea3);">
-        <div class="container">
-          <div class="row row-30">
-            <div class="col-md-4 col-xl-5">
-              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="imagens/logo-footer.png" alt="" width="30%" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
-                <p>Nosso site vem com o intuito de melhorar sua experiência de viagem com seu pet, fornecendo informações úteis e dicas práticas para tornar sua viagem mais agradável e segura para você e seu animal de estimação.</p>
-                <!-- Rights-->
-                <p class="rights"><span>©  </span><span class="copyright-year">2023</span><span> </span><span>Meu Pet Viajá</span><span>. </span><span> All Rights Reserved.</span></p>
+          <div class="container-est" cidade="Sete Lagoas">
+              <img src="imagens/destinos/sete-lagoas.jpg" alt="sete-lagoas" class="image">
+              <div class="overlay">
+                <div class="text"><a href="#">Sete Lagoas</a></div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <h5>Contatos</h5>
-              <dl class="contact-list">
-                <dt> E-mail:</dt>
-                <dd><a href="mailto:#">contato@meupetviaja.com.br</a></dd>
-              </dl>
-              <dl class="contact-list">
-                <dt>Telefone:</dt>
-                <dd><a href="tel:#">(31) 9 0000-0000</a>
-                </dd>
-              </dl>
-            </div>
-            <div class="col-md-4 col-xl-3">
-              <h5>Acesso rápido</h5>
-              <ul class="nav-list">
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Transporte seu Pet</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Destinos em MG</a></li>
-                <li><a href="#">Entre</a></li>
-              </ul>
-            </div>
           </div>
         </div>
-        <div class="row no-gutters social-container">
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span><i class="fa-brands fa-facebook"></i></span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span><i class="fa-brands fa-instagram"></i></span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span><i class="fa-brands fa-twitter"></i></span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span><i class="fa-brands fa-tiktok"></i></span></a></div>
+          <h2 id="top-comp">Estabelecimentos:</h2>      
+        <div class="estabelecimentos">
+          
+          <div class="container-est" cidade="Belo Horizonte" nome="Hotel 1 em Belo Horizonte">
+              <img src="imagens/destinos/hotel1.jpg" alt="hotel1" class="image">
+              <div class="overlay">
+                <div class="text"><a href="#">Hotel 1 em Belo Horizonte</a></div>
+              </div>
+          </div>
+          <div class="container-est" cidade="Ouro Preto" nome="Pousada em Ouro Preto">
+              <img src="imagens/destinos/pousada2.jpg" alt="pousada2" class="image">
+              <div class="overlay">
+                <div class="text"><a href="#">Pousada em Ouro Preto</a></div>
+              </div>
+          </div>
+          <div class="container-est" cidade="Sete Lagoas" nome="Hotel em Sete Lagoas">
+              <img src="imagens/destinos/hotel3.jpg" alt="hotel3" class="image">
+              <div class="overlay">
+                <div class="text"><a href="#">Hotel em Sete Lagoas</a></div>
+              </div>
+          </div>
         </div>
-      </footer>
-    <script src="js/index.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/14b399f147.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+     
+  </main>
+  <footer class="section footer-classic context-dark bg-image" style="background-color:#0097b2">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-md-4 col-xl-5">
+          <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light"
+                src="imagens/logo-footer.png" alt="" width="30%"
+                srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+            <p>Nosso site vem com o intuito de melhorar sua experiência de viagem com seu pet, fornecendo informações
+              úteis e dicas práticas para tornar sua viagem mais agradável e segura para você e seu animal de estimação.
+            </p>
+            <!-- Rights-->
+            <p class="rights"><span>©  </span><span class="copyright-year">2023</span><span> </span><span>Meu Pet
+                Viaja</span><span>. </span><span> All Rights Reserved.</span></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Contatos</h5>
+          <dl class="contact-list">
+            <dt> E-mail:</dt>
+            <dd><a href="mailto:#">contato@meupetviaja.com.br</a></dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>Telefone:</dt>
+            <dd><a href="tel:#">(31) 9 0000-0000</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <h5>Acesso rápido</h5>
+          <ul class="nav-list">
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Transporte seu Pet</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinos em MG</a></li>
+            <li><a href="#">Entre</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters social-container">
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span><i
+              class="fa-brands fa-facebook"></i></span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span><i
+              class="fa-brands fa-instagram"></i></span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span><i
+              class="fa-brands fa-twitter"></i></span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span><i
+              class="fa-brands fa-tiktok"></i></span></a></div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/14b399f147.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/cadastro_viajante.js"></script>
 </body>
+
 </html>

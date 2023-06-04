@@ -38,10 +38,25 @@
 
 
 function mostrarSenha(){
-    var senha=document.getElementById('senha');
+    var senha = document.getElementById('senha');
     if(senha.type=='password'){
         senha.type='text';
     }else{
         senha.type='password';
 }
 };
+
+function cancelarFormulario (){
+    window.location.href = "index.html";
+};
+
+function previewFoto() {
+  var previewFoto = document.getElementById("fotoperfil");
+  previewFoto.addEventListener("change", function(e) {
+    const files = tgt.files;
+    const fr = new FileReader();
+    fr.onload = function(){
+      document.getElementById("fotoperfil_preview").src = fr.result;
+    }
+    fr.readAsDataURL(files[0]);
+  })};

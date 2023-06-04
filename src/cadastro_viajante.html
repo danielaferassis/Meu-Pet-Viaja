@@ -177,8 +177,9 @@
 
           <div class="form-group">
             <label class="fotoperfil" tabindex="0">Foto:
-              <input class="fotoperfil_input" type="file" id="fotoperfil" accept="image/*" />
+              <input class="fotoperfil_input" type="file" id="fotoperfil" accept="image/*" onsubmit="previewFoto()"/>
               <span class="fotoperfil_span">Selecione sua foto</span>
+              <img src="" alt="" class="fotoperfil_preview"  />
             </label>
           </div>
 
@@ -187,8 +188,7 @@
           <div class="row">
             <div class="col text-center">
               <button type="submit" class="btn btn-primary" id="enviar" onclick="validarFormulario()">Enviar</button>
-              <button type="button" class="btn btn-primary" id="cancelar"
-                onclick="cancelarFormulario()">Cancelar</button>
+              <button type="button" class="btn btn-primary" id="cancelar" onclick="cancelarFormulario()">Cancelar</button>
             </div>
             <!--button end-->
 

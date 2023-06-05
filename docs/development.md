@@ -49,7 +49,7 @@ Ao acessar a página de Cadastro de estabelecimento, você encontrará um formul
 ## Registro do usuário
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| ID          | Numero (Inteiro)  | Identificador único do usuário  | 001                |
+| ID          | Numero (Inteiro)  | Identificador único do usuário  | 0001                |
 | Nome        | Texto             | Nome do usuario                 | Guilherme Arantes  |
 | CPF         | Numero (Inteiro)  | CPF do usuario                  | 999.999.999-99   |
 | E-mail       | Texto             | E-mail do usuário                | guiarantes@casapet.com.br|
@@ -63,11 +63,11 @@ Ao acessar a página de Cadastro de estabelecimento, você encontrará um formul
 ## Registro de Estabelecimento
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| ID          | Numero (Inteiro)  | Identificador único do Estabelecimento  | 001                |
+| ID          | Numero (Inteiro)  | Identificador único do Estabelecimento  | 0001                |
 | Nome do Estabelecimento       | Texto             | Nome do Estabelecimento                 | Casa PET |
 | CNPJ        | Numero (Inteiro)  | CNPJ atrelado ao estabelecimento                | 99. 999. 999/0001-99   |
 | E-mail       | Texto             | E-mail do Estabelecimento                | informacao@casapet.com.br|
-| Endereço    | Texto             | logadouro onde o usuario reside       | Av. horizontes  |
+| Endereço    | Texto             | logadouro onde o usuario reside       | Rua. horizontes  |
 | Cidade      | Texto             | Cidade onde o usuario reside    |Mariana   |
 | Estado      | Texto             | Estado onde o usuario reside    |  Minas Gerais    |
 | CEP         | Numero (Inteiro)  | CEP onde o usuario reside       |  00.000-00       |
@@ -78,7 +78,7 @@ Ao acessar a página de Cadastro de estabelecimento, você encontrará um formul
 ## Cadastro de Depoimento
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| ID               | Numero (Inteiro)  | Identificador  do comentario    | 1                |
+| ID               | Numero (Inteiro)  | Identificador  do comentario    | 0001                |
 | Nome             | Texto             | Nome do usuario                 | Adriana Temponi  |
 | Nota             | Numero (Inteiro)  | Nota dada ao estabelecimento       | 4  |
 | Data de Entrada  | Texto             | Periodo da visita        |14/05/2023    |

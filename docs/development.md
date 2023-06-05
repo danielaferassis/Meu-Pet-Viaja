@@ -41,16 +41,46 @@ Ao acessar a página de Cadastro de estabelecimento, você encontrará um formul
 
 |RF-011| Disponibilizar página para proprietários de estabelecimentos enviearem informações sobre seus negócios para serem avaliadas e adicionadas à lista de hospedagens e locais pet friendly  | MÉDIA |
 
-![Titulo](img/Cadastro_Estabelecimento.png)
+![Titulo](img/cadastro-estabelecimento.png)
 
 
 ## Descrição das estruturas:
 
-## Notícia
+## Registro do usuário
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
+| ID          | Numero (Inteiro)  | Identificador único do usuário  | 001                |
+| Nome        | Texto             | Nome do usuario                 | Guilherme Arantes  |
+| CPF         | Numero (Inteiro)  | CPF do usuario                  | 999.999.999-99   |
+| E-mail       | Texto             | E-mail do usuário                | guiarantes@casapet.com.br|
+| Endereço    | Texto             | logadouro onde o usuario reside       | Av. cinco  |
+| Cidade      | Texto             | Cidade onde o usuario reside    |Belo Horizonte    |
+| Estado      | Texto             | Estado onde o usuario reside    |  Minas Gerais    |
+| CEP         | Numero (Inteiro)  | CEP onde o usuario reside       |  00.000-00       |
+| Nome do Pet | Texto             | Nome do animal                  | Beethoven        | 
+| Senha       | Numero (Inteiro)  | Senha do usuário	            | abC#768          |
 
+## Registro de Estabelecimento
+|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
+|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+| ID          | Numero (Inteiro)  | Identificador único do Estabelecimento  | 001                |
+| Nome do Estabelecimento       | Texto             | Nome do Estabelecimento                 | Casa PET |
+| CNPJ        | Numero (Inteiro)  | CNPJ atrelado ao estabelecimento                | 99. 999. 999/0001-99   |
+| E-mail       | Texto             | E-mail do Estabelecimento                | informacao@casapet.com.br|
+| Endereço    | Texto             | logadouro onde o usuario reside       | Av. horizontes  |
+| Cidade      | Texto             | Cidade onde o usuario reside    |Mariana   |
+| Estado      | Texto             | Estado onde o usuario reside    |  Minas Gerais    |
+| CEP         | Numero (Inteiro)  | CEP onde o usuario reside       |  00.000-00       |
+| Web Site    | Texto             | Site do estabelecimento                  | casapet.com.br       | 
+| Instagram   | Texto             | Instagram estabelecimento                  | @casapet       | 
+| Senha       | Numero (Inteiro)  | Senha do usuário	            | Aht#768          |
+
+## Cadastro de Depoimento
+|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
+|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+| ID               | Numero (Inteiro)  | Identificador  do comentario    | 1                |
+| Nome             | Texto             | Nome do usuario                 | Adriana Temponi  |
+| Nota             | Numero (Inteiro)  | Nota dada ao estabelecimento       | 4  |
+| Data de Entrada  | Texto             | Periodo da visita        |14/05/2023    |
+| Data de Saida    | Texto             | Periodo da visita        |16/05/2023    |
+| Descrição        | Texto             | Descrição da experiencia do usuario   |  "Amei minha estadia em um lugar pet friendly incrível! O ambiente era acolhedor, a equipe era atenciosa e meu peludo foi tratado como um rei. Recomendo a todos!"    |

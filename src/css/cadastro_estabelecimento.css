@@ -1,13 +1,13 @@
 /**BODY*/
 
 #titulo {
-        font-family: 'Alegrya bold', sans-serif;
-        font-size: 50px;
-        color: #000000;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+    font-family: 'Alegrya bold', sans-serif;
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 
 #nome {
@@ -36,6 +36,7 @@
     font-size: 15px;
     color: #000000;
 }
+
 #telefone {
     display: inline-block;
     margin-right: 5px;
@@ -114,12 +115,11 @@
 }
 
 
-#fotoperfil {
+#foto_estabelecimento {
     display: none;
     margin-right: 5px;
     margin-left: 5px;
-    font-family: 'Merriwheater', sans-serif
-    sans-serif;
+    font-family: 'Merriwheater', sans-serif sans-serif;
     font-size: 15px;
     color: #000000;
 }
@@ -140,25 +140,25 @@ textarea {
     margin-left: 5px;
     font-family: 'Merriwheater';
     font-size: 15px;
-    }
-
-.fotoperfil_span {
-width: 300px;
-aspect-ratio: 720/720px;
- background-color: #FFFFFF;
- display: flex;
- align-items: center;
- justify-content: center;
- color:#000000;
- border: 2px dashed #000000;
- cursor: pointer;
-font-family: 'Merriwheater', sans-serif;
-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 
-.fotoperfil_span:hover {
-background-color: #0097B2;
-color:#FFFFFF 
+.fotoestabelecimento_span {
+    width: 300px;
+    aspect-ratio: 720/720px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    border: 2px dashed #000000;
+    cursor: pointer;
+    font-family: 'Merriwheater', sans-serif;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.fotoestabelecimento_span:hover {
+    background-color: #0097B2;
+    color: #FFFFFF
 }
 
 #enviar {

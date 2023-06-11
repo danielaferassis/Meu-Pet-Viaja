@@ -1,0 +1,77 @@
+{
+    "cidades": [
+        {
+            "cidade": "Belo Horizonte",
+            "id": 1,
+            "imagem": "imagens/destinos/BH.jpg",
+            "alt": "BH",
+            "detalhes": "Belo Horizonte é uma das maiores capitais do Brasil, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "cidade": "Ouro Preto",
+            "id": 2,
+            "imagem": "imagens/destinos/ouro-preto.jpg",
+            "alt": "ouro-preto",
+            "detalhes": "Belo Horizonte é uma das maiores capitais do Brasil, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "cidade": "Sete Lagoas",
+            "id": 3,
+            "imagem": "imagens/destinos/sete-lagoas.jpg",
+            "alt": "Sete Lagoas",
+            "detalhes": "Belo Horizonte é uma das maiores capitais do Brasil, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "cidade": "Varginha",
+            "id": 4,
+            "imagem": "imagens/destinos/varginha.jpg",
+            "alt": "Varginha",
+            "detalhes": "Belo Horizonte é uma das maiores capitais do Brasil, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "cidade": "Poços de Caldas",
+            "id": 5,
+            "imagem": "imagens/destinos/pocosDeCaldas.jpg",
+            "alt": "Poços de Caldas",
+            "detalhes": "Belo Horizonte é uma das maiores capitais do Brasil, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+    ],
+    "estabelecimentos": [
+        {
+            "cidade": "Belo Horizonte",
+            "id": 1,
+            "imagem": "imagens/destinos/hotel1.jpg",
+            "alt": "hotel1",
+            "nome": "Hotel 1 em Belo Horizonte",
+            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu egestas purus. Nunc mauris urna, luctus fringilla nulla eu, posuere luctus neque. Quisque in mi ligula. Phasellus lorem elit, tempus quis odio nec, tempus maximus enim. Quisque aliquet urna vel bibendum tempus. Integer sit amet odio vitae sapien pellentesque feugiat. Maecenas vel augue sit amet lorem varius consectetur quis in mi.",
+            "user": "Equipe Meu Pet Viaja"
+        },
+        {
+            "cidade": "Ouro Preto",
+            "id": 2,
+            "imagem": "imagens/destinos/pousada2.jpg",
+            "alt": "pousada2",
+            "nome": "Pousada em Ouro Preto",
+            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu egestas purus. Nunc mauris urna, luctus fringilla nulla eu, posuere luctus neque. Quisque in mi ligula. Phasellus lorem elit, tempus quis odio nec, tempus maximus enim. Quisque aliquet urna vel bibendum tempus. Integer sit amet odio vitae sapien pellentesque feugiat. Maecenas vel augue sit amet lorem varius consectetur quis in mi.",
+            "user": "Equipe Meu Pet Viaja"
+        },
+        {
+            "cidade": "Sete Lagoas",
+            "id": 3,
+            "imagem": "imagens/destinos/hotel3.jpg",
+            "alt": "hotel3",
+            "nome": "Hotel em Sete Lagoas",
+            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu egestas purus. Nunc mauris urna, luctus fringilla nulla eu, posuere luctus neque. Quisque in mi ligula. Phasellus lorem elit, tempus quis odio nec, tempus maximus enim. Quisque aliquet urna vel bibendum tempus. Integer sit amet odio vitae sapien pellentesque feugiat. Maecenas vel augue sit amet lorem varius consectetur quis in mi.",
+            "user": "Equipe Meu Pet Viaja"
+        },
+        {
+            "cidade": "Varginha",
+            "id": 4,
+            "imagem": "imagens/destinos/barVarginha.jpg",
+            "alt": "boteco3",
+            "nome": "Bar em Varginha",
+            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu egestas purus. Nunc mauris urna, luctus fringilla nulla eu, posuere luctus neque. Quisque in mi ligula. Phasellus lorem elit, tempus quis odio nec, tempus maximus enim. Quisque aliquet urna vel bibendum tempus. Integer sit amet odio vitae sapien pellentesque feugiat. Maecenas vel augue sit amet lorem varius consectetur quis in mi.",
+            "user": "Equipe Meu Pet Viaja"
+        }
+    ]
+}

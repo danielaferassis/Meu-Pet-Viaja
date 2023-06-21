@@ -9,10 +9,8 @@
   <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -93,7 +91,8 @@
       <div class="row">
         <div class="col">
           <div class="img-fluid" id="imagem-pet">
-            <img src="imagens/viajar-com-cachorro.jpg" alt="Imagem Responsiva">
+            <img src="imagens/viajar-com-cachorro.jpg"
+              alt="Imagem de cachorro dentro de mala de viagem aberta com roupas e com cartão e passaporte brasileiro na boca">
           </div>
         </div>
       </div>
@@ -103,8 +102,6 @@
       <div class="row">
         <div class="col text-center">
           <button type="button" class="btn btn-primary" id="viajante" onclick="cadastrarViajante()">Viajante</button>
-          <button type="button" class="btn btn-primary" id="estabelecimento"
-            onclick="cadastrarEstabelecimento()">Estabelecimento</button>
         </div>
       </div>
       <!--botões viajante e estabelecimento end-->
@@ -113,84 +110,48 @@
       <form id="cadastro_viajante" method="post" class="needs-validation" novalidate>
 
         <h1 class="text-center" id="titulo">Cadastro</h1>
-             <div class="form-group">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome Completo" required>
-            <div class="invalid-feedback">Preencha seu nome completo!</div>
+
+        <div class="form-group">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu Nome Completo" required>
+          <div class="invalid-feedback">Preencha seu nome completo!</div>
+        </div>
+
+        <div class="form-group">
+          <label for="usuario">Usuário:</label>
+          <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
+          <div class="invalid-feedback">Preencha seu usuário!</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu E-mail" required>
+          <div class="invalid-feedback">Preencha seu e-mail!</div>
+        </div>
+
+        <div class="form-group">
+          <label for="senha">Senha:</label>
+          <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required><br>
+          <div class="invalid-feedback">Preencha sua senha!</div>
+          <input type="checkbox" id="checkbox" onclick="mostrarSenha()">Mostrar Senha
+        </div>
+
+        <div class="form-group">
+          <label for="fotoperfil" tabindex="0">Foto:
+            <input class="fotoperfil_input" type="file" id="fotoperfil" name="fotoperfil" accept="image/*" onclick="previewFoto()" />
+            <span class="fotoperfil_span">Selecione sua foto</span>
+            <img src="" alt="" class="fotoperfil_preview" />
+          </label>
+        </div>
+
+
+        <!--button start-->
+        <div class="row">
+          <div class="col text-center">
+            <button type="submit" class="btn btn-primary" id="enviar" name="enviar" onclick="validarFormulario()">Enviar</button>
+            <button type="button" class="btn btn-primary" id="cancelar" onclick="cancelarFormulario()">Cancelar</button>
           </div>
-
-          <div class="form-group">
-            <label for="CPF">CPF:</label>
-            <input type="text" class="form-control" id="CPF" placeholder="Digite seu CPF sem pontuação"
-              pattern="[0-9]{11}" required>
-            <div class="invalid-feedback">Preencha seu CPF!</div>
-          </div>
-
-          <div class="form-group">
-            <label for="email">E-mail:</label>
-            <input type="email" class="form-control" id="email" placeholder="Digite seu E-mail" required>
-            <div class="invalid-feedback">Preencha seu e-mail!</div>
-          </div>
-
-          <div class="form-group">
-            <label for="Telefone">Telefone:</label>
-            <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone com DDD" required>
-            <div class="invalid-feedback">Preencha seu telefone!</div>
-          </div>
-
-          <div class="form-group">
-            <label for="endereco">Endereço:</label>
-            <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço" required>
-            <div class="invalid-feedback">Preencha seu endereço!</div>
-          </div>
-
-          <div class="form-group">
-            <label for="cidade">Cidade:</label>
-            <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" required>
-            <div class="invalid-feedback">Preencha sua cidade!</div>
-          </div>
-
-          <div class="form-group">
-            <label for="estado">Estado:</label>
-            <input type="text" class="form-control" id="estado" placeholder="Digite seu estado" required>
-            <div class="invalid-feedback">Preencha seu estado!</div>
-          </div>
-
-          <div class="form-group">
-            <label for="cep">CEP:</label>
-            <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP sem pontuação" required
-              pattern="[0-9]{8}">
-            <div class="invalid-feedback">Preencha seu CEP!</div>
-          </div>
-
-          <div class="form-group">
-            <label for="nome_pet">Nome do Pet:</label>
-            <input type="text" class="form-control" id="nome_pet" placeholder="Digite o nome do seu pet">
-          </div>
-
-          <div class="form-group">
-            <label for="senha">Senha:</label>
-            <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required><br>
-            <div class="invalid-feedback">Preencha sua senha!</div>
-            <input type="checkbox" id="checkbox" onclick="mostrarSenha()">Mostrar Senha
-          </div>
-
-          <div class="form-group">
-            <label class="fotoperfil" tabindex="0">Foto:
-              <input class="fotoperfil_input" type="file" id="fotoperfil" accept="image/*" onsubmit="previewFoto()"/>
-              <span class="fotoperfil_span">Selecione sua foto</span>
-              <img src="" alt="" class="fotoperfil_preview"  />
-            </label>
-          </div>
-
-
-          <!--button start-->
-          <div class="row">
-            <div class="col text-center">
-              <button type="submit" class="btn btn-primary" id="enviar" onclick="validarFormulario()">Enviar</button>
-              <button type="button" class="btn btn-primary" id="cancelar" onclick="cancelarFormulario()">Cancelar</button>
-            </div>
-            <!--button end-->
+          <!--button end-->
 
       </form>
       <!--form end-->

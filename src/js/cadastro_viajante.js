@@ -32,11 +32,7 @@
     document.getElementById('cadastro_viajante').style['display'] = 'block';
   };
 
-  function cadastrarEstabelecimento(){
-    window.location.href = "cadastro_estabelecimento.html";
-  };
-
-
+  
 function mostrarSenha(){
     var senha = document.getElementById('senha');
     if(senha.type=='password'){

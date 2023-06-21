@@ -38,40 +38,34 @@
     ],
     "estabelecimentos": [
         {
+            "nome": "Dona Lucinha",
+            "tipo": "Restaurante",
+            "email": "donalucinha@donalucinha.com.br",
+            "telefone": "3121270788",
+            "endereco": "Rua Padre Odorico, 38 - São Pedro",
             "cidade": "Belo Horizonte",
             "id": 1,
-            "imagem": "imagens/destinos/hotel1.jpg",
-            "alt": "hotel1",
-            "nome": "Hotel 1 em Belo Horizonte",
-            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu egestas purus. Nunc mauris urna, luctus fringilla nulla eu, posuere luctus neque. Quisque in mi ligula. Phasellus lorem elit, tempus quis odio nec, tempus maximus enim. Quisque aliquet urna vel bibendum tempus. Integer sit amet odio vitae sapien pellentesque feugiat. Maecenas vel augue sit amet lorem varius consectetur quis in mi.",
-            "user": "Equipe Meu Pet Viaja"
+            "estado": "MG",
+            "website": "www.donalucinha.com.br",
+            "instagram": "donalucinha",
+            "descricao": "O Restaurante Dona Lucinha se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar dos tempos coloniais de Minas Gerais. O Cardápio foi elaborado a partir de uma cuidadosa pesquisa da cultura alimentar de nossa gente. Nossa cozinha “espelha” o período de sua formação. Vale dizer: o ciclo do ouro e dos diamantes. Somos petfriendly, aceitamos animais de estimação.",
+            "foto": "https://www.donalucinha.com.br/wp-content/uploads/2019/10/IMG_20191010_123456.jpg",
+            "alt": "Foto do restaurante Dona Lucinha"
         },
         {
-            "cidade": "Ouro Preto",
-            "id": 2,
-            "imagem": "imagens/destinos/pousada2.jpg",
-            "alt": "pousada2",
-            "nome": "Pousada em Ouro Preto",
-            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu egestas purus. Nunc mauris urna, luctus fringilla nulla eu, posuere luctus neque. Quisque in mi ligula. Phasellus lorem elit, tempus quis odio nec, tempus maximus enim. Quisque aliquet urna vel bibendum tempus. Integer sit amet odio vitae sapien pellentesque feugiat. Maecenas vel augue sit amet lorem varius consectetur quis in mi.",
-            "user": "Equipe Meu Pet Viaja"
-        },
-        {
-            "cidade": "Sete Lagoas",
-            "id": 3,
-            "imagem": "imagens/destinos/hotel3.jpg",
-            "alt": "hotel3",
-            "nome": "Hotel em Sete Lagoas",
-            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu egestas purus. Nunc mauris urna, luctus fringilla nulla eu, posuere luctus neque. Quisque in mi ligula. Phasellus lorem elit, tempus quis odio nec, tempus maximus enim. Quisque aliquet urna vel bibendum tempus. Integer sit amet odio vitae sapien pellentesque feugiat. Maecenas vel augue sit amet lorem varius consectetur quis in mi.",
-            "user": "Equipe Meu Pet Viaja"
-        },
-        {
-            "cidade": "Varginha",
-            "id": 4,
-            "imagem": "imagens/destinos/barVarginha.jpg",
-            "alt": "boteco3",
-            "nome": "Bar em Varginha",
-            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu egestas purus. Nunc mauris urna, luctus fringilla nulla eu, posuere luctus neque. Quisque in mi ligula. Phasellus lorem elit, tempus quis odio nec, tempus maximus enim. Quisque aliquet urna vel bibendum tempus. Integer sit amet odio vitae sapien pellentesque feugiat. Maecenas vel augue sit amet lorem varius consectetur quis in mi.",
-            "user": "Equipe Meu Pet Viaja"
+            "nome": "Restaurante Dona Xica",
+            "tipo": "Restaurante",
+            "email": "cdinalli@bol.com.br",
+            "telefone": "3233551770",
+            "endereço": "Rua Vereador João Rosa da Silva, 950, Jardim Capote",
+            "cidade": "Tiradentes",
+            "id": 7,
+            "estado": "MG",
+            "website": "",
+            "instagram": "",
+            "descrição": "O Restaurante Dona Xica se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar de Minas Gerais. Somos petfriendly, aceitamos animais de estimação.",
+            "foto": "imagens/donaxica.jpg",
+            "alt": "Foto do restaurante Dona Xica"
         }
     ]
 }

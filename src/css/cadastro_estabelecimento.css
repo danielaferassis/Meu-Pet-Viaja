@@ -9,17 +9,7 @@
     margin-bottom: 30px;
 }
 
-
 #nome {
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-family: 'Merriwheater', sans-serif;
-    font-size: 15px;
-    color: #000000;
-}
-
-#CNPJ {
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
@@ -55,28 +45,9 @@
     color: #000000;
 }
 
-#cidade {
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-family: 'Merriwheater', sans-serif;
-    font-size: 15px;
-    color: #000000;
-}
-
 #estado {
     display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-family: 'Merriwheater', sans-serif;
-    font-size: 15px;
-    color: #000000;
-}
-
-#cep {
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-top: 10px;
     font-family: 'Merriwheater', sans-serif;
     font-size: 15px;
     color: #000000;
@@ -95,32 +66,21 @@
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
-    font-family: 'Merriwheater';
-    font-size: 15px;
-    color: #000000;
-}
-
-#senha {
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
     font-family: 'Merriwheater', sans-serif;
     font-size: 15px;
     color: #000000;
 }
 
-#checkbox {
-    margin-right: 4px;
-    font-family: 'Merriwheater', sans-serif;
-}
-
-
-#foto_estabelecimento {
+#fotoestabelecimento {
     display: none;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-family: 'Merriwheater', sans-serif sans-serif;
-    font-size: 15px;
+}
+
+select {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: 'Merriwheater', sans-serif;
+    font-size: 15px !important;
     color: #000000;
 }
 
@@ -128,7 +88,7 @@ textarea {
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
-    font-family: 'Merriwheater';
+    font-family: 'Merriwheater', sans-serif;
     font-size: 15px;
     color: #000000;
     resize: none;
@@ -138,13 +98,21 @@ textarea {
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
-    font-family: 'Merriwheater';
+    font-family: 'Merriwheater', sans-serif;
     font-size: 15px;
+}
+
+#altfoto {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: 'Merriwheater', sans-serif;
+    font-size: 15px;
+    resize: none;
 }
 
 .fotoestabelecimento_span {
     width: 300px;
-    aspect-ratio: 720/720px;
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -154,6 +122,8 @@ textarea {
     cursor: pointer;
     font-family: 'Merriwheater', sans-serif;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .fotoestabelecimento_span:hover {

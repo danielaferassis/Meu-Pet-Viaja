@@ -1,4 +1,3 @@
-
 (() => {
   'use strict'
   const forms = document.querySelectorAll('.needs-validation')
@@ -48,23 +47,22 @@ uploadFile.addEventListener("change", (event) => {
     body: formData,
   })
     .then(data => data.json()).then(data => {
-      document.getElementById("fotoestabelecimento").value = data.data.link;
+      uploadFile.src = data.data.link;
     })
     .catch((error) => console.error(error));
 });
 
-  const cadastroEstabelecimento = document.getElementById("cadastro_estabelecimento");
+const cadastroEstabelecimento = document.getElementById("cadastro_estabelecimento");
 
-  cadastroEstabelecimento.addEventListener("submit", (event) => {
+cadastroEstabelecimento.addEventListener("submit", (event) => {
 
-    const estabelecimentos = {
+  const estabelecimentos = {
     nome: document.getElementById('nome').value,
     tipo: document.getElementById('tipo_estabelecimento').value,
     email: document.getElementById('email').value,
     telefone: document.getElementById('telefone').value,
     endereco: document.getElementById('endereço').value,
     cidade: document.getElementById('cidade').value,
-    //id: ,
     estado: document.getElementById('estado').value,
     website: document.getElementById('website').value,
     instagram: document.getElementById('instagram').value,
@@ -72,15 +70,16 @@ uploadFile.addEventListener("change", (event) => {
     foto: document.getElementById('fotoestabelecimento').value,
     alt: document.getElementById('altfoto').value
   };
-  
-    fetch(URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: estabelecimentos
-    })
-      .then((response) => response.json())
+
+  fetch(URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+    },
+    body: estabelecimentos
+  })
+    .then((response) => response.json())
     .then(() => location.reload());
-    });
-  
+});
+

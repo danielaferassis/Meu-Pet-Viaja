@@ -104,9 +104,9 @@
           <label for="tipo_estabelecimento">Tipo de estabelecimento:</label>
           <select class="form-select form-select-lg mb-3" id="tipo_estabelecimento" name="tipo_estabelecimento" required>
             <option selected value="">Selecione o tipo de estabelecimento</option>
-            <option value="1">Hospedagem</option>
-            <option value="2">Restaurante</option>
-            <option value="3">Ponto Turístico</option>
+            <option value="Hospedagem">Hospedagem</option>
+            <option value="Restaurante">Restaurante</option>
+            <option value="Ponto Turístico">Ponto Turístico</option>
           </select>
           <div class="invalid-feedback">Selecione o tipo de estabelecimento!
           </div>
@@ -135,13 +135,13 @@
           <label for="cidade">Cidade:</label>
           <select class="form-select form-select-lg mb-3" id="cidade" name="cidade" required>
             <option selected value="">Selecione a cidade</option>
-            <option value="1" >Belo Horizonte</option>
-            <option value="2" >Ouro Preto</option>
-            <option value="3" >Sete Lagoas</option>
-            <option value="4" >Varginha</option>
-            <option value="5" >Poços de Caldas</option>
-            <option value="6" >Mariana</option>
-            <option value="7" >Tiradentes</option>
+            <option value="Belo Horizonte" >Belo Horizonte</option>
+            <option value="Ouro Preto" >Ouro Preto</option>
+            <option value="Sete Lagoas" >Sete Lagoas</option>
+            <option value="Varginha" >Varginha</option>
+            <option value="Poços de Caldas" >Poços de Caldas</option>
+            <option value="Mariana" >Mariana</option>
+            <option value="Tiradentes" >Tiradentes</option>
           </select>
           <div class="invalid-feedback">Selecione a cidade!
           </div>
@@ -150,7 +150,7 @@
         <div class="form-group">
           <label for="estado">Estado:</label>
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="estado" name="estado" checked disabled>
+            <input class="form-check-input" type="checkbox" id="estado" name="estado" value="MG" checked disabled>
             <label class="form-check-label" for="estado">MG</label>
           </div>
         </div>
@@ -174,8 +174,7 @@
 
       <div class="form-group">
           <label for="fotoestabelecimento" tabindex="0">Foto do estabelecimento:
-            <input class="fotoestablecimento_input" type="file" id="fotoestabelecimento" name="fotoestabelecimento"
-              accept="image/*" />
+            <input class="fotoestablecimento_input" type="file" id="fotoestabelecimento" name="fotoestabelecimento" accept="image/*" />
             <span class="fotoestabelecimento_span">Selecione a foto</span>
           </label>
         </div>

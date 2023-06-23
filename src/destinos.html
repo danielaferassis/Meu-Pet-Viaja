@@ -97,13 +97,15 @@
     <div class="busca">
       <form action="#" method="get">
         <p>
-          <input class="search" type="search" name="busca" id="ibusca" required placeholder="Digite aqui"
-            oninput="search_destino()">
+          <select class="filter" name="filtro" id="ibusca" required oninput="search_destino()">
+            <option value="cidade" onclick="setFilterType()">Selecione a cidade desejada:</option>
+            <option value="estabelecimento" onclick="setFilterType()">Estabelecimento</option>
+          </select>
         </p>
         <p>
-          <label for="filtro">Filtrar por:</label>
           <select class="filter" name="filtro" id="filtro" onclick="setFilterType()">
-            <option value="cidade" onclick="setFilterType()">Cidade</option>
+            <option value="cidade" onclick="setFilterType()">Selecione o tipo de estabelecimento:</option>
+            <option value="estabelecimento" onclick="setFilterType()">Estabelecimento</option>
             <option value="estabelecimento" onclick="setFilterType()">Estabelecimento</option>
           </select>
         </p>
@@ -111,22 +113,12 @@
     </div>
     <h2 id="top-dest">Destinos:</h2>
 
-    <div class="slide-container swiper">
-      <div class="slide-content" id="destinos">
-        <div class="card-wrapper swiper-wrapper" id="wrapper-destinos">
-          <script src="js/destinos.js"></script>
-
-        </div>
-      </div>
-
-      <div class="swiper-button-next swiper-navBtn" id="next-dest"></div>
-      <div class="swiper-button-prev swiper-navBtn" id="prev-dest"></div>
-      <div class="swiper-pagination" id="pag-dest"></div>
+    <div class="slide-container swiper" id="slide-container">
     </div>
 
     <h2 id="top-comp">Estabelecimentos:</h2>
 
-    <div class="slide-container swiper">
+    <div class="slide-container swiper" id="slide-container-est">
       <div class="slide-content" id="estabelecimentos">
         <div class="card-wrapper swiper-wrapper" id="wrapper-estabelecimentos">
 
@@ -196,7 +188,7 @@
 
 <script src="JS/swiper.js"></script>
 
-
+<script src="js/destinos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
   integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"

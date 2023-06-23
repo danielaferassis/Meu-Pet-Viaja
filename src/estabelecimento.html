@@ -92,29 +92,9 @@
   <!--Responsive Navbars end-->
 
   <main>
-    <h1>Destinos</h1>
-    <h3><label for="ibusca">Para onde você deseja ir com o seu pet?</label></h3>
-    <div class="busca">
-      <form action="#" method="get">
-        <p>
-          <select class="filter" name="filtro" id="ibusca" required oninput="search_destino()">
-            <option value="cidade" onclick="setFilterType()">Selecione a cidade desejada:</option>
-            <option value="estabelecimento" onclick="setFilterType()">Estabelecimento</option>
-          </select>
-        </p>
-        <p>
-          <select class="filter" name="filtro" id="filtro" onclick="setFilterType()">
-            <option value="cidade" onclick="setFilterType()">Selecione o tipo de estabelecimento:</option>
-            <option value="estabelecimento" onclick="setFilterType()">Estabelecimento</option>
-            <option value="estabelecimento" onclick="setFilterType()">Estabelecimento</option>
-          </select>
-        </p>
-      </form>
-    </div>
-    <h2 id="top-dest">Destinos:</h2>
+    <div id="container-cidade"></div>
 
-    <div class="slide-container swiper" id="slide-container">
-    </div>
+
 
     <h2 id="top-comp">Estabelecimentos:</h2>
 
@@ -185,10 +165,8 @@
 
 
 </body>
+<script src="JS/estabelecimento.js"></script>
 
-<script src="JS/swipper.js"></script>
-
-<script src="js/destinos.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
   integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>

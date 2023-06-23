@@ -63,7 +63,7 @@
       "estado": "MG",
       "website": "",
       "instagram": "",
-      "descrição": "O Restaurante Dona Xica se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar de Minas Gerais. Somos petfriendly, aceitamos animais de estimação.",
+      "descricao": "O Restaurante Dona Xica se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar de Minas Gerais. Somos petfriendly, aceitamos animais de estimação.",
       "foto": "imagens/donaxica.jpg",
       "alt": "Foto do restaurante Dona Xica"
     },
@@ -81,6 +81,21 @@
       "descricao": "aaa",
       "foto": "https://i.imgur.com/e3PNl60.jpg",
       "alt": "aaa"
+    },
+    {
+      "nome": "Hotel Ouro Minas",
+      "tipo": "Hospedagem",
+      "email": "ourominas@ourominas.com.br",
+      "telefone": "31 3429-4001",
+      "endereco": "Av. Cristiano Machado, 4001",
+      "cidade": "1",
+      "id": 4,
+      "estado": "MG",
+      "website": "https://www.ourominas.com.br/",
+      "instagram": "https://www.instagram.com/hotelourominas/",
+      "descricao": "Ouro Minas Belo Horizonte. O seu hotel em BH.\nO hotel mais mineiro de BH, oferece conforto e segurança para quem vem a trabalho ou a lazer.\nCom a infraestrutura mais completa da cidade para realização de eventos corporativos.",
+      "foto": "https://i.imgur.com/JEzXkMF.jpg",
+      "alt": "Fachada do Hotel Ouro Minas com banner com nome do hotel"
     }
   ]
 }

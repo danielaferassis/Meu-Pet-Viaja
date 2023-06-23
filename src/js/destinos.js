@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(){
             var test2 = '<div class="slide-content" id="estabelecimentos"><div class="card-wrapper swiper-wrapper" id="wrapper-estabelecimentos">';
             console.log(data)
             data.forEach(element => {
-                test2 += '<div class="container-est card swiper-slide" cidade="' + element.cidade + '" nome="' + element.nome + '"> <img src="' + element.foto + '" alt="' + element.alt + '" class="image"><div class="overlay"><div class="text"><a href="#">' + element.nome + '</a><p>' + element.descricao.substr(0, 50) + "..." + '</p></div></div></div>';
+                test2 += montaSwiper(element.cidade, element.nome, element.foto, element.alt, element.descricao, element.id);
             });
             test2 += '</div></div><div class="swiper-button-next swiper-navBtn" id="next-est"></div><div class="swiper-button-prev swiper-navBtn" id="prev-est"></div><div class="swiper-pagination" id="pag-est"></div>'
             wrapperEstabelecimentos.innerHTML = test2;
@@ -73,71 +73,4 @@ function search_destino() {
             console.log(wrapperDestinos)
             swiperLoaderDest()
         });
-}
-
-
-function swiperLoaderDest() {
-    console.log("comecei o swiper")
-    let swiperDest = new Swiper("#destinos", {
-        slidesPerView: 3,
-        spaceBetween: 25,
-        loop: false,
-        centerSlide: 'true',
-        fade: 'true',
-        grabCursor: 'true',
-        pagination: {
-            el: "#pag-dest",
-            clickable: true,
-            dynamicBullets: true,
-        },
-        navigation: {
-            nextEl: "#next-dest",
-            prevEl: "#prev-dest",
-        },
-
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-            },
-            520: {
-                slidesPerView: 2,
-            },
-            950: {
-                slidesPerView: 3,
-            },
-        },
-    })
-
-}
-
-function swiperLoaderEst() {
-    var swiperEst = new Swiper("#estabelecimentos", {
-        slidesPerView: 3,
-        spaceBetween: 25,
-        loop: false,
-        centerSlide: 'true',
-        fade: 'true',
-        grabCursor: 'true',
-        pagination: {
-            el: "#pag-est",
-            clickable: true,
-            dynamicBullets: true,
-        },
-        navigation: {
-            nextEl: "#next-est",
-            prevEl: "#prev-est",
-        },
-
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-            },
-            520: {
-                slidesPerView: 2,
-            },
-            950: {
-                slidesPerView: 3,
-            },
-        },
-    })
 }

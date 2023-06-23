@@ -1,78 +1,71 @@
 {
-    "cidades": [
-        {
-            "cidade": "Belo Horizonte",
-            "id": 1,
-            "imagem": "imagens/destinos/BH.jpg",
-            "alt": "BH",
-            "detalhes": "Belo Horizonte é uma das maiores capitais do Brasil, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "cidade": "Ouro Preto",
-            "id": 2,
-            "imagem": "imagens/destinos/ouro-preto.jpg",
-            "alt": "ouro-preto",
-            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "cidade": "Sete Lagoas",
-            "id": 3,
-            "imagem": "imagens/destinos/sete-lagoas.jpg",
-            "alt": "Sete Lagoas",
-            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "cidade": "Varginha",
-            "id": 4,
-            "imagem": "imagens/destinos/varginha.jpg",
-            "alt": "Varginha",
-            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "cidade": "Poços de Caldas",
-            "id": 5,
-            "imagem": "imagens/destinos/pocosDeCaldas.jpg",
-            "alt": "Poços de Caldas",
-            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "cidade": "Tiradentes",
-            "id": 6,
-            "imagem": "imagens/destinos/tiradentes.jpg",
-            "alt": "Tiradentes",
-            "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        }
-    ],
-    "estabelecimentos": [
-        {
-            "nome": "Dona Lucinha",
-            "tipo": "Restaurante",
-            "email": "donalucinha@donalucinha.com.br",
-            "telefone": "3121270788",
-            "endereco": "Rua Padre Odorico, 38 - São Pedro",
-            "cidade": "Belo Horizonte",
-            "id": 1,
-            "estado": "MG",
-            "website": "www.donalucinha.com.br",
-            "instagram": "donalucinha",
-            "descricao": "O Restaurante Dona Lucinha se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar dos tempos coloniais de Minas Gerais. O Cardápio foi elaborado a partir de uma cuidadosa pesquisa da cultura alimentar de nossa gente. Nossa cozinha “espelha” o período de sua formação. Vale dizer: o ciclo do ouro e dos diamantes. Somos petfriendly, aceitamos animais de estimação.",
-            "foto": "https://www.donalucinha.com.br/wp-content/uploads/2019/10/IMG_20191010_123456.jpg",
-            "alt": "Foto do restaurante Dona Lucinha"
-        },
-        {
-            "nome": "Restaurante Dona Xica",
-            "tipo": "Restaurante",
-            "email": "cdinalli@bol.com.br",
-            "telefone": "3233551770",
-            "endereço": "Rua Vereador João Rosa da Silva, 950, Jardim Capote",
-            "cidade": "Tiradentes",
-            "id": 7,
-            "estado": "MG",
-            "website": "",
-            "instagram": "",
-            "descricao": "O Restaurante Dona Xica se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar de Minas Gerais. Somos petfriendly, aceitamos animais de estimação.",
-            "foto": "imagens/donaxica.jpg",
-            "alt": "Foto do restaurante Dona Xica"
-        }
-    ]
+  "cidades": [
+    {
+      "cidade": "Belo Horizonte",
+      "id": 1,
+      "imagem": "imagens/destinos/BH.jpg",
+      "alt": "BH",
+      "detalhes": "Belo Horizonte é uma das maiores capitais do Brasil, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "cidade": "Ouro Preto",
+      "id": 2,
+      "imagem": "imagens/destinos/ouro-preto.jpg",
+      "alt": "ouro-preto",
+      "detalhes": "Belo Horizonte é uma das maiores capitais do Brasil, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "cidade": "Sete Lagoas",
+      "id": 3,
+      "imagem": "imagens/destinos/sete-lagoas.jpg",
+      "alt": "Sete Lagoas",
+      "detalhes": "Belo Horizonte é uma das maiores capitais do Brasil, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "cidade": "Varginha",
+      "id": 4,
+      "imagem": "imagens/destinos/varginha.jpg",
+      "alt": "Varginha",
+      "detalhes": "Belo Horizonte é uma das maiores capitais do Brasil, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "cidade": "Poços de Caldas",
+      "id": 5,
+      "imagem": "imagens/destinos/pocosDeCaldas.jpg",
+      "alt": "Poços de Caldas",
+      "detalhes": "Belo Horizonte é uma das maiores capitais do Brasil, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ],
+  "estabelecimentos": [
+    {
+      "nome": "Dona Lucinha",
+      "tipo": "Restaurante",
+      "email": "donalucinha@donalucinha.com.br",
+      "telefone": "3121270788",
+      "endereco": "Rua Padre Odorico, 38 - São Pedro",
+      "cidade": "1",
+      "id": 1,
+      "estado": "MG",
+      "website": "www.donalucinha.com.br",
+      "instagram": "donalucinha",
+      "descricao": "O Restaurante Dona Lucinha se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar dos tempos coloniais de Minas Gerais. O Cardápio foi elaborado a partir de uma cuidadosa pesquisa da cultura alimentar de nossa gente. Nossa cozinha “espelha” o período de sua formação. Vale dizer: o ciclo do ouro e dos diamantes. Somos petfriendly, aceitamos animais de estimação.",
+      "foto": "https://www.donalucinha.com.br/wp-content/uploads/2019/10/IMG_20191010_123456.jpg",
+      "alt": "Foto do restaurante Dona Lucinha"
+    },
+    {
+      "nome": "Restaurante Dona Xica",
+      "tipo": "Restaurante",
+      "email": "cdinalli@bol.com.br",
+      "telefone": "3233551770",
+      "endereço": "Rua Vereador João Rosa da Silva, 950, Jardim Capote",
+      "cidade": "7",
+      "id": 2,
+      "estado": "MG",
+      "website": "",
+      "instagram": "",
+      "descrição": "O Restaurante Dona Xica se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar de Minas Gerais. Somos petfriendly, aceitamos animais de estimação.",
+      "foto": "imagens/donaxica.jpg",
+      "alt": "Foto do restaurante Dona Xica"
+    }
+  ]
 }

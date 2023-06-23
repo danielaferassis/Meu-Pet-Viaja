@@ -48,25 +48,40 @@ fileUpload.addEventListener("change", (event) => {
   })
 });
 
+//Preencher select de cidades dinamicamente a partir do json de cidades
+const cidadeSelect = document.getElementById("cidade");
+const optionsCidade = document.createElement("option");
+
+fetch("http://localhost:3000/cidades")
+  .then(resp => resp.json())
+  .then(data => {
+    data.forEach(element => {
+      optionsCidade.textContent = element.cidade;
+      optionsCidade.value = element.id;
+      cidadeSelect.appendChild(optionsCidade.cloneNode(true));
+    });
+  })
+  .catch(err => console.log(err))
+
 
 // Obter dados dos selects
 const selectTipo = document.getElementById("tipo_estabelecimento");
-selectTipo.addEventListener("change", function(){
+selectTipo.addEventListener("change", function () {
   const options = selectTipo.options;
   const selectValues = [];
-  for (let i = 0; i < options.length; i++){
+  for (let i = 0; i < options.length; i++) {
     const option = options[i];
-    selectValues.push (option.textContent);
+    selectValues.push(option.textContent);
   }
 });
 
 const selectCidade = document.getElementById("cidade");
-selectCidade.addEventListener("change", function(){
+selectCidade.addEventListener("change", function () {
   const options = selectCidade.options;
   const selectValues = [];
-  for (let i = 0; i < options.length; i++){
+  for (let i = 0; i < options.length; i++) {
     const option = options[i];
-    selectValues.push (option.textContent);
+    selectValues.push(option.textContent);
   }
 });
 
@@ -77,7 +92,7 @@ URL = "http://localhost:3000/estabelecimentos"
 const cadastroEstabelecimento = document.getElementById("cadastro_estabelecimento");
 
 cadastroEstabelecimento.addEventListener("submit", (event) => {
-  
+
   event.preventDefault();
 
   const estabelecimentos = {
@@ -87,7 +102,7 @@ cadastroEstabelecimento.addEventListener("submit", (event) => {
     telefone: document.getElementById("telefone").value,
     endereco: document.getElementById("endereco").value,
     cidade: document.getElementById("cidade").value,
-    id:"",
+    id: "",
     estado: document.getElementById("estado").value,
     website: document.getElementById("website").value,
     instagram: document.getElementById("instagram").value,
@@ -95,7 +110,7 @@ cadastroEstabelecimento.addEventListener("submit", (event) => {
     foto: document.getElementById("fotoestabelecimento").src,
     alt: document.getElementById("altfoto").value,
   };
-    
+
 
   fetch(URL, {
     method: "POST",
@@ -103,7 +118,7 @@ cadastroEstabelecimento.addEventListener("submit", (event) => {
       Accept: "application/json",
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
-      },
+    },
     body: JSON.stringify(estabelecimentos),
   })
     .then((response) => {
@@ -119,5 +134,10 @@ cadastroEstabelecimento.addEventListener("submit", (event) => {
     });
 });
 
-
+//Botão cancelar
+const cancelar = document.getElementById("cancelar");
+cancelar.addEventListener("click", () => {
+  window.location.href = "destinos.html";
+}
+);
 

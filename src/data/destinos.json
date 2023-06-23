@@ -66,6 +66,21 @@
       "descrição": "O Restaurante Dona Xica se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar de Minas Gerais. Somos petfriendly, aceitamos animais de estimação.",
       "foto": "imagens/donaxica.jpg",
       "alt": "Foto do restaurante Dona Xica"
+    },
+    {
+      "nome": "Ana C F Assis",
+      "tipo": "Restaurante",
+      "email": "assiscarolina18@gmail.com",
+      "telefone": "31993862474",
+      "endereco": "Rua Manoel Gualberto, 11",
+      "cidade": "1",
+      "id": 3,
+      "estado": "MG",
+      "website": "www.carmemrestaurante.com.br",
+      "instagram": "carmemrestaurante",
+      "descricao": "aaa",
+      "foto": "https://i.imgur.com/e3PNl60.jpg",
+      "alt": "aaa"
     }
   ]
 }

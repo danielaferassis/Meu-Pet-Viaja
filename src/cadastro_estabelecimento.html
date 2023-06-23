@@ -89,7 +89,8 @@
     <div class="container">
 
       <!--form start-->
-      <form id="cadastro_estabelecimento" class="needs-validation" method="post" action="" enctype="multipart/form-data" novalidate>
+      <form id="cadastro_estabelecimento" class="needs-validation" method="post" action="" enctype="multipart/form-data"
+        novalidate>
 
         <h1 class="text-center" id="titulo">Informações do Estabelecimento</h1>
 
@@ -102,7 +103,8 @@
 
         <div class="form-group">
           <label for="tipo_estabelecimento">Tipo de estabelecimento:</label>
-          <select class="form-select form-select-lg mb-3" id="tipo_estabelecimento" name="tipo_estabelecimento" required>
+          <select class="form-select form-select-lg mb-3" id="tipo_estabelecimento" name="tipo_estabelecimento"
+            required>
             <option selected value="">Selecione o tipo de estabelecimento</option>
             <option value="Hospedagem">Hospedagem</option>
             <option value="Restaurante">Restaurante</option>
@@ -135,13 +137,6 @@
           <label for="cidade">Cidade:</label>
           <select class="form-select form-select-lg mb-3" id="cidade" name="cidade" required>
             <option selected value="">Selecione a cidade</option>
-            <option value="Belo Horizonte" >Belo Horizonte</option>
-            <option value="Ouro Preto" >Ouro Preto</option>
-            <option value="Sete Lagoas" >Sete Lagoas</option>
-            <option value="Varginha" >Varginha</option>
-            <option value="Poços de Caldas" >Poços de Caldas</option>
-            <option value="Mariana" >Mariana</option>
-            <option value="Tiradentes" >Tiradentes</option>
           </select>
           <div class="invalid-feedback">Selecione a cidade!
           </div>
@@ -172,9 +167,10 @@
           <div class="invalid-feedback">Preencha a descrição!</div>
         </div>
 
-      <div class="form-group">
+        <div class="form-group">
           <label for="fotoestabelecimento" tabindex="0">Foto do estabelecimento:
-            <input class="fotoestablecimento_input" type="file" id="fotoestabelecimento" name="fotoestabelecimento" accept="image/*" />
+            <input class="fotoestablecimento_input" type="file" id="fotoestabelecimento" name="fotoestabelecimento"
+              accept="image/*" />
             <span class="fotoestabelecimento_span">Selecione a foto</span>
           </label>
         </div>
@@ -188,8 +184,8 @@
         <!--buttons start-->
         <div class="row">
           <div class="col text-center">
-            <button type="submit" class="btn btn-primary" id="enviar" >Enviar</button>
-            <button type="button" class="btn btn-primary" id="cancelar" onclick="cancelarFormulario()">Cancelar</button>
+            <button type="submit" class="btn btn-primary" id="enviar" onclick="Alert.render('Cadastro Realizado')">Enviar</button>
+            <button type="button" class="btn btn-primary" id="cancelar">Cancelar</button>
           </div>
           <!--buttons end-->
 

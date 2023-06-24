@@ -142,5 +142,15 @@
       "foto": "https://i.imgur.com/z7mkc1I.jpg",
       "alt": "a"
     }
+  ],
+  "viajante": [
+    {
+      "nome": "Daniela",
+      "usuario": "daniela",
+      "email": "daniela@gmail.com",
+      "id": 1,
+      "senha": "daniela",
+      "foto": "https://i.imgur.com/z7mkc1I.jpg"
+    }
   ]
 }

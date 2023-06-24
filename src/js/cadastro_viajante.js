@@ -92,5 +92,5 @@ function mostrarSenha(){
 };
 
 function cancelarFormulario (){
-    window.location.href = "index.html";
+    window.location.href = "entre.html";
 };

@@ -1,53 +1,89 @@
-// Validação do formulário de cadastro de estabelecimentos
-(() => {
-  'use strict'
-  const forms = document.querySelectorAll('.needs-validation')
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-      form.classList.add('was-validated')
-    }, false)
-  })
-})();
+//Validação do formulário de cadastro de estabelecimentos
+URL = "http://localhost:3000/estabelecimentos";
 
 (function () {
-  'use strict';
-  window.addEventListener('load', function () {
-    var forms = document.getElementsByClassName('needs-validation');
-    var validation = Array.prototype.filter.call(forms, function (form) {
+  'use strict'
+  var forms = document.querySelectorAll('.needs-validation')
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
       form.addEventListener('submit', function (event) {
-        if (form.checkValidity() === false) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+          form.classList.add('was-validated')
+        } else {
           event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+          event.stopPropagation()
+          form.classList.add('was-validated')
 
+          const estabelecimentos = {
+            nome: document.getElementById("nome").value,
+            tipo: document.getElementById("tipo_estabelecimento").value,
+            email: document.getElementById("email").value,
+            telefone: document.getElementById("telefone").value,
+            endereco: document.getElementById("endereco").value,
+            cidade: document.getElementById("cidade").value,
+            id: "",
+            estado: document.getElementById("estado").value,
+            website: document.getElementById("website").value,
+            instagram: document.getElementById("instagram").value,
+            descricao: document.getElementById("descricao_estabelecimento").value,
+            foto: document.getElementById("fotoestabelecimento").src,
+            alt: document.getElementById("altfoto").value,
+          };
+
+
+          fetch (URL, {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Origin": "*",
+            },
+            body: JSON.stringify(estabelecimentos),
+          })
+            .then((response) => {
+              if (response.ok) {
+                alert("Cadastro realizado");
+                location.href = "destinos.html";
+              } else {
+                alert("Erro ao cadastrar");
+              }
+            })
+            .catch((error) => {
+              console.error(error);
+            });
+        }
+
+      }, false)
+    })
+})()
 
 //API Imgur para hospedar a foto
 const clientID = "9facbf355e71bd0"
 const fileUpload = document.getElementById("fotoestabelecimento");
-const prev = document.getElementById("prev-foto-estabelecimento")
+const prev = document.getElementById("prev-foto-estabelecimento");
+
 fileUpload.addEventListener("change", (event) => {
   const formData = new FormData();
   formData.append("image", event.target.files[0]);
   fetch("https://api.imgur.com/3/image", {
     method: "POST",
     headers: {
-      Authorization: `Client-ID ${clientID}`,
+      "Authorization": `Client-ID ${clientID}`,
     },
     body: formData,
   }).then(data => data.json()).then(data => {
-    fileUpload.src = data.data.link;
-    prev.innerHTML = '<img src="'+data.data.link+'" style="width: 200px; border-radius: 10px">'
+    if (data.success) {
+      fileUpload.src = data.data.link;
+      prev.innerHTML = '<img src="' + data.data.link + '" style="width: 200px; border-radius: 10px">'
+      console.log(data.data.link)
+    } else {
+      alert("Erro ao carregar imagem")
+    }
   })
 });
+
 
 //Preencher select de cidades dinamicamente a partir do json de cidades
 const cidadeSelect = document.getElementById("cidade");
@@ -67,6 +103,7 @@ fetch("http://localhost:3000/cidades")
 
 // Obter dados dos selects
 const selectTipo = document.getElementById("tipo_estabelecimento");
+
 selectTipo.addEventListener("change", function () {
   const options = selectTipo.options;
   const selectValues = [];
@@ -76,9 +113,9 @@ selectTipo.addEventListener("change", function () {
   }
 });
 
-const selectCidade = document.getElementById("cidade");
-selectCidade.addEventListener("change", function () {
-  const options = selectCidade.options;
+//const selectCidade = document.getElementById("cidade");
+cidadeSelect.addEventListener("change", function () {
+  const options = cidadeSelect.options;
   const selectValues = [];
   for (let i = 0; i < options.length; i++) {
     const option = options[i];
@@ -88,59 +125,55 @@ selectCidade.addEventListener("change", function () {
 
 //API para cadastro de estabelecimentos
 
-URL = "http://localhost:3000/estabelecimentos"
-
-const cadastroEstabelecimento = document.getElementById("cadastro_estabelecimento");
-
-cadastroEstabelecimento.addEventListener("submit", (event) => {
-
-  event.preventDefault();
-
-  const estabelecimentos = {
-    nome: document.getElementById("nome").value,
-    tipo: document.getElementById("tipo_estabelecimento").value,
-    email: document.getElementById("email").value,
-    telefone: document.getElementById("telefone").value,
-    endereco: document.getElementById("endereco").value,
-    cidade: document.getElementById("cidade").value,
-    id: "",
-    estado: document.getElementById("estado").value,
-    website: document.getElementById("website").value,
-    instagram: document.getElementById("instagram").value,
-    descricao: document.getElementById("descricao_estabelecimento").value,
-    foto: document.getElementById("fotoestabelecimento").src,
-    alt: document.getElementById("altfoto").value,
-  };
 
 
-  fetch(URL, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-    },
-    body: JSON.stringify(estabelecimentos),
-  })
-    .then((response) => {
-      if (response.ok) {
-        alert("Cadastro realizado");
-        window.location.href = "cadastro_estabelecimento.html"
-      } else {
-        alert("Erro!!");
-        throw new Error("Erro na solicitação.");
-      }
-    })
-    //.then((window.location.href = "#"))
-    .catch((error) => {
-      console.error(error);
-    });
-});
+// const cadastroEstabelecimento = document.getElementById("cadastro_estabelecimento");
+
+// cadastroEstabelecimento.addEventListener("submit", (event) => {
+
+//   event.preventDefault();
+
+//   const estabelecimentos = {
+//     nome: document.getElementById("nome").value,
+//     tipo: document.getElementById("tipo_estabelecimento").value,
+//     email: document.getElementById("email").value,
+//     telefone: document.getElementById("telefone").value,
+//     endereco: document.getElementById("endereco").value,
+//     cidade: document.getElementById("cidade").value,
+//     id: "",
+//     estado: document.getElementById("estado").value,
+//     website: document.getElementById("website").value,
+//     instagram: document.getElementById("instagram").value,
+//     descricao: document.getElementById("descricao_estabelecimento").value,
+//     foto: document.getElementById("fotoestabelecimento").src,
+//     alt: document.getElementById("altfoto").value,
+//   };
+
+
+//   fetch(URL, {
+//     method: "POST",
+//     headers: {
+//       Accept: "application/json",
+//       "Content-Type": "application/json",
+//       "Access-Control-Allow-Origin": "*",
+//     },
+//     body: JSON.stringify(estabelecimentos),
+//   })
+//     .then((response) => {
+//       if (response.ok) {
+//         alert("Cadastro realizado");
+//         window.location.href = "destinos.html"
+//       } else {
+//         alert("Erro ao cadastrar");
+//       }
+//     })
+//     .catch((error) => {
+//       console.error(error);
+//     });
+// });
 
 //Botão cancelar
 const cancelar = document.getElementById("cancelar");
 cancelar.addEventListener("click", () => {
   window.location.href = "destinos.html";
-}
-);
-
+});

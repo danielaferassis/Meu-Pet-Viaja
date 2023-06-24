@@ -89,8 +89,7 @@
     <div class="container">
 
       <!--form start-->
-      <form id="cadastro_estabelecimento" class="needs-validation" method="post" action="" enctype="multipart/form-data"
-        novalidate>
+      <form id="cadastro_estabelecimento" class="needs-validation" method="post" action="" enctype="multipart/form-data" novalidate>
 
         <h1 class="text-center" id="titulo">Informações do Estabelecimento</h1>
 
@@ -164,28 +163,31 @@
           <label for="descricao_estabelecimento">Descreva o estabelecimento:</label>
           <textarea class="form-control" id="descricao_estabelecimento" name="descricao_estabelecimento" rows="3"
             required></textarea>
-          <div class="invalid-feedback">Preencha a descrição!</div>
+          <div class="invalid-feedback">Preencha a descrição do estabelecimento!</div>
         </div>
 
         <div class="form-group">
           <label for="fotoestabelecimento" tabindex="0">Foto do estabelecimento:
             <input class="fotoestablecimento_input" type="file" id="fotoestabelecimento" name="fotoestabelecimento"
-              accept="image/*" />
+              accept="image/*"/>
             <span class="fotoestabelecimento_span">Selecione a foto</span>
           </label>
-          <div id="prev-foto-estabelecimento"></div>
+          <div id="prev-foto-estabelecimento">
+            <!--preview foto-->
+          </div>
         </div>
 
         <div class="form-group">
           <label for="altfoto">Texto acessível da foto:</label>
           <textarea class="form-control" id="altfoto" rows="1" required></textarea>
+          <div class="invalid-feedback">Preencha a descrição da foto!</div>
         </div>
-        <div class="invalid-feedback">Preencha a descrição da foto!</div>
+        
 
         <!--buttons start-->
         <div class="row">
           <div class="col text-center">
-            <button type="submit" class="btn btn-primary" id="enviar" onclick="Alert.render('Cadastro Realizado')">Enviar</button>
+            <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
             <button type="button" class="btn btn-primary" id="cancelar">Cancelar</button>
           </div>
           <!--buttons end-->

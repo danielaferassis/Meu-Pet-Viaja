@@ -68,21 +68,6 @@
       "alt": "Foto do restaurante Dona Xica"
     },
     {
-      "nome": "Ana C F Assis",
-      "tipo": "Restaurante",
-      "email": "assiscarolina18@gmail.com",
-      "telefone": "31993862474",
-      "endereco": "Rua Manoel Gualberto, 11",
-      "cidade": "1",
-      "id": 3,
-      "estado": "MG",
-      "website": "www.carmemrestaurante.com.br",
-      "instagram": "carmemrestaurante",
-      "descricao": "aaa",
-      "foto": "https://i.imgur.com/e3PNl60.jpg",
-      "alt": "aaa"
-    },
-    {
       "nome": "Hotel Ouro Minas",
       "tipo": "Hospedagem",
       "email": "ourominas@ourominas.com.br",
@@ -96,6 +81,66 @@
       "descricao": "Ouro Minas Belo Horizonte. O seu hotel em BH.\nO hotel mais mineiro de BH, oferece conforto e segurança para quem vem a trabalho ou a lazer.\nCom a infraestrutura mais completa da cidade para realização de eventos corporativos.",
       "foto": "https://i.imgur.com/JEzXkMF.jpg",
       "alt": "Fachada do Hotel Ouro Minas com banner com nome do hotel"
+    },
+    {
+      "nome": "Sâmerson Araújo Santos",
+      "tipo": "Hospedagem",
+      "email": "samerson25@hotmail.com",
+      "telefone": "31986036315",
+      "endereco": "Rua Gustavo Ladeira 11 torre 4 apto 1308",
+      "cidade": "1",
+      "id": 5,
+      "estado": "MG",
+      "website": "www.carmemrestaurante.com.br",
+      "instagram": "carmemrestaurante",
+      "descricao": "a",
+      "foto": "https://i.imgur.com/h10Stkk.jpg",
+      "alt": "a"
+    },
+    {
+      "nome": "Sâmerson Araújo Santos",
+      "tipo": "Hospedagem",
+      "email": "samerson25@hotmail.com",
+      "telefone": "31986036315",
+      "endereco": "Rua Gustavo Ladeira 11 torre 4 apto 1308",
+      "cidade": "1",
+      "id": 6,
+      "estado": "MG",
+      "website": "qqq",
+      "instagram": "aaaa",
+      "descricao": "a",
+      "foto": "https://i.imgur.com/2rpmAjS.jpg",
+      "alt": "a"
+    },
+    {
+      "nome": "Ana Carolina Fernandes de Assis Ana Assis",
+      "tipo": "Hospedagem",
+      "email": "dra.ana.assis@gmail.com",
+      "telefone": "3133573393",
+      "endereco": "Rua Expedicionário Walter Magalhães",
+      "cidade": "1",
+      "id": 7,
+      "estado": "MG",
+      "website": "www.carmemrestaurante.com.br",
+      "instagram": "carmemrestaurante",
+      "descricao": "a",
+      "foto": "https://i.imgur.com/lmLDkEB.jpg",
+      "alt": "a"
+    },
+    {
+      "nome": "Ana Carolina Fernandes de Assis",
+      "tipo": "Hospedagem",
+      "email": "assiscarolina18@gmail.com",
+      "telefone": "3258799",
+      "endereco": "Rua 1",
+      "cidade": "1",
+      "id": 8,
+      "estado": "MG",
+      "website": "www.carmemrestaurante.com.br",
+      "instagram": "carmemrestaurante",
+      "descricao": "a",
+      "foto": "https://i.imgur.com/z7mkc1I.jpg",
+      "alt": "a"
     }
   ]
 }

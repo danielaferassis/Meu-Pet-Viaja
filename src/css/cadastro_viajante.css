@@ -111,6 +111,10 @@ background-color: #0097B2;
 color:#FFFFFF 
 }
 
+#prev-foto-perfil {
+margin-top: 10px;
+}
+
 #enviar {
     display: inline-block;
     font-family: 'Merriwheater', sans-serif;

@@ -91,6 +91,21 @@
 }
 /**Botões cores*/
 
+/**Conteúdo**/
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: 'Montserrat extra-bold', sans-serif;
+  font-size: 35px;
+}
+
+h4 {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: 'Merriwheater', sans-serif;
+  font-size: 20px;
+}
 
 /**Footer*/
 .context-dark, .bg-gray-dark, .bg-primary {

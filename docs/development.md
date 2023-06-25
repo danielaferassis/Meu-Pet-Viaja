@@ -46,7 +46,7 @@ Ao acessar a página de Cadastro de estabelecimento, você encontrará um formul
 
 ## Descrição das estruturas:
 
-## Registro do usuário
+## Cadastro de usuário
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
 | ID          | Numero (Inteiro)   | Identificador único do usuário  | 0001                |
@@ -56,7 +56,7 @@ Ao acessar a página de Cadastro de estabelecimento, você encontrará um formul
 | Senha       | Texto              | Senha do usuário	               | abC#768          |
 | Foto        | File               | Foto do usuário                 | https://i.imgur.com/z7mkc1I.jpg |
 
-## Registro de Estabelecimento
+## Cadastro de Estabelecimento
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
 | Nome do Estabelecimento       | Texto             | Nome do Estabelecimento                 | Casa PET |

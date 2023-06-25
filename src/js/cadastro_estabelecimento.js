@@ -1,4 +1,4 @@
-//Validação do formulário de cadastro de estabelecimentos
+//Validação do formulário de cadastro de estabelecimento e envio de dados para o json-server
 URL = "http://localhost:3000/estabelecimentos";
 
 (function () {
@@ -10,11 +10,13 @@ URL = "http://localhost:3000/estabelecimentos";
         if (!form.checkValidity()) {
           event.preventDefault()
           event.stopPropagation()
+
           form.classList.add('was-validated')
         } else {
           event.preventDefault();
           event.stopPropagation()
-          form.classList.add('was-validated')
+
+          form.classList.add('was-validated')      
 
           const estabelecimentos = {
             nome: document.getElementById("nome").value,
@@ -57,7 +59,7 @@ URL = "http://localhost:3000/estabelecimentos";
 
       }, false)
     })
-})()
+})();
 
 //API Imgur para hospedar a foto
 const clientID = "9facbf355e71bd0"
@@ -113,7 +115,6 @@ selectTipo.addEventListener("change", function () {
   }
 });
 
-//const selectCidade = document.getElementById("cidade");
 cidadeSelect.addEventListener("change", function () {
   const options = cidadeSelect.options;
   const selectValues = [];
@@ -123,54 +124,6 @@ cidadeSelect.addEventListener("change", function () {
   }
 });
 
-//API para cadastro de estabelecimentos
-
-
-
-// const cadastroEstabelecimento = document.getElementById("cadastro_estabelecimento");
-
-// cadastroEstabelecimento.addEventListener("submit", (event) => {
-
-//   event.preventDefault();
-
-//   const estabelecimentos = {
-//     nome: document.getElementById("nome").value,
-//     tipo: document.getElementById("tipo_estabelecimento").value,
-//     email: document.getElementById("email").value,
-//     telefone: document.getElementById("telefone").value,
-//     endereco: document.getElementById("endereco").value,
-//     cidade: document.getElementById("cidade").value,
-//     id: "",
-//     estado: document.getElementById("estado").value,
-//     website: document.getElementById("website").value,
-//     instagram: document.getElementById("instagram").value,
-//     descricao: document.getElementById("descricao_estabelecimento").value,
-//     foto: document.getElementById("fotoestabelecimento").src,
-//     alt: document.getElementById("altfoto").value,
-//   };
-
-
-//   fetch(URL, {
-//     method: "POST",
-//     headers: {
-//       Accept: "application/json",
-//       "Content-Type": "application/json",
-//       "Access-Control-Allow-Origin": "*",
-//     },
-//     body: JSON.stringify(estabelecimentos),
-//   })
-//     .then((response) => {
-//       if (response.ok) {
-//         alert("Cadastro realizado");
-//         window.location.href = "destinos.html"
-//       } else {
-//         alert("Erro ao cadastrar");
-//       }
-//     })
-//     .catch((error) => {
-//       console.error(error);
-//     });
-// });
 
 //Botão cancelar
 const cancelar = document.getElementById("cancelar");

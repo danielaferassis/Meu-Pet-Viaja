@@ -49,31 +49,29 @@ Ao acessar a página de Cadastro de estabelecimento, você encontrará um formul
 ## Registro do usuário
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| ID          | Numero (Inteiro)  | Identificador único do usuário  | 0001                |
-| Nome        | Texto             | Nome do usuario                 | Guilherme Arantes  |
-| CPF         | Numero (Inteiro)  | CPF do usuario                  | 999.999.999-99   |
-| E-mail       | Texto             | E-mail do usuário                | guiarantes@casapet.com.br|
-| Endereço    | Texto             | logadouro onde o usuario reside       | Av. cinco  |
-| Cidade      | Texto             | Cidade onde o usuario reside    |Belo Horizonte    |
-| Estado      | Texto             | Estado onde o usuario reside    |  Minas Gerais    |
-| CEP         | Numero (Inteiro)  | CEP onde o usuario reside       |  00.000-00       |
-| Nome do Pet | Texto             | Nome do animal                  | Beethoven        | 
-| Senha       | Numero (Inteiro)  | Senha do usuário	            | abC#768          |
+| ID          | Numero (Inteiro)   | Identificador único do usuário  | 0001                |
+| Nome        | Texto              | Nome do usuario                 | Guilherme Arantes  |
+| Usuário     | Texto              | Nome de usuário                 | guiarantes         |
+| E-mail      | Texto              | E-mail do usuário               | guiarantes@casapet.com.br|
+| Senha       | Texto              | Senha do usuário	               | abC#768          |
+| Foto        | File               | Foto do usuário                 | https://i.imgur.com/z7mkc1I.jpg |
 
 ## Registro de Estabelecimento
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| ID          | Numero (Inteiro)  | Identificador único do Estabelecimento  | 0001                |
 | Nome do Estabelecimento       | Texto             | Nome do Estabelecimento                 | Casa PET |
-| CNPJ        | Numero (Inteiro)  | CNPJ atrelado ao estabelecimento                | 99. 999. 999/0001-99   |
+|Tipo de estabelecimento        | Texto             | Tipo de estabelecimento                 | Hospedagem |
 | E-mail       | Texto             | E-mail do Estabelecimento                | informacao@casapet.com.br|
-| Endereço    | Texto             | logadouro onde o usuario reside       | Rua. horizontes  |
-| Cidade      | Texto             | Cidade onde o usuario reside    |Mariana   |
-| Estado      | Texto             | Estado onde o usuario reside    |  Minas Gerais    |
-| CEP         | Numero (Inteiro)  | CEP onde o usuario reside       |  00.000-00       |
-| Web Site    | Texto             | Site do estabelecimento                  | casapet.com.br       | 
-| Instagram   | Texto             | Instagram estabelecimento                  | @casapet       | 
-| Senha       | Numero (Inteiro)  | Senha do usuário	            | Aht#768          |
+| Telefone      | Texto             | Telefone do Estabelecimento                | 3433589627|
+| Endereço    | Texto             | Logadouro do estabelecimento       | Rua. horizontes  |
+| Cidade      | Texto             | Cidade do estabelecimento    | Mariana   |
+| ID          | Numero (Inteiro)  | Identificador único do Estabelecimento  | 0001                |
+| Estado      | Texto             | Estado do estabelecimento    |  MG    |
+| Website    | Texto             | Site do estabelecimento                  | casapet.com.br       | 
+| Instagram   | Texto             | Instagram do estabelecimento                  | @casapet       | 
+| Descrição   | Texto             | Descrição do estabelecimento           | Hotel pet-friendly localizado em Mariana - MG |
+| Foto        | File              | Foto do estabelecimento                | https://i.imgur.com/JEzXkMF.jpg |
+| Alt Foto    | Texto             | Texto acessível para foto              | Foto da fachada do hotel com o nome Casa Pet |
 
 ## Cadastro de Depoimento
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |

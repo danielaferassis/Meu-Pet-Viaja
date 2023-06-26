@@ -18,35 +18,35 @@ A documentação dos testes é dividida nas seguintes seções:
 
 ## Plano de Testes de Software
 
-**Caso de Teste** | **CT01 - Visualizar informações de regras de viagem com pet por diferentes meios de transporte**
+**Caso de Teste** | **CT-01 - Visualizar informações de regras de viagem com pet por diferentes meios de transporte**
  :--------------: | ------------
 **Procedimento**  | Usuário acessa página "Transporte seu Pet" e visualiza as regras de viagem de avião, ônibus ou carro com pet.
 **Requisitos associados** | RF-001, RF-002 e RF-003
 **Resultado esperado** | Espera-se que o usuário consiga visualizar as regras de viagem com pet.
 **Página** | Transporte seu Pet
 
-**Caso de Teste** | **CT02 - Pesquisar hospedagens pet-friendly em MG, filtrando por cidade, e mostrar as informações da hospedagem	**
+**Caso de Teste** | **CT-02 - Pesquisar hospedagens pet-friendly em MG, filtrando por cidade, e mostrar as informações da hospedagem	**
  :--------------: | ------------
 **Procedimento**  | 1) Usuário acessa a página "Destinos em MG" e utiliza o filtro de pesquisa por tipo de estabelecimento, selecionando "hospedagem". Também pode filtrar por cidade;<br>2) Serão mostradas as opções de hospedagem cadastradas no site para o usuário selecionar a desejada e ver as informações desse estabelecimento.
 **Requisitos associados** | RF-004 e RF-008
 **Resultado esperado** | Espera-se que o usuário consiga:<br>1) realizar a pesquisa, utilizando os filtros por tipo de estabelecimento - hospedagem -  e por cidade;<br>2) selecionar a hospedagem desejada;<br>3) ser redirecionado para a página das informações da hospedagem selecionada.
 **Página** | Destinos em MG
 
-**Caso de Teste** | **CT03 - Pesquisar estabelecimentos comerciais privados pet-friendly em MG, filtrando por cidade, e mostrar as informações do estabelecimento	**
+**Caso de Teste** | **CT-03 - Pesquisar estabelecimentos comerciais privados pet-friendly em MG, filtrando por cidade, e mostrar as informações do estabelecimento	**
  :--------------: | ------------
 **Procedimento**  | 1) Usuário acessa a página "Destinos em MG" e utiliza o filtro de pesquisa por tipo de estabelecimento, selecionando "restaurante" ou "estabelecimento privado". Também pode filtrar por cidade;<br>2) Serão mostradas as opções de estabelecimentos comerciais privados cadastrados no site para o usuário selecionar o desejado e ver as informações desse estabelecimento.
 **Requisitos associados** | RF-005 e RF-009
 **Resultado esperado** | Espera-se que o usuário consiga:<br>1) realizar a pesquisa, utilizando os filtros por tipo de estabelecimento e por cidade;<br>2) selecionar o estabelecimento comercial privado desejado;<br>3) ser redirecionado para a página das informações do estabelecimento comercial privado selecionado.
 **Página** | Destinos em MG
 
-**Caso de Teste** | **CT04 - Pesquisar locais públicos pet-friendly em MG, filtrando por cidade, e mostrar as informações do local público	**
+**Caso de Teste** | **CT-04 - Pesquisar locais públicos pet-friendly em MG, filtrando por cidade, e mostrar as informações do local público	**
  :--------------: | ------------
 **Procedimento**  | 1) Usuário acessa a página "Destinos em MG" e utiliza o filtro de pesquisa por tipo de estabelecimento, selecionando "ponto turístico". Também pode filtrar por cidade;<br>2) Serão mostradas as opções de locais públicos cadastrados no site para o usuário selecionar o desejado e ver as informações desse ponto turístico.
 **Requisitos associados** | RF-006 e RF-010
 **Resultado esperado** | Espera-se que o usuário consiga:<br>1) realizar a pesquisa, utilizando os filtros por tipo de estabelecimento e por cidade;<br>2) selecionar o ponto turístico desejado;<br>3) ser redirecionado para a página das informações do ponto turístico selecionado.
 **Página** | Destinos em MG
 
-**Caso de Teste** | **CT05 - Inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais	**
+**Caso de Teste** | **CT-05 - Inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais	**
  :--------------: | ------------
 **Procedimento**  | Usuário acessa a página "Destinos em MG"...
 **Requisitos associados** | RF-007
@@ -54,7 +54,7 @@ A documentação dos testes é dividida nas seguintes seções:
 **Dados de entrada** | Inserção de dados válidos no formulário de depoimento.
 **Página** | ...
 
-**Caso de Teste** | **CT06 - Cadastrar novo estabelecimento	**
+**Caso de Teste** | **CT-06 - Cadastrar novo estabelecimento	**
  :--------------: | ------------
 **Procedimento**  | 1) Usuário acessa a página "Destinos em MG" e clica no botão "Cadastrar Estabelecimento";<br>2) O usuário é redirecionado para a página de formulário onde preencherá as informações do estabelecimento que deseja cadastrar: nome, tipo do estabelecimento, e-mail, telefone, endereço, cidade, estado, website, instagram, descrição, upload de foto e texto acessível da foto. O usuário submete o formulário ao clicar no botão "enviar";<br>3) O formulário valida os dados e informa ao usuário se o cadastro foi realizado ou não;<br>4) Os dados são armazenados caso sejam validados e o usuário é redirecionado para a página "Destinos em MG".
 **Requisitos associados** | RF-011
@@ -62,7 +62,7 @@ A documentação dos testes é dividida nas seguintes seções:
 **Dados de entrada** | Inserção de dados válidos no formulário de informações do estabelecimento.
 **Página** | Destinos em MG
 
-**Caso de Teste** | **CT07 - Cadastrar depoimento com perfil de usuário anônimo	**
+**Caso de Teste** | **CT-07 - Cadastrar depoimento com perfil de usuário anônimo	**
  :--------------: | ------------
 **Procedimento**  | Usuário acessa a página "Destinos em MG"...
 **Requisitos associados** | RF-012
@@ -70,7 +70,7 @@ A documentação dos testes é dividida nas seguintes seções:
 **Dados de entrada** | Inserção de dados válidos ...
 **Página** | ...
 
-**Caso de Teste** | **CT08 - Enviar depoimento com usuário logado - Criar conta de usuário parte 1	**
+**Caso de Teste** | **CT-08 - Enviar depoimento com usuário logado - Criar conta de usuário parte 1	**
  :--------------: | ------------
 **Procedimento**  | 1) Usuário acessa página "..." onde estará o formulário de depoimentos e clica na opção de efetuar o "login";<br>2) O usuário será redirecionado para a página "Entre" que contém o formulário para o usuário que já possui conta cadastrada realizar o login ou a opção de criar conta;<br>3) Supondo que o usuário ainda não tenha conta cadastrada, ao clicar na opção de "criar conta", o usuário é redirecionado para o formulário de cadastro onde deverá preencher os campos: nome, usuário, e-mail, senha e enviar uma foto;<br>4) O formulário valida as informações e retorna se o cadastro foi realizado ou não;<br>5) Os dados são armazenados caso sejam validados e o usuário é redirecionado para a página "Entre".
 **Requisitos associados** | RF-012
@@ -78,7 +78,7 @@ A documentação dos testes é dividida nas seguintes seções:
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Página** | ...
 
-**Caso de Teste** | **CT09 - Enviar depoimento com usuário logado - Criar conta de usuário parte 2	**
+**Caso de Teste** | **CT-09 - Enviar depoimento com usuário logado - Criar conta de usuário parte 2	**
  :--------------: | ------------
 **Procedimento**  | 1) Usuário preenche as informações de login na página "Entre": e-mail/usuário e senha;<br>2) O formulário valida os dados e retorna para o usuário caso não sejam;<br>3) Os dados são armazenados caso sejam validados e o usuário é redirecionado para cadastrar o depoimento permanecendo logado.
 **Requisitos associados** | RF-012
@@ -93,7 +93,7 @@ A documentação dos testes é dividida nas seguintes seções:
 |*Caso de Teste*                                 |*CT-01 - Visualizar informações de regras de viagem com pet por diferentes meios de transporte*                                  |
 |---|---|
 |Requisito Associado | RF-001 - Disponibilizar área com informações com regras de viagem de avião com pet.<br>RF-002 - Disponibilizar área com informações com regras de viagem de ônibus com pet.<br>RF-003 - Disponibilizar área com informações com regras de viagem de carro com pet.|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1aUTIYXBmX4qBlZl6yjuhqyo0n3u9uflU/view?usp=sharing|
 |Resultado obtido | Sucesso |
 
 |*Caso de Teste*                                 |*CT-02 - Pesquisar hospedagens pet-friendly em MG, filtrando por cidade, e mostrar as informações da hospedagem*                                         |

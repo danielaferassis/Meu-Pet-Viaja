@@ -81,7 +81,38 @@
       "descricao": "Ouro Minas Belo Horizonte. O seu hotel em BH.\nO hotel mais mineiro de BH, oferece conforto e segurança para quem vem a trabalho ou a lazer.\nCom a infraestrutura mais completa da cidade para realização de eventos corporativos.",
       "foto": "https://i.imgur.com/JEzXkMF.jpg",
       "alt": "Fachada do Hotel Ouro Minas com banner com nome do hotel"
+    },
+    {
+      "nome": "Lagoa da Pampulha",
+      "tipo": "Ponto Turístico",
+      "email": "",
+      "telefone": "",
+      "endereco": "Av. Otacílio Negrão de Lima, s/n - Pampulha",
+      "cidade": "1",
+      "id": 5,
+      "estado": "MG",
+      "website": "",
+      "instagram": "",
+      "descricao": "A Lagoa da Pampulha é um conjunto arquitetônico e paisagístico projetado por Oscar Niemeyer, em 1943, na cidade de Belo Horizonte, Minas Gerais, Brasil. O conjunto foi a primeira intervenção urbanística de Niemeyer na cidade, que mais tarde seria marcada por sua influência.",
+      "foto": "imagens/destinos/lagoa-da-pampulha.jpg",
+      "alt": "Foto da Lagoa da Pampulha"
+    },
+    {
+      "nome": "Nave Espacial",
+      "tipo": "Ponto Turístico",
+      "email": "",
+      "telefone": "",
+      "endereco": "Praça Getúlio Vargas, s/n - Centro",
+      "cidade": "4",
+      "id": 6,
+      "estado": "MG",
+      "website": "",
+      "instagram": "",
+      "descricao": "A Nave Espacial é um monumento localizado na Praça Getúlio Vargas, no centro da cidade de Varginha, no estado de Minas Gerais, Brasil. Foi inaugurada em 2001.A Nave Espacial de Varginha é uma reminiscência do incidente de Varginha, um suposto pouso de OVNI, que ocorreu em 20 de janeiro de 1996.",
+      "foto": "imagens/destinos/nave-et-varginha.jpg",
+      "alt": "Foto da Nave Espacial"
     }
+
   ],
   "viajante": [
     {
@@ -91,6 +122,14 @@
       "email": "sara.vieira@gmail.com",
       "senha": "sara2780",
       "foto": "https://i.imgur.com/z7mkc1I.jpg"
-    }    
+    },
+    {
+      "nome": "Ana Carolina Fernandes de Assis",
+      "usuario": "assiscarolina18",
+      "email": "assiscarolina18@gmail.com",
+      "id": 2,
+      "senha": "1234",
+      "foto": "https://i.imgur.com/8ukbEwk.jpg"
+    }
   ]
 }

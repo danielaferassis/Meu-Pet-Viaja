@@ -57,7 +57,7 @@
       "tipo": "Restaurante",
       "email": "cdinalli@bol.com.br",
       "telefone": "3233551770",
-      "endereço": "Rua Vereador João Rosa da Silva, 950, Jardim Capote",
+      "endereco": "Rua Vereador João Rosa da Silva, 950, Jardim Capote",
       "cidade": "7",
       "id": 2,
       "estado": "MG",
@@ -112,7 +112,6 @@
       "foto": "imagens/destinos/nave-et-varginha.jpg",
       "alt": "Foto da Nave Espacial"
     }
-
   ],
   "viajante": [
     {
@@ -130,6 +129,14 @@
       "id": 2,
       "senha": "1234",
       "foto": "https://i.imgur.com/8ukbEwk.jpg"
+    },
+    {
+      "nome": "thais camila",
+      "usuario": "this.thais",
+      "email": "thais@teste.com.br",
+      "id": 3,
+      "senha": "1234",
+      "foto": ""
     }
   ]
 }

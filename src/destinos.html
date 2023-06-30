@@ -27,6 +27,12 @@
 
 <body>
   <header class="header">
+    <div id="usuarioLogado">
+      <span>
+        <h6>Olá, Usuário</h6>
+        <i id="iconeDeslogar" onclick="deslogar()" class="fa-solid fa-xmark"></i>
+      </span>
+    </div>
     <!--Logo starts -->
     <div class="logo">
       <img src="imagens/logo.png">
@@ -49,7 +55,7 @@
           <a href="destinos.html">Destinos em MG</a>
         </li>
         <li>
-          <a href="entre.html">Entre</a>
+          <a id="entre" href="entre.html">Entre</a>
         </li>
       </ul>
     </div>
@@ -171,6 +177,7 @@
 
 
 </body>
+<script src="js/index.js"></script>
 
 <script src="JS/swipper.js"></script>
 

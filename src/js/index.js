@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if(Object.keys(sessionStorage).length === 0){
     const divEsconder = document.getElementById('usuarioLogado');
-    if(divEsconder){
-      divEsconder.style.display = 'none';
-    }
+      if(divEsconder){
+        divEsconder.style.display = 'none';
+      }
   }
 
   const dadosRecuperadosString = sessionStorage.getItem('Dados');
@@ -19,18 +19,31 @@ document.addEventListener('DOMContentLoaded', function() {
     const nomeUsuario = document.querySelector('h6');
     nomeUsuario.innerHTML = '';
     nomeUsuario.innerHTML = frase + valorPrimeiraLetraMaiuscula;
+
   }
+
+  if(dadosRecuperados.status === "true"){
+    const esconderEntre = document.getElementById('entre');
+      if(esconderEntre){
+        esconderEntre.style.display = 'none';
+      }
+  }
+
 });
 
 function deslogar() {
 // Limpar o sessionStorage e remover todos os dados
-sessionStorage.clear();
-if(Object.keys(sessionStorage).length === 0){
-  const divEsconder = document.getElementById('usuarioLogado');
-  if(divEsconder){
-    divEsconder.style.display = 'none';
-  }
-}
+  sessionStorage.clear();
+    if(Object.keys(sessionStorage).length === 0){
+      const divEsconder = document.getElementById('usuarioLogado');
+        if(divEsconder){
+          divEsconder.style.display = 'none';
+        }
+    }
+    const esconderEntre = document.getElementById('entre');
+      if(esconderEntre){
+        esconderEntre.style.display = 'block';
+      }
 }
 
 function ajustarLayout() {

@@ -129,6 +129,14 @@
       "id": 2,
       "senha": "1234",
       "foto": "https://i.imgur.com/8ukbEwk.jpg"
+    },
+    {
+      "nome": "thais camila",
+      "usuario": "this.thais",
+      "email": "thais@teste.com.br",
+      "id": 3,
+      "senha": "1234",
+      "foto": ""
     }
   ]
 }

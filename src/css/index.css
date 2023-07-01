@@ -18,6 +18,30 @@
    
 }
 
+#usuarioLogado {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+#usuarioLogado span {
+  display: flex;
+  align-items: center;
+}
+
+#usuarioLogado h6 {
+  margin-right: 10px;
+}
+
+#usuarioLogado i {
+  cursor: pointer;
+}
+
 .navbar{
     display: block;
     margin-left: auto;
@@ -73,6 +97,7 @@
 .btn.btn-primary {
   background-color: #0097B2;
   border-color: #0097B2;
+  border-radius: 5px;
 }
 
 .btn.btn-primary:hover {
@@ -203,6 +228,19 @@ ul, ol {
           transition: 0.3s;
           color: white;
         }
-  }
+        #usuarioLogado {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 0;
+          padding: 0.5rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background-color: #f0f0f0;
+          color: #333;
+        }
+      }
+
   
   /**Adaptação*/

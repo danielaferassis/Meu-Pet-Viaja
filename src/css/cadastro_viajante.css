@@ -28,10 +28,6 @@
     font-size: 15px;
 }
     
-#cadastro_viajante {
-    display: none;
-}
-
 #titulo {
         font-family: 'Alegrya bold', sans-serif;
         font-size: 50px;
@@ -109,6 +105,10 @@ transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 .fotoperfil_span:hover {
 background-color: #0097B2;
 color:#FFFFFF 
+}
+
+#prev-foto-perfil {
+margin-top: 10px;
 }
 
 #enviar {

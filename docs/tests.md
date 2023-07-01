@@ -16,44 +16,133 @@ A documentação dos testes é dividida nas seguintes seções:
  - [Registro dos Testes de Usabilidade](#registro-dos-testes-de-usabilidade)
  - [Avaliação dos Testes de Usabilidade](#avaliação-dos-testes-de-usabilidade)
 
-# Teste de Software
-
-Nesta seção o grupo deverá documentar os testes de software que verificam a correta implementação dos requisitos funcionais e não funcionais do software.
-
 ## Plano de Testes de Software
 
-Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
-
-
-**Caso de Teste** | **CT01 - Criar conta parte 1**
+**Caso de Teste** | **CT-01 - Visualizar informações de regras de viagem com pet por diferentes meios de transporte**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa nome, sobrenome, email, senha, Estado e Cidade e clica no botão "Continuar".<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Resultado obtido** | Sucesso.
+**Procedimento**  | Usuário acessa página "Transporte seu Pet" e visualiza as regras de viagem de avião, ônibus ou carro com pet.
+**Requisitos associados** | RF-001, RF-002 e RF-003
+**Resultado esperado** | Espera-se que o usuário consiga visualizar as regras de viagem com pet.
+**Página** | Transporte seu Pet
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
+**Caso de Teste** | **CT-02 - Pesquisar hospedagens pet-friendly em MG, filtrando por cidade, e mostrar as informações da hospedagem**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa gênero, seu tipo de usuário (cuidador ou comum), data de nascimento e clica em criar.<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Criação de cadastro
+**Procedimento**  | 1) Usuário acessa a página "Destinos em MG" e utiliza o filtro de pesquisa por tipo de estabelecimento, selecionando "hospedagem". Também pode filtrar por cidade;<br>2) Serão mostradas as opções de hospedagem cadastradas no site para o usuário selecionar a desejada e ver as informações desse estabelecimento.
+**Requisitos associados** | RF-004 e RF-008
+**Resultado esperado** | Espera-se que o usuário consiga:<br>1) realizar a pesquisa, utilizando os filtros por tipo de estabelecimento - hospedagem -  e por cidade;<br>2) selecionar a hospedagem desejada;<br>3) ser redirecionado para a página das informações da hospedagem selecionada.
+**Página** | Destinos em MG
+
+**Caso de Teste** | **CT-03 - Pesquisar estabelecimentos comerciais privados pet-friendly em MG, filtrando por cidade, e mostrar as informações do estabelecimento**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário acessa a página "Destinos em MG" e utiliza o filtro de pesquisa por tipo de estabelecimento, selecionando "restaurante" ou "estabelecimento privado". Também pode filtrar por cidade;<br>2) Serão mostradas as opções de estabelecimentos comerciais privados cadastrados no site para o usuário selecionar o desejado e ver as informações desse estabelecimento.
+**Requisitos associados** | RF-005 e RF-009
+**Resultado esperado** | Espera-se que o usuário consiga:<br>1) realizar a pesquisa, utilizando os filtros por tipo de estabelecimento e por cidade;<br>2) selecionar o estabelecimento comercial privado desejado;<br>3) ser redirecionado para a página das informações do estabelecimento comercial privado selecionado.
+**Página** | Destinos em MG
+
+**Caso de Teste** | **CT-04 - Pesquisar locais públicos pet-friendly em MG, filtrando por cidade, e mostrar as informações do local público**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário acessa a página "Destinos em MG" e utiliza o filtro de pesquisa por tipo de estabelecimento, selecionando "ponto turístico". Também pode filtrar por cidade;<br>2) Serão mostradas as opções de locais públicos cadastrados no site para o usuário selecionar o desejado e ver as informações desse ponto turístico.
+**Requisitos associados** | RF-006 e RF-010
+**Resultado esperado** | Espera-se que o usuário consiga:<br>1) realizar a pesquisa, utilizando os filtros por tipo de estabelecimento e por cidade;<br>2) selecionar o ponto turístico desejado;<br>3) ser redirecionado para a página das informações do ponto turístico selecionado.
+**Página** | Destinos em MG
+
+**Caso de Teste** | **CT-05 - Inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais**
+ :--------------: | ------------
+**Procedimento**  | Usuário acessa a página "Destinos em MG"...
+**Requisitos associados** | RF-007
+**Resultado esperado** | Espera-se que o usuário consiga enviar o depoimento através do formulário contido na página...
+**Dados de entrada** | Inserção de dados válidos no formulário de depoimento.
+**Página** | ...
+
+**Caso de Teste** | **CT-06 - Cadastrar novo estabelecimento**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário acessa a página "Destinos em MG" e clica no botão "Cadastrar Estabelecimento";<br>2) O usuário é redirecionado para a página de formulário onde preencherá as informações do estabelecimento que deseja cadastrar: nome, tipo do estabelecimento, e-mail, telefone, endereço, cidade, estado, website, instagram, descrição, upload de foto e texto acessível da foto. O usuário submete o formulário ao clicar no botão "enviar";<br>3) O formulário valida os dados e informa ao usuário se o cadastro foi realizado ou não;<br>4) Os dados são armazenados caso sejam validados e o usuário é redirecionado para a página "Destinos em MG".
+**Requisitos associados** | RF-011
+**Resultado esperado** | Espera-se que o usuário consiga enviar as informações do estabelecimento através do formulário contido na página e seja redirecionado para a página "Destinos em MG" 
+**Dados de entrada** | Inserção de dados válidos no formulário de informações do estabelecimento.
+**Página** | Destinos em MG
+
+**Caso de Teste** | **CT-07 - Cadastrar depoimento com perfil de usuário anônimo**
+ :--------------: | ------------
+**Procedimento**  | Usuário acessa a página "Destinos em MG"...
+**Requisitos associados** | RF-012
+**Resultado esperado** | Espera-se que o usuário consiga ... 
+**Dados de entrada** | Inserção de dados válidos ...
+**Página** | ...
+
+**Caso de Teste** | **CT-08 - Enviar depoimento com usuário logado - Criar conta de usuário parte 1**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário acessa página "..." onde estará o formulário de depoimentos e clica na opção de efetuar o "login";<br>2) O usuário será redirecionado para a página "Entre" que contém o formulário para o usuário que já possui conta cadastrada realizar o login ou a opção de criar conta;<br>3) Supondo que o usuário ainda não tenha conta cadastrada, ao clicar na opção de "criar conta", o usuário é redirecionado para o formulário de cadastro onde deverá preencher os campos: nome, usuário, e-mail, senha e enviar uma foto;<br>4) O formulário valida as informações e retorna se o cadastro foi realizado ou não;<br>5) Os dados são armazenados caso sejam validados e o usuário é redirecionado para a página "Entre".
+**Requisitos associados** | RF-012
+**Resultado esperado** | Espera-se que o usuário consiga cadastrar a conta e prosseguir para a parte 2 do cadastro.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Resultado obtido** | Sucesso.
+**Página** | ...
+
+**Caso de Teste** | **CT-09 - Enviar depoimento com usuário logado - Criar conta de usuário parte 2**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário preenche as informações de login na página "Entre": e-mail/usuário e senha;<br>2) O formulário valida os dados e retorna para o usuário caso não sejam;<br>3) Os dados são armazenados caso sejam validados e o usuário é redirecionado para cadastrar o depoimento permanecendo logado.
+**Requisitos associados** | RF-012
+**Resultado esperado** | Espera-se que o usuário consiga cadastrar um depoimento estando logado. 
+**Dados de entrada** | Inserção de dados válidos no formulário de login.
+**Página** | ...
+
 
 ## Registro dos Testes de Software
 
-Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*TC-01 - Criar uma conta*                                         |
+|**Caso de Teste**                                 |**CT-01 - Visualizar informações de regras de viagem com pet por diferentes meios de transporte**                                  |
 |---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+|**Requisito Associado** | RF-001 - Disponibilizar área com informações com regras de viagem de avião com pet.<br>RF-002 - Disponibilizar área com informações com regras de viagem de ônibus com pet.<br>RF-003 - Disponibilizar área com informações com regras de viagem de carro com pet.|
+|**Link do vídeo do teste realizado:** | https://drive.google.com/file/d/1aUTIYXBmX4qBlZl6yjuhqyo0n3u9uflU/view?usp=sharing|
+|**Resultado obtido** | Sucesso |
 
-|*Caso de Teste*                                 |*TC-02 - Efetuar Login (usuário autenticado)*                                         |
+|**Caso de Teste**                                 |**CT-02 - Pesquisar hospedagens pet-friendly em MG, filtrando por cidade, e mostrar as informações da hospedagem**                                         |
 |---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|**Requisito Associado** | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.<br>RF-008 - Disponibilizar funcionalidade que permita pesquisar hospedagens pet friendly em Minas Gerais.|
+|Link do vídeo do teste realizado: | ... |
+|Resultado obtido | Sucesso |
+
+|**Caso de Teste**                                 |**CT-03 - Pesquisar estabelecimentos comerciais privados pet-friendly em MG, filtrando por cidade, e mostrar as informações do estabelecimento**                                         |
+|---|---|
+|**Requisito Associado** | RF-005 - Disponibilizar área com informações de estabelecimentos comerciais privados pet friendly em Minas Gerais.<br>RF-009 - Disponibilizar funcionalidade que permita pesquisar estabelecimentos comerciais privados pet friendly em Minas Gerais.|
+|**Link do vídeo do teste realizado:** | ... |
+|**Resultado obtido** | Sucesso |
+
+|**Caso de Teste**                                 |**CT-04 - Pesquisar locais públicos pet-friendly em MG, filtrando por cidade, e mostrar as informações do local público**                                         |
+|---|---|
+|**Requisito Associado** | RF-006 - Disponibilizar área com informações de locais públicos pet friendly em Minas Gerais.<br>RF-010 - Disponibilizar funcionalidade que permita pesquisar locais publicos pet friendly em Minas Gerais.|
+|**Link do vídeo do teste realizado:** | ... |
+|**Resultado obtido** | Sucesso |
+
+|**Caso de Teste**                                 |**CT-05 - Inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais**                                         |
+|---|---|
+|**Requisito Associado** | RF-007 - Disponibilizar página em que o usuário poderá inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais.|
+|**Link do vídeo do teste realizado:** | ... |
+|**Resultado obtido** | Sucesso |
+
+|**Caso de Teste**                                 |**CT-06 - Cadastrar novo estabelecimento**                                         |
+|---|---|
+|**Requisito Associado** | RF-011 - Disponibilizar página para proprietários de estabelecimentos enviearem informações sobre seus negócios para serem avaliadas e adicionadas à lista de hospedagens e locais pet friendly.|
+|**Link do vídeo do teste realizado:** | ... |
+|**Resultado obtido** | Sucesso |
+
+|**Caso de Teste**                                 |**CT-07 - Cadastrar depoimento com perfil de usuário anônimo**                                         |
+|---|---|
+|**Requisito Associado** | RF-012 - Disponibilizar funcionalidade que permita definir perfil de usuário anônimo ou identificado para depoimentos.|
+|**Link do vídeo do teste realizado:** | ... |
+|**Resultado obtido** | Sucesso |
+
+|**Caso de Teste**                                 |**CT-08 - Enviar depoimento com usuário logado - Criar conta de usuário**                                         |
+|---|---|
+|**Requisito Associado** | RF-012 - Disponibilizar funcionalidade que permita definir perfil de usuário anônimo ou identificado para depoimentos.|
+|**Link do vídeo do teste realizado:** | ... |
+|**Resultado obtido** | Sucesso |
+
+|**Caso de Teste**                                 |**CT-09 - Enviar depoimento com usuário logado - Efetuar Login (usuário autenticado)**                                         |
+|---|---|
+|**Requisito Associado** | RF-012 - Disponibilizar funcionalidade que permita definir perfil de usuário anônimo ou identificado para depoimentos.|
+|**Link do vídeo do teste realizado:** | ... |
+|**Resultado obtido** | Sucesso |
 
 
 ## Avaliação dos Testes de Software
@@ -64,7 +153,7 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 
 ## Testes de unidade automatizados (Opcional)
 
-Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
+Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia o documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
 
 
 # Testes de Usabilidade

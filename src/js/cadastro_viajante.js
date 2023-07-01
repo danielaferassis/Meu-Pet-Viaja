@@ -1,38 +1,87 @@
-(() => {
-    'use strict'
-    const forms = document.querySelectorAll('.needs-validation')
-    Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
+//Validação do formulário de cadastro do viajante
+// Vincula URL do jsonserver 
+URL = "http://localhost:3000/viajante";
+// Validação do bootrasp no formulário
+(function () {
+  'use strict'
+  var forms = document.querySelectorAll('.needs-validation')
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
         if (!form.checkValidity()) {
           event.preventDefault()
           event.stopPropagation()
+          form.classList.add('was-validated')
+        } else {
+          event.preventDefault();
+          event.stopPropagation()
+          form.classList.add('was-validated')
+          // Dados necessários para o json
+          const viajante = {
+            nome: document.getElementById("nome").value,
+            usuario: document.getElementById("usuario").value,
+            email: document.getElementById("email").value,
+            id: "",
+            senha: document.getElementById("senha").value,
+            foto: document.getElementById("fotoperfil").src
+          };
+
+          // Envia os dados do formulário para arquivo json
+          fetch (URL, {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Origin": "*",
+            },
+            body: JSON.stringify(viajante),
+          })
+            .then((response) => {
+              if (response.ok) {
+                alert("Cadastro realizado");
+                location.href = "entre.html";
+              } else {
+                alert("Erro ao cadastrar");
+              }
+            })
+            .catch((error) => {
+              console.error(error);
+            });
         }
-        form.classList.add('was-validated')
+
       }, false)
     })
-  })();
+})()
 
-  (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-      var forms = document.getElementsByClassName('needs-validation');
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
+  // function cadastrarViajante(){
+  //   document.getElementById('cadastro_viajante').style['display'] = 'block';
+  // };
 
-  function cadastrarViajante(){
-    document.getElementById('cadastro_viajante').style['display'] = 'block';
-  };
+  //API Imgur para hospedar a foto
+const clientID = "9facbf355e71bd0"
+const fileUpload = document.getElementById("fotoperfil");
+const prev = document.getElementById("prev-foto-perfil");
 
-  
+fileUpload.addEventListener("change", (event) => {
+  const formData = new FormData();
+  formData.append("image", event.target.files[0]);
+  fetch("https://api.imgur.com/3/image", {
+    method: "POST",
+    headers: {
+      "Authorization": `Client-ID ${clientID}`,
+    },
+    body: formData,
+  }).then(data => data.json()).then(data => {
+    if (data.success) {
+      fileUpload.src = data.data.link;
+      prev.innerHTML = '<img src="' + data.data.link + '" style="width: 200px; border-radius: 10px">'
+      console.log(data.data.link)
+    } else {
+      alert("Erro ao carregar imagem")
+    }
+  })
+});
+
 function mostrarSenha(){
     var senha = document.getElementById('senha');
     if(senha.type=='password'){
@@ -43,16 +92,5 @@ function mostrarSenha(){
 };
 
 function cancelarFormulario (){
-    window.location.href = "index.html";
+    window.location.href = "entre.html";
 };
-
-function previewFoto() {
-  var previewFoto = document.getElementById("fotoperfil");
-  previewFoto.addEventListener("change", function(e) {
-    const files = tgt.files;
-    const fr = new FileReader();
-    fr.onload = function(){
-      document.getElementById("fotoperfil_preview").src = fr.result;
-    }
-    fr.readAsDataURL(files[0]);
-  })};

@@ -49,7 +49,7 @@
       "website": "www.donalucinha.com.br",
       "instagram": "donalucinha",
       "descricao": "O Restaurante Dona Lucinha se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar dos tempos coloniais de Minas Gerais. O Cardápio foi elaborado a partir de uma cuidadosa pesquisa da cultura alimentar de nossa gente. Nossa cozinha “espelha” o período de sua formação. Vale dizer: o ciclo do ouro e dos diamantes. Somos petfriendly, aceitamos animais de estimação.",
-      "foto": "https://www.donalucinha.com.br/wp-content/uploads/2019/10/IMG_20191010_123456.jpg",
+      "foto": "imagens/destinos/dona-lucinha.jpg",
       "alt": "Foto do restaurante Dona Lucinha"
     },
     {
@@ -57,30 +57,15 @@
       "tipo": "Restaurante",
       "email": "cdinalli@bol.com.br",
       "telefone": "3233551770",
-      "endereço": "Rua Vereador João Rosa da Silva, 950, Jardim Capote",
+      "endereco": "Rua Vereador João Rosa da Silva, 950, Jardim Capote",
       "cidade": "7",
       "id": 2,
       "estado": "MG",
       "website": "",
       "instagram": "",
       "descricao": "O Restaurante Dona Xica se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar de Minas Gerais. Somos petfriendly, aceitamos animais de estimação.",
-      "foto": "imagens/donaxica.jpg",
+      "foto": "imagens/destinos/donaxica.jpg",
       "alt": "Foto do restaurante Dona Xica"
-    },
-    {
-      "nome": "Ana C F Assis",
-      "tipo": "Restaurante",
-      "email": "assiscarolina18@gmail.com",
-      "telefone": "31993862474",
-      "endereco": "Rua Manoel Gualberto, 11",
-      "cidade": "1",
-      "id": 3,
-      "estado": "MG",
-      "website": "www.carmemrestaurante.com.br",
-      "instagram": "carmemrestaurante",
-      "descricao": "aaa",
-      "foto": "https://i.imgur.com/e3PNl60.jpg",
-      "alt": "aaa"
     },
     {
       "nome": "Hotel Ouro Minas",
@@ -96,6 +81,62 @@
       "descricao": "Ouro Minas Belo Horizonte. O seu hotel em BH.\nO hotel mais mineiro de BH, oferece conforto e segurança para quem vem a trabalho ou a lazer.\nCom a infraestrutura mais completa da cidade para realização de eventos corporativos.",
       "foto": "https://i.imgur.com/JEzXkMF.jpg",
       "alt": "Fachada do Hotel Ouro Minas com banner com nome do hotel"
+    },
+    {
+      "nome": "Lagoa da Pampulha",
+      "tipo": "Ponto Turístico",
+      "email": "",
+      "telefone": "",
+      "endereco": "Av. Otacílio Negrão de Lima, s/n - Pampulha",
+      "cidade": "1",
+      "id": 5,
+      "estado": "MG",
+      "website": "",
+      "instagram": "",
+      "descricao": "A Lagoa da Pampulha é um conjunto arquitetônico e paisagístico projetado por Oscar Niemeyer, em 1943, na cidade de Belo Horizonte, Minas Gerais, Brasil. O conjunto foi a primeira intervenção urbanística de Niemeyer na cidade, que mais tarde seria marcada por sua influência.",
+      "foto": "imagens/destinos/lagoa-da-pampulha.jpg",
+      "alt": "Foto da Lagoa da Pampulha"
+    },
+    {
+      "nome": "Nave Espacial",
+      "tipo": "Ponto Turístico",
+      "email": "",
+      "telefone": "",
+      "endereco": "Praça Getúlio Vargas, s/n - Centro",
+      "cidade": "4",
+      "id": 6,
+      "estado": "MG",
+      "website": "",
+      "instagram": "",
+      "descricao": "A Nave Espacial é um monumento localizado na Praça Getúlio Vargas, no centro da cidade de Varginha, no estado de Minas Gerais, Brasil. Foi inaugurada em 2001.A Nave Espacial de Varginha é uma reminiscência do incidente de Varginha, um suposto pouso de OVNI, que ocorreu em 20 de janeiro de 1996.",
+      "foto": "imagens/destinos/nave-et-varginha.jpg",
+      "alt": "Foto da Nave Espacial"
+    }
+  ],
+  "viajante": [
+    {
+      "id": 1,
+      "nome": "Sara Vieira",
+      "usuario": "sarav",
+      "email": "sara.vieira@gmail.com",
+      "senha": "sara2780",
+      "foto": "https://i.imgur.com/z7mkc1I.jpg"
+    },
+    {
+      "nome": "Ana Carolina Fernandes de Assis",
+      "usuario": "assiscarolina18",
+      "email": "assiscarolina18@gmail.com",
+      "id": 2,
+      "senha": "1234",
+      "foto": "https://i.imgur.com/8ukbEwk.jpg"
+    },
+    {
+      "nome": "thais camila",
+      "usuario": "this.thais",
+      "email": "thais@teste.com.br",
+      "id": 3,
+      "senha": "1234",
+      "foto": ""
     }
   ]
 }

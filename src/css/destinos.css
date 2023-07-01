@@ -81,6 +81,7 @@ div#resultados > p {
     font-family: var(--font-title);
     padding: 5px;
     box-shadow: 1px 1px 3px rgb(118, 118, 118);
+    background-color: #4ecdc4;
 }
 
 .button:hover {
@@ -93,6 +94,22 @@ div#resultados > p {
     margin: 70px 0px 40px 40px;
 }
 
+.foto_container{
+    display: block;
+}
+
+.depoimentos{
+    text-align: left;
+    border: #0097b2 solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+#depoimento {
+    height: 100px;
+}
 .container-est {
     position: relative;
     border-radius: 20px;
@@ -167,4 +184,43 @@ div#resultados > p {
         display: inline-block;
         margin: 0px 15px;
     }    
+}
+
+
+
+
+
+
+
+.rate {
+    display: block;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
 }

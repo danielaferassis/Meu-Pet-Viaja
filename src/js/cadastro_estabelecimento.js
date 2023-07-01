@@ -33,7 +33,7 @@
 //API Imgur para hospedar a foto
 const clientID = "9facbf355e71bd0"
 const fileUpload = document.getElementById("fotoestabelecimento");
-const prev = document.getElementById("prev-foto-estabelecimento")
+const prev = document.getElementById("prev-foto-estabelecimento");
 fileUpload.addEventListener("change", (event) => {
   const formData = new FormData();
   formData.append("image", event.target.files[0]);
@@ -46,6 +46,7 @@ fileUpload.addEventListener("change", (event) => {
   }).then(data => data.json()).then(data => {
     fileUpload.src = data.data.link;
     prev.innerHTML = '<img src="'+data.data.link+'" style="width: 200px; border-radius: 10px">'
+    console.log(data);
   })
 });
 

@@ -94,21 +94,40 @@
   <main>
     <div id="container-cidade"></div>
 
+    <div class="depoimentos">
+      <label for="nome_depoimento">Qual seu nome?</label><input type="text" id="nome_depoimento"
+        placeholder="Digite o seu nome" required>
+      <div class="invalid-feedback">Preencha o nome!</div>
+
+      <label for="depoimento">Fale um pouco sobre sua experiência</label><br>
+      <textarea id="depoimento" required>
+      </textarea>
+      <div class="invalid-feedback">Fale sobre sua experiência!</div>
 
 
-    <h2 id="top-comp">Estabelecimentos:</h2>
 
-    <div class="slide-container swiper" id="slide-container-est">
-      <div class="slide-content" id="estabelecimentos">
-        <div class="card-wrapper swiper-wrapper" id="wrapper-estabelecimentos">
 
-        </div>
+      <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text"><i class="fa fa-paw" aria-hidden="true"></i></label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text"><i class="fa fa-paw" aria-hidden="true"></i></label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text"><i class="fa fa-paw" aria-hidden="true"></i></label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text"><i class="fa fa-paw" aria-hidden="true"></i></label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text"><i class="fa fa-paw" aria-hidden="true"></i></label>
+      </div>
+      <br>
+      <div class="foto_container">
+        <label for="foto_depoimento" tabindex="0">Foto do estabelecimento:<br>
+          <input type="file" id="foto_depoimento" accept="image/*" />
+          <span class="foto_depoimento_span">Selecione a foto</span>
+        </label>
+        <div id="prev-foto-estabelecimento"></div>
       </div>
 
-
-      <div class="swiper-button-next swiper-navBtn" id="next-est"></div>
-      <div class="swiper-button-prev swiper-navBtn" id="prev-est"></div>
-      <div class="swiper-pagination" id="pag-est"></div>
     </div>
 
   </main>

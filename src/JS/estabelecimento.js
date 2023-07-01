@@ -51,3 +51,22 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 
+//API Imgur para hospedar a foto
+const clientID = "9facbf355e71bd0"
+const fileUpload = document.getElementById("foto_depoimento");
+const prev = document.getElementById("prev-foto-estabelecimento");
+fileUpload.addEventListener("change", (event) => {
+  const formData = new FormData();
+  formData.append("image", event.target.files[0]);
+  fetch("https://api.imgur.com/3/image", {
+    method: "POST",
+    headers: {
+      Authorization: `Client-ID ${clientID}`,
+    },
+    body: formData,
+  }).then(data => data.json()).then(data => {
+    fileUpload.src = data.data.link;
+    prev.innerHTML = '<img src="'+data.data.link+'" style="width: 200px; border-radius: 10px">'
+    console.log(data);
+  })
+});

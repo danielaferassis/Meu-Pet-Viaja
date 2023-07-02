@@ -7,7 +7,7 @@
     --cor2: #15eea3;
 
     --font-title: 'Montserrat', sans-serif;
-    --font-default: 'Roboto', sans-serif;  
+    --font-default: 'Roboto', sans-serif;
 }
 
 main {
@@ -16,16 +16,16 @@ main {
     margin: auto;
 }
 
-main > h1 {
+main>h1 {
     font-family: var(--font-title);
     margin: 50px 0px;
 }
 
-main > h3 {
+main>h3 {
     font-family: var(--font-title);
 }
 
-div > form {
+div>form {
     margin: 20px auto;
     max-width: 800px;
     display: flex;
@@ -36,12 +36,12 @@ div > form {
     border-radius: 35px;
 }
 
-div > form > p {
+div>form>p {
     margin: 10px 0px;
 }
 
 #wrapper-destinos,
-#wrapper-estabelecimentos{
+#wrapper-estabelecimentos {
     display: flex;
 }
 
@@ -54,7 +54,8 @@ input[type=search] {
     box-shadow: 1px 1px 3px rgb(118, 118, 118);
 }
 
-input[type=search]:focus, select:focus {
+input[type=search]:focus,
+select:focus {
     outline: none;
 }
 
@@ -62,7 +63,7 @@ div#resultados {
     display: none;
 }
 
-div#resultados > p {
+div#resultados>p {
     font-family: var(--font-default);
     padding-top: 20px;
     padding-left: 20px;
@@ -72,60 +73,67 @@ div#resultados > p {
     border: none;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 1px 1px 3px rgb(118, 118, 118);    
-}
-
-.button {
-    border: none;
-    border-radius: 5px;
-    font-family: var(--font-title);
-    padding: 5px;
     box-shadow: 1px 1px 3px rgb(118, 118, 118);
-    background-color: #4ecdc4;
 }
 
-.button:hover {
-    cursor: pointer;
+.btn.btn-primary a {
+    font-family: 'Merriwheater', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
 }
 
-#top-dest, #top-comp, #resultados {
+#top-dest,
+#top-comp,
+#resultados {
     text-align: left;
     font-family: var(--font-title);
     margin: 70px 0px 40px 40px;
 }
 
-.foto_container{
+.foto_container {
     display: block;
 }
 
-.depoimentos{
+.depoimentos {
     text-align: left;
     border: #0097b2 solid;
     border-width: 1px;
     border-radius: 5px;
     padding: 20px;
-    
+
 }
 
 #depoimento {
     height: 100px;
 }
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container-est {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  }
-  
-  .image {
+    margin: 0;
+    padding: 0;
+}
+
+.container-est img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
-  .overlay {
+
+.overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -137,53 +145,71 @@ div#resultados > p {
     transition: .5s ease;
     font-weight: bold;
     text-shadow: 1px 1px 3px black;
-  }
-  
-  .container-est:hover .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-est:hover .overlay {
     height: 100%;
     cursor: pointer;
-  }
+}
 
-  div.estabelecimentos {
+div.estabelecimentos {
     margin-bottom: 50px;
-  }
-  
-  .text {
+}
+
+.text {
     color: white;
     font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     text-align: center;
-  }
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
-  .text > a,
-  .text > p > a {
+.container-est:hover .text {
+    opacity: 1;
+}
+
+.text>a,
+.text>p>a {
     text-decoration: none;
     color: white;
-  }
+}
 
-  .text > p {
+.text>p {
     text-decoration: none;
     color: white;
     font-size: 10px;
-  }
+}
+
+.card-info {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
-    div > form {
+    div>form {
         flex-direction: row;
         justify-content: space-around;
     }
-    input[type=search]{
+
+    input[type=search] {
         width: 350px;
     }
+
     .container-est {
         display: inline-block;
         margin: 0px 15px;
-    }    
+    }
 }
 
 
@@ -197,30 +223,35 @@ div#resultados > p {
     height: 46px;
     padding: 0 10px;
 }
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
 }
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
-    color:#ccc;
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
 }
-.rate > input:checked ~ label {
-    color: #ffc700;    
+
+.rate>input:checked~label {
+    color: #ffc700;
 }
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
 }
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
     color: #c59b08;
 }

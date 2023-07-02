@@ -111,13 +111,20 @@
    
 
 /**Cards*/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  scrollbar-width: none; /* Para navegadores baseados em Chromium (Chrome, Edge) */
+  -ms-overflow-style: none; /* Para o Internet Explorer e o Microsoft Edge */
+}
 
-.cards-wrap{
+.swiper-wrapper {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
 }
-.card {
+
+.swiper-slide {
   border-radius: 16px;
   box-shadow: rgba(223, 233, 231, 0.35) 0px 5px 15px;
   cursor: pointer;
@@ -129,22 +136,21 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient( #66989a);
+  background-image: linear-gradient(#66989a);
   transition: all .5s;
-  margin-left: 04px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.card:last-child {
-  margin-right: 0; /* Remova a margem direita do último card para evitar espaçamento extra */
+.swiper-slide:last-child {
+  margin-right: 0;
 }
 
-.card:hover {
+.swiper-slide:hover {
   background-image: linear-gradient(#20b2aa, #20b2aa);
 }
 
-.card img {
+.swiper-slide img {
   width: 100%;
   align-items: center;
   height: 150px;
@@ -155,7 +161,7 @@
   opacity: .8;
 }
 
-.card img span {
+.swiper-slide img span {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 100;
@@ -163,20 +169,20 @@
   transition: all .5s;
 }
 
-.card:hover img {
+.swiper-slide:hover img {
   width: 430px;
   opacity: 1;
 }
 
-.card:hover img span {
+.swiper-slide:hover img span {
   font-size: 28px;
 }
 
-.card .description {
+.swiper-slide .description {
   display: none;
 }
 
-.card .content {
+.swiper-slide .content {
   padding: 0px 20px;
   height: 0;
   opacity: 0;
@@ -188,53 +194,65 @@
   max-height: 100%;
 }
 
-.card p {
+.swiper-slide p {
   color: white;
   padding: 10px;
 }
 
-.card h2 {
+.swiper-slide h2 {
   padding: 10px;
   text-align: center;
   margin-bottom: 5px;
 }
 
-.card:hover .content {
+.swiper-slide:hover .content {
   height: 260px;
   padding: 20px;
   opacity: 1;
   transform: translateY(0);
 }
 
-.card .content p {
+.swiper-slide .content p {
   margin: 0;
 }
 
-.card .content .title {
+.swiper-slide .content .title {
   font-size: 20px;
   font-weight: 600;
 }
 
-.card .content .desc {
+.swiper-slide .content .desc {
   font-size: 14px;
   font-weight: 100;
   opacity: .8;
   margin-top: 8px;
 }
 
-.card .arrow {
+.swiper-slide .arrow {
   padding: 15px;
   transform: rotate(-180deg);
   transition: all .5s;
 }
 
-.card:hover .arrow {
+.swiper-slide:hover .arrow {
   transform: rotate(0);
 }
 
-.card .arrow span {
+.swiper-slide .arrow span {
   font-size: 24px;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 /**Cards*/
 
 /**Depoimentos*/

@@ -102,12 +102,26 @@ fetch("http://localhost:3000/cidades")
   })
   .catch(err => console.log(err))
 
+//Preencher select de tipo de estabelecimento dinamicamente a partir do json de tipo-estabelecimento
+const tipoSelect = document.getElementById("tipo_estabelecimento");
+const optionsTipo = document.createElement("option");
+
+fetch("http://localhost:3000/tipo-estabelecimento")
+  .then(resp => resp.json())
+  .then(data => {
+    data.forEach(element => {
+      optionsTipo.textContent = element.tipo;
+      optionsTipo.value = element.id;
+      tipoSelect.appendChild(optionsTipo.cloneNode(true));
+    });
+  })
+  .catch(err => console.log(err))
+
+
 
 // Obter dados dos selects
-const selectTipo = document.getElementById("tipo_estabelecimento");
-
-selectTipo.addEventListener("change", function () {
-  const options = selectTipo.options;
+tipoSelect.addEventListener("change", function () {
+  const options = tipoSelect.options;
   const selectValues = [];
   for (let i = 0; i < options.length; i++) {
     const option = options[i];

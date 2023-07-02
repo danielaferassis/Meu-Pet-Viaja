@@ -214,6 +214,38 @@
       "id": 3,
       "senha": "1234",
       "foto": ""
+    },
+    {
+      "nome": "lucas",
+      "usuario": "lucas45",
+      "email": "lucasrg274@gmail.com",
+      "id": 4,
+      "senha": "12345",
+      "foto": ""
+    },
+    {
+      "nome": "Lucas Rodrigo Gonçalves",
+      "usuario": "lucasr45",
+      "email": "lucasrg274@gmail.com",
+      "id": 5,
+      "senha": "12345678",
+      "foto": ""
+    },
+    {
+      "nome": "Lucas Rodrigo Gonçalves",
+      "usuario": "lucasr45",
+      "email": "lucasrg274@gmail.com",
+      "id": 6,
+      "senha": "12345678",
+      "foto": ""
+    },
+    {
+      "nome": "Thais de Oliveira Alves Inez",
+      "usuario": "tata",
+      "email": "tata@teste.com",
+      "id": 7,
+      "senha": "123",
+      "foto": ""
     }
   ]
 }

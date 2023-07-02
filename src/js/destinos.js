@@ -18,21 +18,61 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 });
 
-document.addEventListener("DOMContentLoaded", function(){
-    let wrapperEstabelecimentos = document.getElementById('slide-container-est')
+
+function montaSwiper(cidade, nome, foto, alt, descricao, id, tipo) {
+
+    return `
+      <div class="swiper-slide">
+        <div class="card">
+          <div class="container-est" data-id="${id}">
+          <img src="${foto}" alt="${alt}">
+            <div class="overlay">
+              <div class="text">
+                <h4>${nome}</h4>
+                <p>${descricao.substring(0, 50)}...</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="hidden">${cidade}</h3>
+            <span class="hidden">${tipo}</span>
+          </div>
+        </div>
+      </div>
+    `;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    let wrapperEstabelecimentos = document.getElementById('slide-container-est');
     fetch("http://localhost:3000/estabelecimentos")
         .then(response => response.json())
         .then(data => {
             var test2 = '<div class="slide-content" id="estabelecimentos"><div class="card-wrapper swiper-wrapper" id="wrapper-estabelecimentos">';
-            console.log(data)
+            console.log(data);
             data.forEach(element => {
-                test2 += montaSwiper(element.cidade, element.nome, element.foto, element.alt, element.descricao, element.id);
+                const card = montaSwiper(element.cidade, element.nome, element.foto, element.alt, element.descricao, element.id, element.tipo);
+                test2 += card;
             });
-            test2 += '</div></div><div class="swiper-button-next swiper-navBtn" id="next-est"></div><div class="swiper-button-prev swiper-navBtn" id="prev-est"></div><div class="swiper-pagination" id="pag-est"></div>'
+            test2 += '</div></div><div class="swiper-button-next swiper-navBtn" id="next-est"></div><div class="swiper-button-prev swiper-navBtn" id="prev-est"></div><div class="swiper-pagination" id="pag-est"></div>';
             wrapperEstabelecimentos.innerHTML = test2;
-            swiperLoaderEst()
+            swiperLoaderEst();
+
+            // Adiciona evento de clique aos cards
+            const cards = document.getElementsByClassName('card');
+            Array.from(cards).forEach(card => {
+                card.addEventListener('click', function () {
+                    const estabelecimentoId = card.querySelector('.container-est').getAttribute('data-id');
+                    console.log(estabelecimentoId)
+                    window.location.href = `estabelecimento.html?id=${estabelecimentoId}`;;
+                });
+            });
         });
-})
+});
+
+
+
+
+
 
 
 function setFilterType() {

@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("container-est");
-      const cardsWrap = container.querySelector(".cards-wrap");
+      const cardsWrap = container.querySelector(".swiper-wrapper");
       data.forEach(estabelecimento => {
         const card = document.createElement('div');
-        card.classList.add('card');
+        card.classList.add('swiper-slide');
 
         const arrow = document.createElement('div');
         arrow.classList.add('arrow');
@@ -21,11 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
         info.classList.add('info');
         const nome = document.createElement('h2');
         nome.textContent = estabelecimento.nome;
-        const tipo = document.createElement('p');
-        tipo.textContent = estabelecimento.tipo;
 
         info.appendChild(nome);
-        info.appendChild(tipo);
 
         card.appendChild(info);
 
@@ -52,16 +49,74 @@ document.addEventListener("DOMContentLoaded", function () {
 
         cardsWrap.appendChild(card);
       });
+
+      // Inicialize o Swiper.js após adicionar todos os cards
+      new Swiper('.slide-container', {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        centerSlide: 'true',
+        fade: 'true',
+        grabCursor: 'true',
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 3,
+          },
+        },
+      });
     })
     .catch(error => {
-      console.error('Ocorreu um erro ao obter os dados do JSON:', error);
+      console.error('Ocorreu um erro ao obter os dados do JSON ou inicializar o Swiper:', error);
     });
 });
 
-
-
-
-
+// var swiper = new Swiper(document.getElementById('container-est'), {
+//   slidesPerView: 3,
+//   spaceBetween: 25,
+//   loop: true,
+//   centerSlide: 'true',
+//   fade: 'true',
+//   grabCursor: 'true',
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//     dynamicBullets: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//     },
+//     520: {
+//       slidesPerView: 2,
+//     },
+//     950: {
+//       slidesPerView: 3,
+//     },
+//   },
+// });
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -128,37 +183,9 @@ if (larguraJanela >= 240 && larguraJanela <= 615) {
 window.addEventListener('load', ajustarLayout);
 window.addEventListener('resize', ajustarLayout);
 
-
 const iconeDeslogar = document.getElementById('iconeDeslogar');
 iconeDeslogar.addEventListener('click', deslogar);
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
-  spaceBetween: 25,
-  loop: true,
-  centerSlide: 'true',
-  fade: 'true',
-  grabCursor: 'true',
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    520: {
-      slidesPerView: 2,
-    },
-    950: {
-      slidesPerView: 3,
-    },
-  },
-});
+
 
 
 

@@ -41,9 +41,9 @@ function validarDadosUsuario(usuario) {
     const senha = document.getElementById("senha").value;
   
     if (usuario.senha === senha) {
-      alert("Usuário logado. Redirecionando para a página inicial...");
+      alert("Usuário logado. Redirecionando para pagina de destinos");
       localStorage.setItem("nomeUsuario", usuario.nome);
-      window.location.href = "index.html";
+      window.location.href = "destinos.html";
     } else {
       alert("Senha incorreta");
     }

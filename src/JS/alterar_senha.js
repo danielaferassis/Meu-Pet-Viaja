@@ -32,17 +32,19 @@ function enviar() {
         usuario.senha = novaSenha;
 
         // Enviar os dados JSON atualizados de volta para a API
-        fetch("http://localhost:3000/viajante", {
+        fetch(`http://localhost:3000/viajante/${usuario.id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json"
           },
-          body: JSON.stringify(data)
+          body: JSON.stringify(usuario)
         })
           .then(response => response.json())
           .then(dadosAtualizados => {
             console.log("Senha atualizada com sucesso:", dadosAtualizados);
-            // Exibir mensagem de sucesso ou executar outras ações
+
+            // Redirecionar para a página de login após a atualização da senha
+            window.location.href = "entre.html";
           })
           .catch(error => {
             console.error("Erro ao atualizar a senha:", error);

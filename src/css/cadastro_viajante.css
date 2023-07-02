@@ -78,6 +78,16 @@
     color: #000000;
 }
 
+    #confirmarSenha {
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-family: 'Merriwheater', sans-serif;
+        font-size: 15px;
+        color: #000000;    
+
+}
+
 #fotoperfil {
     display: none;
     margin-right: 5px;

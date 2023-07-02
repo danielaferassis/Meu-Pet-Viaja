@@ -1,5 +1,5 @@
-//Validação do formulário de cadastro do viajante
-// Vincula URL do jsonserver 
+/*Validação do formulário de cadastro do viajante
+Vincula URL do jsonserver */
 URL = "http://localhost:3000/viajante";
 // Validação do bootrasp no formulário
 (function () {

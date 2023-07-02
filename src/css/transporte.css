@@ -10,7 +10,7 @@
     font-style: initial;
 }
 
-.title p{
+.title #info{
     margin-left: 12%;
     margin-right: 12% ; 
     margin-top: 20px;
@@ -60,4 +60,7 @@
 .content h3 {
     font-size: 16px;
     font-style: italic;
+}
+#infoFooter{
+    margin-left: 0 !important; 
 }

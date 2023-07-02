@@ -21,7 +21,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="JS/swiper-bundle.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -120,13 +120,10 @@
         <label for="star1" title="text"><i class="fa fa-paw" aria-hidden="true"></i></label>
       </div>
       <br>
-      <div class="foto_container">
-        <label for="foto_depoimento" tabindex="0">Foto do estabelecimento:<br>
-          <input type="file" id="foto_depoimento" accept="image/*" />
-          <span class="foto_depoimento_span">Selecione a foto</span>
-        </label>
-        <div id="prev-foto-estabelecimento"></div>
-      </div>
+      <div class="row">
+        <div class="col text-center">
+          <button type="submit" class="btn btn-primary" id="enviar" name="enviar" >Enviar</button>
+        </div>
 
     </div>
 
@@ -169,7 +166,7 @@
 
 
 </body>
-<script src="JS/estabelecimento.js"></script>
+<script src="js/estabelecimento.js"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"

@@ -1,4 +1,4 @@
-// Página inicial de Login
+/*/ Página inicial de Login
 const LOGIN_URL = "login.html";
 
 // Objeto para o banco de dados de usuários baseado em JSON
@@ -11,15 +11,15 @@ var usuarioCorrente = {};
 // Fonte: https://stackoverflow.com/questions/105034/how-to-create-guid-uuid
 function generateUUID() { // Public Domain/MIT
     var d = new Date().getTime();//Timestamp
-    var d2 = (performance && performance.now && (performance.now()*1000)) || 0;//Time in microseconds since page-load or 0 if unsupported
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var d2 = (performance && performance.now && (performance.now() * 1000)) || 0;//Time in microseconds since page-load or 0 if unsupported
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
         var r = Math.random() * 16;//random number between 0 and 16
-        if(d > 0){//Use timestamp until depleted
-            r = (d + r)%16 | 0;
-            d = Math.floor(d/16);
+        if (d > 0) {//Use timestamp until depleted
+            r = (d + r) % 16 | 0;
+            d = Math.floor(d / 16);
         } else {//Use microseconds since page-load if supported
-            r = (d2 + r)%16 | 0;
-            d2 = Math.floor(d2/16);
+            r = (d2 + r) % 16 | 0;
+            d2 = Math.floor(d2 / 16);
         }
         return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
     });
@@ -29,27 +29,27 @@ function generateUUID() { // Public Domain/MIT
 // Dados de usuários para serem utilizados como carga inicial
 const dadosIniciais = {
     usuarios: [
-        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "admin@abc.com"},
-        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum", "email": "user@abc.com"},
+        { "id": generateUUID(), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "admin@abc.com" },
+        { "id": generateUUID(), "login": "user", "senha": "123", "nome": "Usuario Comum", "email": "user@abc.com" },
     ]
 };
 
 
 // Inicializa o usuarioCorrente e banco de dados de usuários da aplicação de Login
-function initLoginApp () {
+function initLoginApp() {
     // PARTE 1 - INICIALIZA USUARIOCORRENTE A PARTIR DE DADOS NO LOCAL STORAGE, CASO EXISTA
     usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
     if (usuarioCorrenteJSON) {
-        usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
+        usuarioCorrente = JSON.parse(usuarioCorrenteJSON);
     }
-    
+
     // PARTE 2 - INICIALIZA BANCO DE DADOS DE USUÁRIOS
     // Obtem a string JSON com os dados de usuários a partir do localStorage
     var usuariosJSON = localStorage.getItem('db_usuarios');
 
     // Verifica se existem dados já armazenados no localStorage
     if (!usuariosJSON) {  // Se NÃO há dados no localStorage
-        
+
         // Informa sobre localStorage vazio e e que serão carregados os dados iniciais
         alert('Dados de usuários não encontrados no localStorage. \n -----> Fazendo carga inicial.');
 
@@ -57,33 +57,33 @@ function initLoginApp () {
         db_usuarios = dadosIniciais;
 
         // Salva os dados iniciais no local Storage convertendo-os para string antes
-        localStorage.setItem('db_usuarios', JSON.stringify (dadosIniciais));
+        localStorage.setItem('db_usuarios', JSON.stringify(dadosIniciais));
     }
-    else  {  // Se há dados no localStorage
-        
+    else {  // Se há dados no localStorage
+
         // Converte a string JSON em objeto colocando no banco de dados baseado em JSON
-        db_usuarios = JSON.parse(usuariosJSON);    
+        db_usuarios = JSON.parse(usuariosJSON);
     }
 };
 
 
 // Verifica se o login do usuário está ok e, se positivo, direciona para a página inicial
-function loginUser (login, senha) {
-    
+function loginUser(login, senha) {
+
     // Verifica todos os itens do banco de dados de usuarios 
     // para localizar o usuário informado no formulario de login
     for (var i = 0; i < db_usuarios.usuarios.length; i++) {
         var usuario = db_usuarios.usuarios[i];
-        
+
         // Se encontrou login, carrega usuário corrente e salva no Session Storage
         if (login == usuario.login && senha == usuario.senha) {
             usuarioCorrente.id = usuario.id;
             usuarioCorrente.login = usuario.login;
             usuarioCorrente.email = usuario.email;
             usuarioCorrente.nome = usuario.nome;
-            
+
             // Salva os dados do usuário corrente no Session Storage, mas antes converte para string
-            sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
+            sessionStorage.setItem('usuarioCorrente', JSON.stringify(usuarioCorrente));
 
             // Retorna true para usuário encontrado
             return true;
@@ -95,29 +95,105 @@ function loginUser (login, senha) {
 }
 
 // Apaga os dados do usuário corrente no sessionStorage
-function logoutUser () {
+function logoutUser() {
     usuarioCorrente = {};
-    sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
+    sessionStorage.setItem('usuarioCorrente', JSON.stringify(usuarioCorrente));
     window.location = LOGIN_URL;
 }
 
-function addUser (nome, login, senha, email) {
-    
+function addUser(nome, login, senha, email) {
+
     // Cria um objeto de usuario para o novo usuario 
-    let newId = generateUUID ();
+    let newId = generateUUID();
     let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "email": email };
-    
+
     // Inclui o novo usuario no banco de dados baseado em JSON
-    db_usuarios.usuarios.push (usuario);
+    db_usuarios.usuarios.push(usuario);
 
     // Salva o novo banco de dados com o novo usuário no localStorage
-    localStorage.setItem('db_usuarios', JSON.stringify (db_usuarios));
+    localStorage.setItem('db_usuarios', JSON.stringify(db_usuarios));
 }
 
-function setUserPass () {
+function setUserPass() {
 
 }
 
 
 // Inicializa as estruturas utilizadas pelo LoginApp
-initLoginApp ();
+initLoginApp(); */
+
+
+
+
+
+
+
+
+
+
+
+const URL = "http://localhost:3000/viajante";
+
+function entrar() {
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
+
+    obterDadosViajante(email);
+}
+
+function obterDadosViajante(email) {
+    fetch(URL, {
+        method: "GET",
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+    })
+        .then((response) => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error("Erro ao obter os dados do usuário");
+            }
+        })
+        .then((data) => {
+            const usuarioEncontrado = data.find((usuario) => usuario.email === email);
+
+            if (usuarioEncontrado) {
+                validarDadosUsuario(usuarioEncontrado);
+            } else {
+                alert("Usuário não cadastrado");
+            }
+        })
+        .catch((error) => {
+            console.error(error);
+            alert("Erro ao obter os dados do usuário");
+        });
+}
+
+function validarDadosUsuario(usuario) {
+    const senha = document.getElementById("senha").value;
+  
+    if (usuario.senha === senha) {
+      alert("Usuário logado. Redirecionando para a página inicial...");
+      localStorage.setItem("nomeUsuario", usuario.nome);
+      window.location.href = "index.html";
+    } else {
+      alert("Senha incorreta");
+    }
+  }
+  
+
+function exibirNomeUsuario(nome) {
+    console.log(nome)
+    const nomeUsuarioElemento = document.getElementById("nome");
+    nomeUsuarioElemento.innerText = nome;
+}
+
+function exibirSenha() {
+    const senhaInput = document.getElementById("senha");
+    const senhaCheckbox = document.getElementById("exibir-senha");
+  
+    senhaInput.type = senhaCheckbox.checked ? "text" : "password";
+  }
+  

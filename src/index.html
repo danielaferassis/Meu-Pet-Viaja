@@ -18,6 +18,7 @@
 </head>
 
 <body>
+  <p>Bem-vindo, <span id="nome-usuario"></span>!</p>
   <header class="header">
      <div id="usuarioLogado">
       <span>
@@ -264,5 +265,20 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
 </body>
+
+<script>
+
+window.addEventListener("DOMContentLoaded", function() {
+  const nomeUsuarioElemento = document.getElementById("nome-usuario");
+  const nomeUsuario = localStorage.getItem("nomeUsuario");
+
+  if (nomeUsuario) {
+    nomeUsuarioElemento.innerText = nomeUsuario;
+  } else {
+    nomeUsuarioElemento.innerText = "Convidado";
+  }
+});
+
+</script>
 
 </html>

@@ -1,25 +1,24 @@
-function recuperarSenha() {
-    var email = document.getElementById('email').value;
-    
-    // Faz uma requisição para a API no lado do servidor
-    fetch('http://localhost:3000/viajante', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ email: email })
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        alert('Um email de recuperação de senha foi enviado para ' + email);
-      } else {
-        alert('Falha ao recuperar senha. Verifique seu email e tente novamente.');
-      }
-    })
-    .catch(error => {
-      console.error('Erro:', error);
-      alert('Ocorreu um erro ao recuperar a senha. Tente novamente mais tarde.');
-    });
+function enviarLinkRedefinicaoSenha(email) {
+    // Implementar a lógica para enviar o link de redefinição de senha para o email cadastrado
+    // Atraves de uma API de envio de emails ou um serviço de envio de emails específico
+  
+    // Exibição de mensagem para o usuário
+    console.log(`Um link de redefinição de senha foi enviado para o email ${email}. Verifique sua caixa de entrada.`);
   }
+  
+  function entrar(event) {
+    event.preventDefault();
+    
+    const email = document.getElementById('email').value;
+  
+    if (verificarEmailCadastrado(email)) {
+      // O email está cadastrado, enviar o link de redefinição de senha
+      enviarLinkRedefinicaoSenha(email);
+    } else {
+      // Mensagem de erro ou realizar outras ações necessárias.
+      console.log("Verifique o email digitado.");
+    }
+  }
+  
+  document.getElementById('enviar').addEventListener('click', entrar);
   

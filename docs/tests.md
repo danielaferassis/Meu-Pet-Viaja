@@ -64,11 +64,11 @@ A documentação dos testes é dividida nas seguintes seções:
 
 **Caso de Teste** | **CT-07 - Cadastrar depoimento com perfil de usuário anônimo**
  :--------------: | ------------
-**Procedimento**  | Usuário acessa a página "Destinos em MG"...
+**Procedimento**  |1)Usuário acessa a página "Destinos em MG"<br>2)vá até a seção "estabelecimento" ou pesquisa pelo estabelecimento no filtro <br>3)clica no estabelecimento desejado <br>4) no final da página a um formulário onde o cliente pode se identificar ou não<br>5)a um campo onde o usuário pode descrever sua experiência naquele estabelecimento <br>6) o cliente pode escolher a nota desejada para o estabelecimento <br>7) ao clicar em enviar os dados são armazenados sem a identificação do usuário<br>
 **Requisitos associados** | RF-012
-**Resultado esperado** | Espera-se que o usuário consiga ... 
-**Dados de entrada** | Inserção de dados válidos ...
-**Página** | ...
+**Resultado esperado** | Espera-se que o usuário consiga descrever sua experiencia sem se identificar.
+**Dados de entrada** | Inserção de dados válidos no formulário de informações do estabelecimento.
+**Página** | Destinos em MG
 
 **Caso de Teste** | **CT-08 - Enviar depoimento com usuário logado - Criar conta de usuário parte 1**
  :--------------: | ------------
@@ -123,7 +123,7 @@ A documentação dos testes é dividida nas seguintes seções:
 |**Caso de Teste**                                 |**CT-06 - Cadastrar novo estabelecimento**                                         |
 |---|---|
 |**Requisito Associado** | RF-011 - Disponibilizar página para proprietários de estabelecimentos enviearem informações sobre seus negócios para serem avaliadas e adicionadas à lista de hospedagens e locais pet friendly.|
-|**Link do vídeo do teste realizado:** | ... |
+|**Link do vídeo do teste realizado:** | https://drive.google.com/file/d/1HWpHzBxMQo-T6_srFflp4ZerlnNF2pls/view?usp=sharing |
 |**Resultado obtido** | Sucesso |
 
 |**Caso de Teste**                                 |**CT-07 - Cadastrar depoimento com perfil de usuário anônimo**                                         |

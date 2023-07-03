@@ -17,14 +17,15 @@
 </head>
 
 <body>
-  <p>Bem-vindo, <span id="nome-usuario"></span>!</p>
   <header class="header">
+
     <div id="usuarioLogado">
       <span>
-        <h6>Olá, Usuário</h6>
+        <h6></h6>
         <i id="iconeDeslogar" onclick="deslogar()" class="fa-solid fa-xmark"></i>
       </span>
     </div>
+
     <!--Logo -->
     <div class="logo">
       <img src="imagens/logo.png">
@@ -179,56 +180,9 @@
       </h3>
     </div>
 
-    <div class="container">
+    <div class="container" id = "locais-wrap">
       <div class="locais-wrap">
-        <div class="local">
-          <div class="local_img">
-            <img src="imagens/user1.jpg" alt="user-image">
-          </div>
-          <div>
-            <i class="fa-solid fa-paw"></i>
-            <i class="fa-solid fa-paw"></i>
-            <i class="fa-solid fa-paw"></i>
-            <i class="fa-solid fa-paw"></i>
-            <i class="fa-solid fa-paw"></i>
-          </div>
-          <div class="local_info">
-            <h3>Gabriel Lucca</h3>
-            <a href="#!">Encantadora estadia em um hotel pet friendly! Acolhimento excepcional para os animais de
-              estimação, comodidades excelentes e equipe simpática. Recomendo!</a>
-          </div>
-        </div>
-        <div class="local">
-          <div class="local_img">
-            <img src="imagens/user2.jpg" alt="user-image">
-          </div>
-          <div class="local_info">
-            <h3>Luana Lucia</h3>
-            <a href="#!">Amei minha estadia em um lugar pet friendly incrível! O ambiente era acolhedor, a equipe era
-              atenciosa e meu peludo foi tratado como um rei. Recomendo a todos!</a>
-          </div>
-        </div>
-        <div class="local">
-          <div class="local_img">
-            <img src="imagens/user3.jpg" alt="user-image">
-          </div>
-          <div class="local_info">
-            <h3>Thiago Borges</h3>
-            <a href="#!">Descobri um refúgio perfeito para mim e meu fiel companheiro de quatro patas! Esta hospedagem
-              pet friendly nos recebeu de braços abertos, proporcionando uma experiência inesquecível. Adoramos!</a>
-          </div>
-        </div>
-        <div class="local">
-          <div class="local_img">
-            <img src="imagens/user4.jpg" alt="user-image">
-          </div>
-          <div class="local_info">
-            <h3>Mirian Carla</h3>
-            <a href="#!">Encontrei o paraíso dos animais em uma hospedagem pet friendly! Meu pet teve a liberdade de
-              explorar, brincar e até fez novos amigos. Foi uma experiência maravilhosa para nós dois. Recomendo de
-              coração!</a>
-          </div>
-        </div>
+        
       </div>
     </div>
 
@@ -274,27 +228,12 @@
       </div>
     </div>
   </footer>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
   <script src="js/index.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/14b399f147.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
 </body>
-
-<script>
-
-window.addEventListener("DOMContentLoaded", function() {
-  const nomeUsuarioElemento = document.getElementById("nome-usuario");
-  const nomeUsuario = localStorage.getItem("nomeUsuario");
-
-  if (nomeUsuario) {
-    nomeUsuarioElemento.innerText = nomeUsuario;
-  } else {
-    nomeUsuarioElemento.innerText = "Convidado";
-  }
-});
-
-</script>
-
 </html>

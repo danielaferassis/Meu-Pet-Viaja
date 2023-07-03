@@ -1,24 +1,4 @@
 
-//API Imgur para hospedar a foto
-const clientID = "9facbf355e71bd0"
-const fileUpload = document.getElementById("foto_depoimento");
-const prev = document.getElementById("prev-foto-estabelecimento");
-fileUpload.addEventListener("change", (event) => {
-    const formData = new FormData();
-    formData.append("image", event.target.files[0]);
-    fetch("https://api.imgur.com/3/image", {
-        method: "POST",
-        headers: {
-            Authorization: `Client-ID ${clientID}`,
-        },
-        body: formData,
-    }).then(data => data.json()).then(data => {
-        fileUpload.src = data.data.link;
-        prev.innerHTML = '<img src="' + data.data.link + '" style="width: 200px; border-radius: 10px">'
-        console.log(data);
-    })
-});
-
 // Função para fazer uma requisição HTTP e retornar os dados como JSON
 async function fetchData(url) {
     const response = await fetch(url);
@@ -57,6 +37,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 console.log("ID:", id); // Adicionado console.log para verificar o ID
+
+                if(Object.keys(sessionStorage).length != 0){
+                  var divOriginal = document.getElementById('nomeOriginal');
+                  var novaDiv = document.createElement('div');
+                  var h4 = document.createElement('h4');
+                  const dados = JSON.parse(sessionStorage.getItem("Dados"));
+                  var i = dados.nome;
+                  h4.textContent = i;
+                
+                  novaDiv.appendChild(h4);
+                  divOriginal.parentNode.replaceChild(novaDiv, divOriginal);
+                }
+                
+
+
 
                 fetch(`http://localhost:3000/estabelecimentos/${id}`)
                     .then(response => response.json())
@@ -112,6 +107,77 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+URL = "http://localhost:3000/depoimentos";
+// Validação do bootrasp no formulário
+(function () {
+  'use strict'
+  var forms = document.querySelectorAll(".needs-validation")
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+          form.classList.add('was-validated')
+        } else {
+          event.preventDefault();
+          event.stopPropagation()
+          form.classList.add('was-validated')
+          // Dados necessários para o json
+          //Recupera nome caso logado
+          var avaValue;
+          var nomeAva;
+          var fotoUsuario;
+          var divOriginal;
+          var novaDiv;
+          if(Object.keys(sessionStorage).length === 0){
+
+            avaValue = document.querySelector('input[name="rate"]:checked').value;
+            nomeAva = document.getElementById("nome_depoimento").value; 
+            fotoUsuario = "";
+            
+          }else{
+            const dadosRecuperadosString = sessionStorage.getItem('Dados');
+            const dadosRecuperados = JSON.parse(dadosRecuperadosString);
+            nomeAva = dadosRecuperados.nome.charAt(0).toUpperCase() + dadosRecuperados.nome.slice(1);
+            fotoUsuario = dadosRecuperados.foto;
+            avaValue = document.querySelector('input[name="rate"]:checked').value;
+
+          }
+
+          const depoimentos = {
+            id: "",
+            nome: nomeAva,
+            avaliacao: document.getElementById("depoimento").value,
+            nota: avaValue,
+            foto: fotoUsuario,
+          };
+          // Envia os dados do formulário para arquivo json
+          fetch (URL, {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Origin": "*",
+            },
+            body: JSON.stringify(depoimentos),
+          })
+            .then((response) => {
+              if (response.ok) {
+                alert("Depoimento enviado");
+                location.href = "destinos.html";
+              } else {
+                alert("Erro ao cadastrar");
+              }
+            })
+            .catch((error) => {
+              console.error(error);
+            });
+        }
+
+      }, false)
+    })
+})()
 
 
 

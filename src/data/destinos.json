@@ -220,7 +220,7 @@
       "usuario": "lucas45",
       "email": "lucasrg274@gmail.com",
       "id": 4,
-      "senha": "lucas",
+      "senha": "12345",
       "foto": ""
     },
     {
@@ -248,20 +248,51 @@
       "foto": ""
     },
     {
-      "nome": "luiz",
-      "usuario": "luiz10",
-      "email": "luiz@teste.com",
+      "nome": "Thiago Borges",
+      "usuario": "Thi.cht",
+      "email": "thiagopetviaja@gmail.com",
       "id": 8,
-      "senha": "12345",
-      "foto": ""
+      "senha": "1234",
+      "foto": "https://i.imgur.com/of35ipY.jpg"
     },
     {
-      "nome": "sandra",
-      "usuario": "sand01",
-      "email": "sandra@teste.com",
+      "nome": "Luana Lucia",
+      "usuario": "luana",
+      "email": "luana@luana.com.br",
       "id": 9,
-      "senha": "123",
-      "foto": "https://i.imgur.com/BQz6aZU.png"
+      "senha": "1234",
+      "foto": "https://i.imgur.com/3E3o6u6.jpg"
+    },
+    {
+      "nome": "Mirian Carla",
+      "usuario": "Mirian",
+      "email": "Mirian@mirian.com.br",
+      "id": 10,
+      "senha": "1234",
+      "foto": "https://i.imgur.com/HFe0CL6.jpg"
+    }
+  ],
+  "depoimentos": [
+    {
+      "id": 1,
+      "nome": "Thiago Borges",
+      "avaliacao": "Encantadora estadia em um hotel pet friendly! Acolhimento excepcional para os animais de estimação, comodidades excelentes e equipe simpática. Recomendo!",
+      "nota": 5,
+      "foto": "https://i.imgur.com/of35ipY.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Luana Lucia",
+      "avaliacao": "Amei minha estadia em um lugar pet friendly incrível! O ambiente era acolhedor, a equipe era\n              atenciosa e meu peludo foi tratado como um rei. Recomendo a todos!",
+      "nota": 4,
+      "foto": "https://i.imgur.com/3E3o6u6.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Mirian Carla",
+      "avaliacao": "Encontrei o paraíso dos animais em uma hospedagem pet friendly! Meu pet teve a liberdade de explorar, brincar e até fez novos amigos. Foi uma experiência maravilhosa para nós dois. Recomendo de coração!",
+      "nota": "3",
+      "foto": "https://i.imgur.com/HFe0CL6.jpg"
     }
   ]
 }

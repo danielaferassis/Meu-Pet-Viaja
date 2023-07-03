@@ -99,19 +99,19 @@ A documentação dos testes é dividida nas seguintes seções:
 |**Caso de Teste**                                 |**CT-02 - Pesquisar hospedagens pet-friendly em MG, filtrando por cidade, e mostrar as informações da hospedagem**                                         |
 |---|---|
 |**Requisito Associado** | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.<br>RF-008 - Disponibilizar funcionalidade que permita pesquisar hospedagens pet friendly em Minas Gerais.|
-|Link do vídeo do teste realizado: | ... |
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1HHsiQ_ozbxNuG9HzpWj9ChW_dBNcsDjd/view?usp=sharing |
 |Resultado obtido | Sucesso |
 
 |**Caso de Teste**                                 |**CT-03 - Pesquisar estabelecimentos comerciais privados pet-friendly em MG, filtrando por cidade, e mostrar as informações do estabelecimento**                                         |
 |---|---|
 |**Requisito Associado** | RF-005 - Disponibilizar área com informações de estabelecimentos comerciais privados pet friendly em Minas Gerais.<br>RF-009 - Disponibilizar funcionalidade que permita pesquisar estabelecimentos comerciais privados pet friendly em Minas Gerais.|
-|**Link do vídeo do teste realizado:** | ... |
+|**Link do vídeo do teste realizado:** | https://drive.google.com/file/d/1HHsiQ_ozbxNuG9HzpWj9ChW_dBNcsDjd/view?usp=sharing |
 |**Resultado obtido** | Sucesso |
 
 |**Caso de Teste**                                 |**CT-04 - Pesquisar locais públicos pet-friendly em MG, filtrando por cidade, e mostrar as informações do local público**                                         |
 |---|---|
 |**Requisito Associado** | RF-006 - Disponibilizar área com informações de locais públicos pet friendly em Minas Gerais.<br>RF-010 - Disponibilizar funcionalidade que permita pesquisar locais publicos pet friendly em Minas Gerais.|
-|**Link do vídeo do teste realizado:** | ... |
+|**Link do vídeo do teste realizado:** | https://drive.google.com/file/d/1HHsiQ_ozbxNuG9HzpWj9ChW_dBNcsDjd/view?usp=sharing |
 |**Resultado obtido** | Sucesso |
 
 |**Caso de Teste**                                 |**CT-05 - Inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais**                                         |

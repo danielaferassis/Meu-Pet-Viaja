@@ -129,7 +129,7 @@ A documentação dos testes é dividida nas seguintes seções:
 |**Caso de Teste**                                 |**CT-06 - Cadastrar novo estabelecimento**                                         |
 |---|---|
 |**Requisito Associado** | RF-011 - Disponibilizar página para proprietários de estabelecimentos enviearem informações sobre seus negócios para serem avaliadas e adicionadas à lista de hospedagens e locais pet friendly.|
-|**Link do vídeo do teste realizado:** | ... |
+|**Link do vídeo do teste realizado:** | https://drive.google.com/file/d/1HWpHzBxMQo-T6_srFflp4ZerlnNF2pls/view?usp=sharing |
 |**Resultado obtido** | Sucesso |
 
 |**Caso de Teste**                                 |**CT-07 - Cadastrar depoimento com perfil de usuário anônimo**                                         |

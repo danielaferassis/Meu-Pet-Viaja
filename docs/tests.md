@@ -64,13 +64,7 @@ A documentação dos testes é dividida nas seguintes seções:
 
 **Caso de Teste** | **CT-07 - Cadastrar depoimento com perfil de usuário anônimo**
  :--------------: | ------------
-**Procedimento**  |1)Usuário acessa a página "Destinos em MG"<br> 
-2)vá até a seção "estabelecimento" ou pesquisa pelo estabelecimento no filtro <br>
-3)clica no estabelecimento desejado <br>
-4) no final da página a um formulário onde o cliente pode se identificar ou não<br> 
-5)a um campo onde o usuário pode descrever sua experiência naquele estabelecimento <br>
-6) o cliente pode escolher a nota desejada para o estabelecimento <br>
-7) ao clicar em enviar os dados são armazenados sem a identificação do usuário<br>
+**Procedimento**  |1)Usuário acessa a página "Destinos em MG"<br>2)vá até a seção "estabelecimento" ou pesquisa pelo estabelecimento no filtro <br>3)clica no estabelecimento desejado <br>4) no final da página a um formulário onde o cliente pode se identificar ou não<br>5)a um campo onde o usuário pode descrever sua experiência naquele estabelecimento <br>6) o cliente pode escolher a nota desejada para o estabelecimento <br>7) ao clicar em enviar os dados são armazenados sem a identificação do usuário<br>
 **Requisitos associados** | RF-012
 **Resultado esperado** | Espera-se que o usuário consiga descrever sua experiencia sem se identificar.
 **Dados de entrada** | Inserção de dados válidos no formulário de informações do estabelecimento.

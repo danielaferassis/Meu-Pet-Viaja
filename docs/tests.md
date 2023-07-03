@@ -129,7 +129,7 @@ A documentação dos testes é dividida nas seguintes seções:
 |**Caso de Teste**                                 |**CT-07 - Cadastrar depoimento com perfil de usuário anônimo**                                         |
 |---|---|
 |**Requisito Associado** | RF-012 - Disponibilizar funcionalidade que permita definir perfil de usuário anônimo ou identificado para depoimentos.|
-|**Link do vídeo do teste realizado:** | ... |
+|**Link do vídeo do teste realizado:** | https://drive.google.com/file/d/16fFxEAoIzBOiGYL0_-YhiX07-2rT-lAZ/view?usp=drivesdk |
 |**Resultado obtido** | Sucesso |
 
 |**Caso de Teste**                                 |**CT-08 - Enviar depoimento com usuário logado - Criar conta de usuário**                                         |

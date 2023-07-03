@@ -208,7 +208,7 @@
       "foto": "https://i.imgur.com/8ukbEwk.jpg"
     },
     {
-      "nome": "thais camila",
+      "nome": "Thais camila",
       "usuario": "this.thais",
       "email": "thais@teste.com.br",
       "id": 3,
@@ -293,6 +293,34 @@
       "avaliacao": "Encontrei o paraíso dos animais em uma hospedagem pet friendly! Meu pet teve a liberdade de explorar, brincar e até fez novos amigos. Foi uma experiência maravilhosa para nós dois. Recomendo de coração!",
       "nota": "3",
       "foto": "https://i.imgur.com/HFe0CL6.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Regiane",
+      "avaliacao": "      Amei o Restaurante dona lucinha",
+      "nota": "5",
+      "foto": ""
+    },
+    {
+      "id": 5,
+      "nome": "Thais camila",
+      "avaliacao": "      Amei Minha experiência no Hotel com meu Pet ",
+      "nota": "5",
+      "foto": ""
+    },
+    {
+      "id": 6,
+      "nome": "",
+      "avaliacao": "Amei O Restaurante dona Lucinha, excelente comida e incrível espaço para se estar com nossos pets ",
+      "nota": "5",
+      "foto": ""
+    },
+    {
+      "id": 7,
+      "nome": "Thais",
+      "avaliacao": "      Ótimo lugar para passeios com nossos Pets, amei tudo!",
+      "nota": "5",
+      "foto": ""
     }
   ]
 }

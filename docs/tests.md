@@ -117,7 +117,7 @@ A documentação dos testes é dividida nas seguintes seções:
 |**Caso de Teste**                                 |**CT-05 - Inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais**                                         |
 |---|---|
 |**Requisito Associado** | RF-007 - Disponibilizar página em que o usuário poderá inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais.|
-|**Link do vídeo do teste realizado:** | ... |
+|**Link do vídeo do teste realizado:** | https://drive.google.com/file/d/1Ppz360lX1KVxpL-6E3bYHzif1tOpKIfW/view?usp=drive_link |
 |**Resultado obtido** | Sucesso |
 
 |**Caso de Teste**                                 |**CT-06 - Cadastrar novo estabelecimento**                                         |
@@ -135,13 +135,13 @@ A documentação dos testes é dividida nas seguintes seções:
 |**Caso de Teste**                                 |**CT-08 - Enviar depoimento com usuário logado - Criar conta de usuário**                                         |
 |---|---|
 |**Requisito Associado** | RF-012 - Disponibilizar funcionalidade que permita definir perfil de usuário anônimo ou identificado para depoimentos.|
-|**Link do vídeo do teste realizado:** | ... |
+|**Link do vídeo do teste realizado:** | https://drive.google.com/file/d/1Ppz360lX1KVxpL-6E3bYHzif1tOpKIfW/view?usp=drive_link |
 |**Resultado obtido** | Sucesso |
 
 |**Caso de Teste**                                 |**CT-09 - Enviar depoimento com usuário logado - Efetuar Login (usuário autenticado)**                                         |
 |---|---|
 |**Requisito Associado** | RF-012 - Disponibilizar funcionalidade que permita definir perfil de usuário anônimo ou identificado para depoimentos.|
-|**Link do vídeo do teste realizado:** | ... |
+|**Link do vídeo do teste realizado:** | https://drive.google.com/file/d/1Ppz360lX1KVxpL-6E3bYHzif1tOpKIfW/view?usp=drive_link |
 |**Resultado obtido** | Sucesso |
 
 

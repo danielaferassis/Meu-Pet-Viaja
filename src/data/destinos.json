@@ -296,31 +296,10 @@
     },
     {
       "id": 4,
-      "nome": "Regiane",
-      "avaliacao": "      Amei o Restaurante dona lucinha",
+      "nome": "Sara Vieira",
+      "avaliacao": "      A hospedagem foi um sucesso. Eu e meu pet fomos muito bem recebidos por todos e com certeza iremos voltar mais vezes.",
       "nota": "5",
-      "foto": ""
-    },
-    {
-      "id": 5,
-      "nome": "Thais camila",
-      "avaliacao": "      Amei Minha experiência no Hotel com meu Pet ",
-      "nota": "5",
-      "foto": ""
-    },
-    {
-      "id": 6,
-      "nome": "",
-      "avaliacao": "Amei O Restaurante dona Lucinha, excelente comida e incrível espaço para se estar com nossos pets ",
-      "nota": "5",
-      "foto": ""
-    },
-    {
-      "id": 7,
-      "nome": "Thais",
-      "avaliacao": "      Ótimo lugar para passeios com nossos Pets, amei tudo!",
-      "nota": "5",
-      "foto": ""
+      "foto": "https://i.imgur.com/z7mkc1I.jpg"
     }
   ]
 }

@@ -100,6 +100,14 @@ function entrar(){
                     foto : result[0].foto,
                     status : 'true'
                 }
+
+                function exibirSenha() {
+                    const senhaInput = document.getElementById("senha");
+                    const senhaCheckbox = document.getElementById("exibir-senha");
+                  
+                    senhaInput.type = senhaCheckbox.checked ? "text" : "password";
+                  }
+
                 const dadosUsuario = JSON.stringify(infoUsuario);
                 sessionStorage.setItem('Dados', dadosUsuario);
                 window.location.href = 'destinos.html';

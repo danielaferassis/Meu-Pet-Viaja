@@ -1,4 +1,65 @@
-function enviar() {
+URL = "http://localhost:3000/viajante";
+
+function alterarSenha() {
+  const novaSenhaInput = document.getElementById('nova-senha');
+  const confirmeSenhaInput = document.getElementById('confirme-a-senha');
+  
+  const novaSenha = novaSenhaInput.value;
+  const confirmeSenha = confirmeSenhaInput.value;
+  
+  if (novaSenha !== confirmeSenha) {
+    alert('As senhas digitadas não coincidem!');
+    return;
+  }
+  
+  // Requisição para a API para atualizar a senha no JSON
+      
+    fetch(URL, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      email: getEmailFromURL(), // Função para obter o email da URL
+      novaSenha: novaSenha
+    })
+  })
+  .then(response => {
+    if (response.ok) {
+      // Senha alterada com sucesso
+      alert('Senha alterada com sucesso!');
+      window.location.href = 'entre.html'; // Redireciona para a página "entre.html"
+      
+    } else {
+      // Falha ao alterar a senha
+      alert('Falha ao alterar a senha. Por favor, tente novamente.');
+    }
+  })
+  .catch(error => {
+    console.error('Ocorreu um erro:', error);
+    alert('Ocorreu um erro ao processar a solicitação. Por favor, tente novamente.');
+  });
+}
+
+function getEmailFromURL() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  return urlParams.get('email');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function enviar() {
   // Obter os valores dos campos de entrada
   var email = document.getElementById("email").value;
   var novaSenha = document.getElementById("senha").value;
@@ -58,4 +119,4 @@ function enviar() {
       console.error("Erro ao buscar os dados JSON:", error);
       // Exibir mensagem de erro ou executar outras ações
     });
-}
+}*/

@@ -1,44 +1,31 @@
-/*Verificar se o email está cadastrado no json
-  Se não: verifique o email digitado
-  Se sim: ser redirecionado para pagina de redefinição de senha
-  Inserir nova senha e conferir se são iguais
-  se não: As duas senhas devem ser iguais
-  Se sim: é enviada a alteração para o json
-  e o usuario recebe msg de senha alterada com sucesso*/
+URL = "http://localhost:3000/viajante";
 
-
-
-const URL = "http://localhost:3000/viajante";
-
-function entrar() {
-    const email = document.getElementById("email").value;
-    confirmarEmailCadastrado(email);
-}
-
-function confirmarEmailCadastrado(email) {
-    fetch(URL)
-        .then((response) => {
-            if (response.ok) {
-                return response.json();
-            } else {
-                throw new Error("Erro ao obter os dados do usuário");
-            }
-        })
-        .then((data) => {
-            const usuarioEncontrado = data.find((usuario) => usuario.email === email);
-
-            if (usuarioEncontrado) {
-                redirecionarParaRedefinirSenha();
-            } else {
-                alert("Email não cadastrado");
-            }
-        })
-        .catch((error) => {
-            console.error("Erro na requisição:", error);
-        });
-}
-
-function redirecionarParaRedefinirSenha() {
-    window.location.href = "alterar_senha.html";
-}
-;
+// Função para verificar se o e-mail está cadastrado
+function verificarEmail() {
+    // Obter o valor do campo de e-mail
+    const emailInput = document.getElementById('email');
+    const email = emailInput.value;
+  
+    // Requisição para a API e verificar se o e-mail está cadastrado no arquivo JSON
+    fetch(URL, {
+      method: 'POST',
+      body: JSON.stringify({ email: email }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.cadastrado) {
+        // E-mail cadastrado, redirecionar para a página de alteração de senha
+        window.location.href = 'alterar_senha.html?email=' + encodeURIComponent(email);
+      } else {
+        alert('Verifique o e-mail digitado.');
+      }
+    })
+    .catch(error => {
+      console.error('Erro ao verificar o e-mail:', error);
+      alert('Ocorreu um erro ao verificar o e-mail. Por favor, tente novamente mais tarde.');
+    });
+  }
+  

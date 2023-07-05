@@ -188,10 +188,10 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 
 | Nº do Cenário | Descrição do cenário |
 |---------------|----------------------|
-| 1             | O usuário acessa o site e navega até a seção "Transporte seu PET".|
-| 1             | O usuário encontra facilmente as informações sobre regras de viagem com animais em companhias aéreas.|
-| 1             | O usuário verifica se as informações são claras, atualizadas e abrangem diferentes companhias aéreas.|
-| 2             | O usuário acessa o site e navega até a seção "Destinos em MG".|
+| 1             |O usuário acessa o site e navega até a seção "Transporte seu PET".|
+| 1             |O usuário encontra facilmente as informações sobre regras de viagem com animais.|
+| 1             |O usuário verifica se as informações são claras, atualizadas e abrangem diferentes meios de transporte.|
+| 2             |O usuário acessa o site e navega até a seção "Destinos em MG".|
 | 2             |O usuário utiliza um filtro de pesquisa para encontrar hospedagens em Minas Gerais.|
 | 2             |O usuário encontra facilmente o contato e localização de cada estabelecimento para obter mais informações ou fazer uma reserva.|
 | 3             |O usuário seleciona uma cidade específica em Minas Gerais.|
@@ -201,6 +201,22 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 | 4             |O proprietário encontra facilmente as informações sobre como cadastrar seu estabelecimento no site.|
 | 4             |O proprietário preenche o formulário de cadastro e verifica se todas as informações necessárias são solicitadas de forma clara.|
 | 4             |O proprietário envia o formulário e recebe uma confirmação de recebimento e instruções adicionais sobre o processo de anúncio.|
+| 5             |O usuário acessa a página inicial do site.|
+| 5             |O usuário clica no botão "Entre".|
+| 5             |O usuário verifica se há validações claras e mensagens de erro em caso de campos obrigatórios não preenchidos corretamente.|
+| 5             |O usuário envia o formulário de cadastro.|
+| 5             |O usuário recebe uma confirmação de cadastro bem-sucedido e é redirecionado para a página "Destinos em MG".|
+| 6             |O usuário acessa a página "Entre".|
+| 6             |O usuário preenche seu e-mail e senha nos campos correspondentes.|
+| 6             |O usuário verifica se há validações claras e mensagens de erro em caso de informações de login inválidas.|
+| 6             |O usuário envia o formulário de login|
+| 6             |O usuário é autenticado com sucesso e é redirecionado para a página inicial do site, com uma mensagem de boas-vindas personalizada.|
+| 7             |O usuário identifica e clica no link "Esqueci minha senha". |
+| 7             |...... |
+| 7             |...... |
+| 7             |...... |
+| 7             |...... |
+| 8             |...... |
 
 
 

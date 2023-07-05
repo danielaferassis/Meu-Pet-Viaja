@@ -188,8 +188,19 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 
 | Nº do Cenário | Descrição do cenário |
 |---------------|----------------------|
-| 1             | Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço. |
+| 1             | O usuário acessa o site e navega até a seção "Transporte seu PET".|
+| 1             | O usuário encontra facilmente as informações sobre regras de viagem com animais em companhias aéreas.|
+| 1             | O usuário verifica se as informações são claras, atualizadas e abrangem diferentes companhias aéreas.|
+| 2             | O usuário acessa o site e navega até a seção "Destinos em MG".|
+| 2             |O usuário utiliza um filtro de pesquisa para encontrar hospedagens em Minas Gerais.|
+| 2             |O usuário encontra facilmente o contato e localização de cada estabelecimento para obter mais informações ou fazer uma reserva.|
+| 3             |O usuário seleciona uma cidade específica em Minas Gerais.|
+| 3             |O usuário verifica se as informações incluem uma lista de pontos turísticos, parques, restaurantes e serviços que permitem a presença de animais de estimação.|
+| 3             |O usuário encontra facilmente detalhes adicionais, como horários de funcionamento, restrições e recomendações específicas para cada local.|
+| 4             |O proprietário acessa o site e navega até a seção "Destinos em MG".|
+| 4             |O proprietário encontra facilmente as informações sobre como cadastrar seu estabelecimento no site.|
+| 4             |O proprietário preenche o formulário de cadastro e verifica se todas as informações necessárias são solicitadas de forma clara.|
+| 4             |O proprietário envia o formulário e recebe uma confirmação de recebimento e instruções adicionais sobre o processo de anúncio.|
 
 
 

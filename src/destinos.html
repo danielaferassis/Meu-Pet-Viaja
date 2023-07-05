@@ -97,48 +97,58 @@
   <!--Responsive Navbars end-->
 
   <main>
+
     <h1>Destinos</h1>
     <h3><label for="ibusca">Para onde você deseja ir com o seu pet?</label></h3>
-    <div class="busca">
-      <form action="#" method="get">
-        <p>
-          <select class="filter" name="filtro" id="ibusca" required oninput="search_destino()">
-            <option value="cidade" onclick="setFilterType()">Selecione a cidade desejada:</option>
-            <option value="estabelecimento" onclick="setFilterType()">Estabelecimento</option>
-          </select>
-        </p>
-        <p>
-          <select class="filter" name="filtro" id="filtro" onclick="setFilterType()">
+    
+   <!--Filtros de busca-->
+<div class="busca">
+  <form action="#" method="get">
+    <p>
+      <select class="filter" name="filtro" id="ibusca" required>
+        <option value="cidade">Selecione a cidade desejada:</option>
+      </select>
+    </p>
+    <p>
+      <select class="filter" name="filtro_tipo_estabelecimento" id="ibusca_tipo_estabelecimento" required>
+        <option value="">Selecione o tipo de estabelecimento desejado:</option>
+      </select>
+    </p>
+    <button class="btn btn-primary" id="btnFiltrar">Filtrar</button>
+  </form>
+</div>
+
+    
+    
+        
+        <!-- <p>
+          <select class="filter filtro-estabelecimento" name="filtro" id="filtro" onclick="setFilterType()">
             <option value="cidade" onclick="setFilterType()">Selecione o tipo de estabelecimento:</option>
             <option value="estabelecimento" onclick="setFilterType()">Hospedagem</option>
             <option value="estabelecimento" onclick="setFilterType()">Restaurante</option>
             <option value="estabelecimento" onclick="setFilterType()">Estabelecimento privado</option>
             <option value="estabelecimento" onclick="setFilterType()">Ponto Turístico</option>
           </select>
-        </p>
+        </p> -->
         
-      </form>
-    </div>
     <h2 id="top-dest">Destinos:</h2>
-
     <div class="slide-container swiper" id="slide-container">
+      <!--Os cards das cidades serão criados aqui-->
     </div>
 
     <h2 id="top-comp">Estabelecimentos:</h2>
-
     <div class="slide-container swiper" id="slide-container-est">
       <div class="slide-content" id="estabelecimentos">
         <div class="card-wrapper swiper-wrapper" id="wrapper-estabelecimentos">
-
+          <!--Os cards de estabelecimetno serão criados aqui-->
         </div>
       </div>
-
-
       <div class="swiper-button-next swiper-navBtn" id="next-est"></div>
       <div class="swiper-button-prev swiper-navBtn" id="prev-est"></div>
       <div class="swiper-pagination" id="pag-est"></div>
     </div>
 
+    <!--Botão para cadastrar novo estabelecimento-->
     <p>
     <div>
       <button class="btn btn-primary"><a href="cadastro_estabelecimento.html">Cadastre um novo estabelecimento</a></button>
@@ -146,6 +156,7 @@
     </p>
 
   </main>
+
   <footer class="section footer-classic context-dark bg-image" style="background-color: #0097b2">
     <div class="container">
       <div class="row row-30">
@@ -203,7 +214,7 @@
 
 <script src="js/index.js"></script>
 
-<script src="JS/swipper.js"></script>
+<script src="js/swipper.js"></script>
 
 <script src="js/destinos.js"></script>
 

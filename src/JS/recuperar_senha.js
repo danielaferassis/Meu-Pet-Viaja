@@ -1,4 +1,4 @@
-URL = "http://localhost:3000/viajante";
+URL = "https://db-json-kp7o.vercel.app/viajante";
 
 // Função para verificar se o e-mail está cadastrado
 function verificarEmail() {

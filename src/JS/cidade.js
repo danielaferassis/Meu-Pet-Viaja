@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (id == null) {
         containerCidade.innerHTML = "<h1> 404 Cidade não encontrada</h1>"
     } else {
-        fetch("http://localhost:3000/cidades")
+        fetch("https://db-json-kp7o.vercel.app/cidades")
             .then(response => response.json())
             .then(data => {
                 var test = '';
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     let wrapperEstabelecimentos = document.getElementById('slide-container-est')
     console.log('antes de chamar a api de est')
-    fetch("http://localhost:3000/estabelecimentos")
+    fetch("https://db-json-kp7o.vercel.app/estabelecimentos")
         .then(response => response.json())
         .then(data => {
             var test2 = '<div class="slide-content" id="estabelecimentos"><div class="card-wrapper swiper-wrapper" id="wrapper-estabelecimentos">';

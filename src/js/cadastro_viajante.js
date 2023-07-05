@@ -1,6 +1,6 @@
 /*Validação do formulário de cadastro do viajante
 Vincula URL do jsonserver */
-URL = "http://localhost:3000/viajante";
+URL = "https://db-json-kp7o.vercel.app/viajante";
 // Validação do bootrasp no formulário
 (function () {
   'use strict'

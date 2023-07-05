@@ -1,5 +1,5 @@
 //Validação do formulário de cadastro de estabelecimento e envio de dados para o json-server
-URL = "http://localhost:3000/estabelecimentos";
+URL = "https://db-json-kp7o.vercel.app/estabelecimentos";
 
 (function () {
   'use strict'
@@ -91,7 +91,7 @@ fileUpload.addEventListener("change", (event) => {
 const cidadeSelect = document.getElementById("cidade");
 const optionsCidade = document.createElement("option");
 
-fetch("http://localhost:3000/cidades")
+fetch("https://db-json-kp7o.vercel.app/cidades")
   .then(resp => resp.json())
   .then(data => {
     data.forEach(element => {
@@ -106,7 +106,7 @@ fetch("http://localhost:3000/cidades")
 const tipoSelect = document.getElementById("tipo_estabelecimento");
 const optionsTipo = document.createElement("option");
 
-fetch("http://localhost:3000/tipo-estabelecimento")
+fetch("https://db-json-kp7o.vercel.app/tipo-estabelecimento")
   .then(resp => resp.json())
   .then(data => {
     data.forEach(element => {

@@ -28,7 +28,7 @@ let selectTipoEstabelecimento;
 let tipoEstabelecimentoSelecionado;
 
 function getCidadePorID(idCidade) {
-    return fetch(`http://localhost:3000/cidades/${idCidade}`)
+    return fetch(`http://db-json-kp7o.vercel.app/cidades/${idCidade}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erro ao obter os dados da cidade: ${response.status} ${response.statusText}`);
@@ -46,7 +46,7 @@ function getCidadePorID(idCidade) {
 
 async function verificarCidadeExistente(idCidade) {
     try {
-        const response = await fetch(`http://localhost:3000/cidades/${idCidade}`);
+        const response = await fetch(`http://db-json-kp7o.vercel.app/cidades/${idCidade}`);
         return response.ok;
     } catch (error) {
         console.error('Erro ao verificar a existência da cidade:', error);
@@ -229,7 +229,7 @@ btnFiltrar.addEventListener('click', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    fetch("http://localhost:3000/cidades")
+    fetch("http://db-json-kp7o.vercel.app/cidades")
         .then(response => response.json())
         .then(data => {
             let wrapperDestinos = document.getElementById('slide-container');
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-    fetch("http://localhost:3000/tipo-estabelecimento")
+    fetch("https://db-json-kp7o.vercel.app/tipo-estabelecimento")
         .then(response => response.json())
         .then(data => {
             let wrapperFilterTipoEstabelecimento = document.getElementById('ibusca_tipo_estabelecimento');
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Popula os cards de estabelecimentos
     let wrapperEstabelecimentos = document.getElementById('slide-container-est');
-    fetch("http://localhost:3000/estabelecimentos")
+    fetch("https://db-json-kp7o.vercel.app/estabelecimentos")
         .then(response => response.json())
         .then(data => {
             var test2 = '<div class="slide-content" id="estabelecimentos"><div class="card-wrapper swiper-wrapper" id="wrapper-estabelecimentos">';

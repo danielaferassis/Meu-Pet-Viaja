@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (id == null) {
         containerEstabelecimento.innerHTML = "<h1>404 Estabelecimento não encontrado</h1>";
     } else {
-        const cidadesURL = "http://localhost:3000/cidades";
-        const tipoEstabelecimentoURL = "http://localhost:3000/tipo-estabelecimento";
+        const cidadesURL = "https://db-json-kp7o.vercel.app/cidades";
+        const tipoEstabelecimentoURL = "https://db-json-kp7o.vercel.app/tipo-estabelecimento";
 
         // Aguardar o retorno das requisições
         Promise.all([fetchData(cidadesURL), fetchData(tipoEstabelecimentoURL)])
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-                fetch(`http://localhost:3000/estabelecimentos/${id}`)
+                fetch(`https://db-json-kp7o.vercel.app/estabelecimentos/${id}`)
                     .then(response => response.json())
                     .then(estabelecimento => {
                         let est = `
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-URL = "http://localhost:3000/depoimentos";
+URL = "https://db-json-kp7o.vercel.app/depoimentos";
 // Validação do bootrasp no formulário
 (function () {
   'use strict'

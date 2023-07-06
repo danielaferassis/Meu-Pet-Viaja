@@ -1,3 +1,5 @@
+alert('Senha alterada com sucesso!');
+
 URL = "http://localhost:3000/viajante";
 
 function alterarSenha() {

@@ -64,7 +64,7 @@ function exibirSenha() {
   }*/
   
 // Página inicial de Login
-URL = "https://db-json-kp7o.vercel.app/viajante";
+URL = "http://localhost:3000/viajante";
 function entrar(){
     var result;
     var nome;

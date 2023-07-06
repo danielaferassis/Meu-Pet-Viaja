@@ -53,11 +53,7 @@ URL = "https://db-json-kp7o.vercel.app/viajante";
     })
 })()
 
-  // function cadastrarViajante(){
-  //   document.getElementById('cadastro_viajante').style['display'] = 'block';
-  // };
-
-  //API Imgur para hospedar a foto
+//API Imgur para hospedar a foto
 const clientID = "9facbf355e71bd0"
 const fileUpload = document.getElementById("fotoperfil");
 const prev = document.getElementById("prev-foto-perfil");

@@ -1,43 +1,145 @@
 /* Google Fonts - Poppins */
 
-
-.slide-container{
+#slide-container{
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
+  height: 300px;
 }
+
+#slide-container-est{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  height: 300px;
+}
+
 .slide-content{
   margin: 0 40px;
   overflow: hidden;
   border-radius: 25px;
 }
-.card{
-  border-radius: 25px;
-}
 
-.swiper-navBtn{
-  color: #6E93f7;
-  transition: color 0.3s ease;
-}
-.swiper-navBtn:hover{
-  color: #4070F4;
-}
 .swiper-navBtn::before,
 .swiper-navBtn::after{
   font-size: 35px;
 }
+
 .swiper-button-next{
   right: 0;
+  color: #6E93f7;
+  transition: color 0.3s ease;
 }
+
 .swiper-button-prev{
   left: 0;
+  color: #6E93f7;
+  transition: color 0.3s ease;
 }
+
 .swiper-pagination-bullet{
   background-color: #6E93f7;
   opacity: 1;
 }
+
 .swiper-pagination-bullet-active{
   background-color: #4070F4;
+}
+
+#slide-container-est .swiper-slide {
+  margin-right: 10px !important;
+}
+
+#slide-container-est .swiper-slide.container-est.card {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#slide-container-est .slide-content {
+  padding: 0 40px;
+}
+
+#slide-container-est .swiper-slide {
+  margin-right: 10px;
+}
+
+#slide-container-est .swiper-slide:last-child {
+  margin-right: 0;
+}
+
+#slide-container-est .swiper-slide .container-est.card .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-est:hover .text {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px black;
+}
+
+.container-est:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+
+.container-est.card {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.card.container-dest {
+  width: 100%;
+  height: 100%;
+}
+
+.card-wrapper.swiper-wrapper {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.container-est.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card-info {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {

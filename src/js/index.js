@@ -105,35 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error('Ocorreu um erro ao obter os dados do JSON ou inicializar o Swiper:', error);
     });
 
-    
-    sessionStorage.removeItem('IsThisFirstTime_Log_From_LiveServer');
-    
-    if(Object.keys(sessionStorage).length === 0){
-      const divEsconder = document.getElementById('usuarioLogado');
-        if(divEsconder){
-          divEsconder.style.display = 'none';
-        }
-    }
-
-    const dadosRecuperadosString = sessionStorage.getItem('Dados');
-    const dadosRecuperados = JSON.parse(dadosRecuperadosString);
-    const valorPrimeiraLetraMaiuscula = dadosRecuperados.nome.charAt(0).toUpperCase() + dadosRecuperados.nome.slice(1);
-    const frase = 'Olá, ';
-
-    if(dadosRecuperados.status === "true"){
-      const nomeUsuario = document.querySelector('h6');
-      nomeUsuario.innerHTML = '';
-      nomeUsuario.innerHTML = frase + valorPrimeiraLetraMaiuscula;
-
-    }
-
-    if(dadosRecuperados.status === "true"){
-      const esconderEntre = document.getElementById('entre');
-        if(esconderEntre){
-          esconderEntre.style.display = 'none';
-        }
-    }
-
     fetch("http://localhost:3000/depoimentos")
     .then(response => response.json())
     .then(data => {
@@ -182,6 +153,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
       });
     });
+    
+    sessionStorage.removeItem('IsThisFirstTime_Log_From_LiveServer');
+    
+    if(Object.keys(sessionStorage).length === 0){
+      const divEsconder = document.getElementById('usuarioLogado');
+        if(divEsconder){
+          divEsconder.style.display = 'none';
+        }
+    }
+
+    const dadosRecuperadosString = sessionStorage.getItem('Dados');
+    const dadosRecuperados = JSON.parse(dadosRecuperadosString);
+    const valorPrimeiraLetraMaiuscula = dadosRecuperados.nome.charAt(0).toUpperCase() + dadosRecuperados.nome.slice(1);
+    const frase = 'Olá, ';
+
+    if(dadosRecuperados.status === "true"){
+      const nomeUsuario = document.querySelector('h6');
+      nomeUsuario.innerHTML = '';
+      nomeUsuario.innerHTML = frase + valorPrimeiraLetraMaiuscula;
+
+    }
+
+    if(dadosRecuperados.status === "true"){
+      const esconderEntre = document.getElementById('entre');
+        if(esconderEntre){
+          esconderEntre.style.display = 'none';
+        }
+    }
+
+   
     
     
 });

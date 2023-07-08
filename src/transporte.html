@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/transporte.css">
 </head>
 <body>
-  <p>Bem-vindo, <span id="nome-usuario"></span>!</p>
+
   <header class="header">
     <div id="usuarioLogado">
       <span>
@@ -284,19 +284,5 @@
       crossorigin="anonymous"></script>
 </body>
 
-<script>
-
-  window.addEventListener("DOMContentLoaded", function() {
-    const nomeUsuarioElemento = document.getElementById("nome-usuario");
-    const nomeUsuario = localStorage.getItem("nomeUsuario");
-  
-    if (nomeUsuario) {
-      nomeUsuarioElemento.innerText = nomeUsuario;
-    } else {
-      nomeUsuarioElemento.innerText = "Convidado";
-    }
-  });
-  
-  </script>
 
 </html>

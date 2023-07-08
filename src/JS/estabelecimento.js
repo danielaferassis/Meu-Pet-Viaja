@@ -9,6 +9,7 @@ async function fetchData(url) {
 document.addEventListener("DOMContentLoaded", function () {
     const containerEstabelecimento = document.getElementById('container-cidade');
     const id = new URLSearchParams(window.location.search).get('id'); // Obtenha o ID do estabelecimento da URL
+    console.log("ID estabelecimento:", id); // Adicionado console.log para verificar o ID
 
     if (id == null) {
         containerEstabelecimento.innerHTML = "<h1>404 Estabelecimento não encontrado</h1>";
@@ -50,9 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
                   divOriginal.parentNode.replaceChild(novaDiv, divOriginal);
                 }
                 
-
-
-
                 fetch(`https://db-json-kp7o.vercel.app/estabelecimentos/${id}`)
                     .then(response => response.json())
                     .then(estabelecimento => {

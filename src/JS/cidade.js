@@ -20,26 +20,65 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 
+function montaGlider(cidade, nome, foto, alt, descricao, id, tipo) {
+    return `
+        <div class="card-wrapper" id="wrapper-estabelecimentos" data-id="${id}">
+            <div class="container-est card">
+                <img src="${foto}" alt="${alt}" class="glider-image">
+                    <div class="overlay">
+                        <div class="text">
+                            <h4>${nome}</h4>
+                            <p>${descricao.substring(0, 50)}...</p>
+                                <div class="card-info" data-cidade-id="${cidade}">
+                                <h3 class="hidden">${cidade}</h3>
+                                <span class="hidden" data-id="${tipo}">${tipo}</span>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    `;
+};
+
 document.addEventListener("DOMContentLoaded", function () {
     let wrapperEstabelecimentos = document.getElementById('slide-container-est')
     console.log('antes de chamar a api de est')
     fetch("https://db-json-kp7o.vercel.app/estabelecimentos")
         .then(response => response.json())
         .then(data => {
-            var test2 = '<div class="slide-content" id="estabelecimentos"><div class="card-wrapper swiper-wrapper" id="wrapper-estabelecimentos">';
-            console.log(data)
+            var estabelecimentosCarrossel = '<div class="glider" id="glider-estabelecimentos">';
             data.forEach(element => {
-
-                console.log(element.cidade)
-                console.log(id)
-                if (element.cidade == id) {
-
-                    console.log('dentro do if')
-                    test2 += montaSwiper(element.cidade, element.nome, element.foto, element.alt, element.descricao, element.id);
-                }
+                const card = montaGlider(element.cidade, element.nome, element.foto, element.alt, element.descricao, element.id, element.tipo);
+                estabelecimentosCarrossel += card;
             });
-            test2 += '</div></div><div class="swiper-button-next swiper-navBtn" id="next-est"></div><div class="swiper-button-prev swiper-navBtn" id="prev-est"></div><div class="swiper-pagination" id="pag-est"></div>'
-            wrapperEstabelecimentos.innerHTML = test2;
-            swiperLoaderEst()
+            estabelecimentosCarrossel += '</div></div><button class="glider-prev" id="prev-est"><i class="fa-solid fa-chevron-left fa-lg"></i></button><button class="glider-next" aria-disabled="true" id="next-est"><i class="fa-solid fa-chevron-right fa-l"></i></button><div role="tablist" class="dots"></div>';
+            wrapperEstabelecimentos.innerHTML = estabelecimentosCarrossel;
+
+            // Inicializa o Glider
+            gliderEst = new Glider(document.querySelector('.glider'), {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                spaceBetween: 15,
+                draggable: true,
+                dots: '.dots',
+                arrows: {
+                    prev: '.glider-prev',
+                    next: '.glider-next'
+                },
+                responsive: [
+                    {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 950,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }
+                ]
+            });
         });
 })

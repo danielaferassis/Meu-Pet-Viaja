@@ -1,3 +1,10 @@
+// Função para fazer uma requisição HTTP e retornar os dados como JSON
+async function fetchData(url) {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+}
+
 let id;
 document.addEventListener("DOMContentLoaded", function () {
     let containerCidade = document.getElementById('container-cidade');

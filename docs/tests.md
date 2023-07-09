@@ -48,15 +48,16 @@ A documentação dos testes é dividida nas seguintes seções:
 
 **Caso de Teste** | **CT-05 - Inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais**
  :--------------: | ------------
-**Procedimento**  | Usuário acessa a página "Destinos em MG"...
+**Procedimento**  | Usuário acessa a página "Homepage" e consegue visualizar os depoimentos sobre os estabelecimentos na seção "Depoimentos".
+
 **Requisitos associados** | RF-007
 **Resultado esperado** | Espera-se que o usuário consiga enviar o depoimento através do formulário contido na página...
 **Dados de entrada** | Inserção de dados válidos no formulário de depoimento.
-**Página** | ...
+**Página** | Homepage
 
 **Caso de Teste** | **CT-06 - Cadastrar novo estabelecimento**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário acessa a página "Destinos em MG" e clica no botão "Cadastrar Estabelecimento";<br>2) O usuário é redirecionado para a página de formulário onde preencherá as informações do estabelecimento que deseja cadastrar: nome, tipo do estabelecimento, e-mail, telefone, endereço, cidade, estado, website, instagram, descrição, upload de foto e texto acessível da foto. O usuário submete o formulário ao clicar no botão "enviar";<br>3) O formulário valida os dados e informa ao usuário se o cadastro foi realizado ou não;<br>4) Os dados são armazenados caso sejam validados e o usuário é redirecionado para a página "Destinos em MG".
+**Procedimento**  | 1) Usuário acessa a página "Destinos em MG" e clica no botão "Cadastre um novo estabelecimento";<br>2) O usuário é redirecionado para a página de formulário onde preencherá as informações do estabelecimento que deseja cadastrar: nome, tipo do estabelecimento, e-mail, telefone, endereço, cidade, estado, website, instagram, descrição, upload de foto e texto acessível da foto. O usuário submete o formulário ao clicar no botão "enviar";<br>3) O formulário valida os dados e informa ao usuário se o cadastro foi realizado ou não;<br>4) Os dados são armazenados caso sejam validados e o usuário é redirecionado para a página "Destinos em MG".
 **Requisitos associados** | RF-011
 **Resultado esperado** | Espera-se que o usuário consiga enviar as informações do estabelecimento através do formulário contido na página e seja redirecionado para a página "Destinos em MG" 
 **Dados de entrada** | Inserção de dados válidos no formulário de informações do estabelecimento.
@@ -64,27 +65,27 @@ A documentação dos testes é dividida nas seguintes seções:
 
 **Caso de Teste** | **CT-07 - Cadastrar depoimento com perfil de usuário anônimo**
  :--------------: | ------------
-**Procedimento**  |1)Usuário acessa a página "Destinos em MG"<br>2)vá até a seção "estabelecimento" ou pesquisa pelo estabelecimento no filtro <br>3)clica no estabelecimento desejado <br>4) no final da página a um formulário onde o cliente pode se identificar ou não<br>5)a um campo onde o usuário pode descrever sua experiência naquele estabelecimento <br>6) o cliente pode escolher a nota desejada para o estabelecimento <br>7) ao clicar em enviar os dados são armazenados sem a identificação do usuário<br>
+**Procedimento**  |1)Usuário acessa a página "Destinos em MG"; <br> 2) Ele pode ir diretamente na seção "estabelecimentos" ou pesquisar pelo tipo de estabelecimento e cidade no filtro <br>;3) O usuário clica no estabelecimento desejado; <br>4) No final da página há um formulário onde o usuário pode se identificar ou não;<br>5) Há um campo onde o usuário pode descrever sua experiência naquele estabelecimento; <br>6) O usuário pode escolher a nota desejada para o estabelecimento; <br>7) Ao clicar em enviar, os dados são armazenados sem a identificação do usuário.<br>
 **Requisitos associados** | RF-012
 **Resultado esperado** | Espera-se que o usuário consiga descrever sua experiencia sem se identificar.
-**Dados de entrada** | Inserção de dados válidos no formulário de informações do estabelecimento.
+**Dados de entrada** | Inserção de dados válidos no formulário de depoimentos.
 **Página** | Destinos em MG
 
 **Caso de Teste** | **CT-08 - Enviar depoimento com usuário logado - Criar conta de usuário parte 1**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário acessa página "..." onde estará o formulário de depoimentos e clica na opção de efetuar o "login";<br>2) O usuário será redirecionado para a página "Entre" que contém o formulário para o usuário que já possui conta cadastrada realizar o login ou a opção de criar conta;<br>3) Supondo que o usuário ainda não tenha conta cadastrada, ao clicar na opção de "criar conta", o usuário é redirecionado para o formulário de cadastro onde deverá preencher os campos: nome, usuário, e-mail, senha e enviar uma foto;<br>4) O formulário valida as informações e retorna se o cadastro foi realizado ou não;<br>5) Os dados são armazenados caso sejam validados e o usuário é redirecionado para a página "Entre".
+**Procedimento**  | 1) Usuário acessa página "Destinos em MG" 2) Ele pode ir diretamente na seção "estabelecimentos" ou pesquisar pelo tipo de estabelecimento e cidade no filtro <br>;3) O usuário clica no estabelecimento desejado; <br>4) No final da página há um formulário onde o usuário pode se identificar ou não;<br>5) Há um campo onde o usuário pode descrever sua experiência naquele estabelecimento; <br>6) O usuário pode escolher a nota desejada para o estabelecimento; <br>7) Ao clicar em enviar, os dados são armazenados sem a identificação do usuário.<br>
 **Requisitos associados** | RF-012
-**Resultado esperado** | Espera-se que o usuário consiga cadastrar a conta e prosseguir para a parte 2 do cadastro.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Página** | ...
+**Resultado esperado** | Espera-se que o usuário consiga descrever sua experiencia se identificando.
+**Dados de entrada** | Inserção de dados válidos no formulário de depoimentos.
+**Página** | Destinos em MG
 
 **Caso de Teste** | **CT-09 - Enviar depoimento com usuário logado - Criar conta de usuário parte 2**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário preenche as informações de login na página "Entre": e-mail/usuário e senha;<br>2) O formulário valida os dados e retorna para o usuário caso não sejam;<br>3) Os dados são armazenados caso sejam validados e o usuário é redirecionado para cadastrar o depoimento permanecendo logado.
+**Procedimento**  | 1) Usuário preenche as informações de login na página "Entre": e-mail/usuário e senha;<br>2) O formulário valida os dados e retorna para o usuário caso não sejam;<br>3) Os dados são armazenados caso sejam validados<br>4) Ao acessar a página do estabelecimento, o formulário já estará preenchido com o nome do usuário.
 **Requisitos associados** | RF-012
 **Resultado esperado** | Espera-se que o usuário consiga cadastrar um depoimento estando logado. 
 **Dados de entrada** | Inserção de dados válidos no formulário de login.
-**Página** | ...
+**Página** | Destinos em MG
 
 
 ## Registro dos Testes de Software
@@ -147,9 +148,9 @@ A documentação dos testes é dividida nas seguintes seções:
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
-
-
+Pontos fortes do software - o usuário consegue: navegar entre as páginas, utilizar os filtros de pesquisa, fazer o login e se manter logado e preencher e enviar os formulários.
+Pontos fracos do software - os depoimentos não estão sendo alimentados dinamicamente ainda; quando o usuário é redirecionado para a página de uma cidade ou de um estabelecimento, as informações não estão sendo carregadas corretamente na versão hospedada do site, encontramos erro no envio e exibição de depoimentos de usuários anõnimos por conta da foto.
+Resolução dos pontos fracos - estamos buscando soluções para corrigir as falhas do software para garantir que o usuário tenha uma boa experiência ao navegar pelo site.
 
 ## Testes de unidade automatizados (Opcional)
 

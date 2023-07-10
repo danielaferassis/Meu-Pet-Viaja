@@ -6,7 +6,7 @@ Liste os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e 
 
 
 * [Pitch inicial](https://drive.google.com/file/d/1kgD7FWJ57BYicNWSAsZQHODJa4sxsfeg/view?usp=drive_link) -- arquivo com os slides da apresentação inicial
-* [Apresentação final](./sample-presentation.pdf) -- arquivo com os slides da apresentação final
+* [Apresentação final](https://drive.google.com/file/d/1OiWIUYKn_t_1g3ucdvtaSC60lVmIDjxp/view?usp=sharing) -- arquivo com os slides da apresentação final
 * [Vídeo de demonstração](https://drive.google.com/file/d/11Mc20WG4PQa42QDky7Y0oeqDxg1AwkPY/view?usp=drive_link) -- arquivo com a demonstração do funcionamento do sistema
 
 O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apresentação do projeto deve contemplar todos os itens trabalhados nos demais artefatos. Alguns aspectos que devem ser contemplados na apresentação são listados a seguir.

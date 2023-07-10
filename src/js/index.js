@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  fetch("http://localhost:3000/estabelecimentos")
+  fetch("https://db-json-kp7o.vercel.app/estabelecimentos")
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("container-est");
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error('Ocorreu um erro ao obter os dados do JSON ou inicializar o Swiper:', error);
     });
 
-    fetch("http://localhost:3000/depoimentos")
+    fetch("https://db-json-kp7o.vercel.app/depoimentos")
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("locais-wrap");

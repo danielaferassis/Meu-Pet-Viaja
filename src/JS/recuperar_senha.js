@@ -1,4 +1,4 @@
-const URL = "http://localhost:3000/viajante";
+URL = "https://db-json-kp7o.vercel.app/viajante";
 
 function verificarEmail() {
     const email = document.getElementById("email").value;

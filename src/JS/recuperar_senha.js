@@ -42,7 +42,7 @@ function obterDadosViajante(email) {
         if (usuario.email === emailInserido) {
             alert("Redirecionando para alterar senha");
             localStorage.setItem("nomeUsuario", usuario.nome);
-            window.location.href = 'alterar_senha.html?email=' + encodeURIComponent(email);
+            window.location.href = "alterar_senha.html?email=" + encodeURIComponent(email);
         } else {
             alert("E-mail incorreto");
         }

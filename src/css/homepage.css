@@ -260,6 +260,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  width: 80%;
+  margin: 0 auto;
 }
 .local {
   border: 1px solid #ddd;
@@ -290,24 +292,41 @@ a {
 text-decoration: none;
 color: cadetblue;
 }
-.prev,
-.next {
-  background-color: #ccc;
-  color: #fff;
+
+.local p {
+  padding: 10px;
+  margin: auto;
+  text-align: justify;
+}
+
+.fa-lg { 
+  transition: all .5s;
+  color: #6E93f7;
+}
+
+.prev, .next {
+  background-color: none !important;
   padding: 10px;
   border-radius: 50%;
-  position: absolute;
   top: 190%;
   transform: translateY(-50%);
   z-index: 1;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 50px;
+  position: absolute;
 }
 
 .prev {
   left: 10px;
+  margin-top: 85px;
 }
 
 .next {
   right: 10px;
+  margin-top: 85px;
 }
 
 /**Depoimentos*/

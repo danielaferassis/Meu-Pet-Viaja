@@ -105,23 +105,23 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error('Ocorreu um erro ao obter os dados do JSON ou inicializar o Swiper:', error);
     });
 
-    fetch("https://db-json-kp7o.vercel.app/depoimentos")
+  fetch("https://db-json-kp7o.vercel.app/depoimentos")
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("locais-wrap");
       const cardsWrap = document.createElement('div');
       cardsWrap.classList.add('locais-wrap');
       container.appendChild(cardsWrap);
-  
+
       const cardWidth = 33; // Porcentagem de largura para cada card
       const totalCards = data.length;
       const visibleCards = 3;
       let currentIndex = 0;
-  
+
       const createCard = (depoimento) => {
         const card = document.createElement('div');
         card.classList.add('local');
-  
+
         const fotoDiv = document.createElement('div');
         fotoDiv.classList.add('local_img');
         const foto = document.createElement('img');
@@ -129,43 +129,43 @@ document.addEventListener("DOMContentLoaded", function () {
         if (depoimento.foto) {
           foto.src = depoimento.foto;
         } else {
-          foto.src = 'imagens/user.png'; 
+          foto.src = 'imagens/user.png';
         }
-      
+
         foto.alt = depoimento.alt;
-  
+
         fotoDiv.appendChild(foto);
         card.appendChild(fotoDiv);
-  
+
         const nota = document.createElement('div');
         nota.classList.add('nota');
-  
+
         var i = depoimento.nota;
-  
+
         for (var j = 1; j <= i; j++) {
           var icon = document.createElement('i');
           icon.classList.add('fa-solid', 'fa-paw');
           nota.appendChild(icon);
           card.appendChild(nota);
         }
-  
+
         const nome = document.createElement('div');
         nome.classList.add('nome');
         const nomeUsuario = document.createElement('h3');
         nomeUsuario.textContent = depoimento.nome;
         const avaliacao = document.createElement('p');
         avaliacao.textContent = depoimento.avaliacao;
-  
+
         card.appendChild(nome);
         nome.appendChild(nomeUsuario);
         nome.appendChild(avaliacao);
-  
+
         return card;
       };
-  
+
       const renderCards = (startIndex) => {
         cardsWrap.innerHTML = '';
-  
+
         for (let i = startIndex; i < startIndex + visibleCards; i++) {
           if (i >= totalCards) break;
           const depoimento = data[i];
@@ -173,91 +173,92 @@ document.addEventListener("DOMContentLoaded", function () {
           cardsWrap.appendChild(card);
         }
       };
-  
+
       renderCards(currentIndex);
       ///botoes 
       const prevButton = document.createElement('button');
       const nextButton = document.createElement('button');
-  
-      prevButton.textContent = 'Anterior';
-      nextButton.textContent = 'Próximo';
+
+      prevButton.innerHTML = '<i class="fa-solid fa-chevron-left fa-lg"></i>';
+      nextButton.innerHTML = '<i class="fa-solid fa-chevron-right fa-lg"></i>';
       prevButton.classList.add('carousel-button', 'prev');
       nextButton.classList.add('carousel-button', 'next');
-  
+
+
       prevButton.addEventListener('click', () => {
         currentIndex = Math.max(currentIndex - 1, 0);
         renderCards(currentIndex);
       });
-  
+
       nextButton.addEventListener('click', () => {
         const maxIndex = Math.max(totalCards - visibleCards, 0);
         currentIndex = Math.min(currentIndex + 1, maxIndex);
         renderCards(currentIndex);
       });
-  
+
       container.appendChild(prevButton);
       container.appendChild(nextButton);
     });
-  
 
-      
-    sessionStorage.removeItem('IsThisFirstTime_Log_From_LiveServer');
-    
-    if(Object.keys(sessionStorage).length === 0){
-      const divEsconder = document.getElementById('usuarioLogado');
-        if(divEsconder){
-          divEsconder.style.display = 'none';
-        }
+
+
+  sessionStorage.removeItem('IsThisFirstTime_Log_From_LiveServer');
+
+  if (Object.keys(sessionStorage).length === 0) {
+    const divEsconder = document.getElementById('usuarioLogado');
+    if (divEsconder) {
+      divEsconder.style.display = 'none';
     }
+  }
 
-    const dadosRecuperadosString = sessionStorage.getItem('Dados');
-    const dadosRecuperados = JSON.parse(dadosRecuperadosString);
-    const valorPrimeiraLetraMaiuscula = dadosRecuperados.nome.charAt(0).toUpperCase() + dadosRecuperados.nome.slice(1);
-    const frase = 'Olá, ';
+  const dadosRecuperadosString = sessionStorage.getItem('Dados');
+  const dadosRecuperados = JSON.parse(dadosRecuperadosString);
+  const valorPrimeiraLetraMaiuscula = dadosRecuperados.nome.charAt(0).toUpperCase() + dadosRecuperados.nome.slice(1);
+  const frase = 'Olá, ';
 
-    if(dadosRecuperados.status === "true"){
-      const nomeUsuario = document.querySelector('h6');
-      nomeUsuario.innerHTML = '';
-      nomeUsuario.innerHTML = frase + valorPrimeiraLetraMaiuscula;
+  if (dadosRecuperados.status === "true") {
+    const nomeUsuario = document.querySelector('h6');
+    nomeUsuario.innerHTML = '';
+    nomeUsuario.innerHTML = frase + valorPrimeiraLetraMaiuscula;
 
+  }
+
+  if (dadosRecuperados.status === "true") {
+    const esconderEntre = document.getElementById('entre');
+    if (esconderEntre) {
+      esconderEntre.style.display = 'none';
     }
-
-    if(dadosRecuperados.status === "true"){
-      const esconderEntre = document.getElementById('entre');
-        if(esconderEntre){
-          esconderEntre.style.display = 'none';
-        }
-    }
+  }
 
 });
 
 
 function deslogar() {
-// Limpar o sessionStorage e remover todos os dados
+  // Limpar o sessionStorage e remover todos os dados
   sessionStorage.clear();
-    if(Object.keys(sessionStorage).length === 0){
-      const divEsconder = document.getElementById('usuarioLogado');
-        if(divEsconder){
-          divEsconder.style.display = 'none';
-        }
+  if (Object.keys(sessionStorage).length === 0) {
+    const divEsconder = document.getElementById('usuarioLogado');
+    if (divEsconder) {
+      divEsconder.style.display = 'none';
     }
-    const esconderEntre = document.getElementById('entre');
-      if(esconderEntre){
-        esconderEntre.style.display = 'block';
-      }
+  }
+  const esconderEntre = document.getElementById('entre');
+  if (esconderEntre) {
+    esconderEntre.style.display = 'block';
+  }
 }
 
 function ajustarLayout() {
-const larguraJanela = window.innerWidth;
+  const larguraJanela = window.innerWidth;
 
-if (larguraJanela >= 240 && larguraJanela <= 615) {
-  const divUsuarioLogado = document.getElementById('usuarioLogado');
-  const navbarContent = document.getElementById('navbarToggleExternalContent');
+  if (larguraJanela >= 240 && larguraJanela <= 615) {
+    const divUsuarioLogado = document.getElementById('usuarioLogado');
+    const navbarContent = document.getElementById('navbarToggleExternalContent');
 
-  if (divUsuarioLogado && navbarContent) {
-    navbarContent.insertBefore(divUsuarioLogado, navbarContent.firstChild);
+    if (divUsuarioLogado && navbarContent) {
+      navbarContent.insertBefore(divUsuarioLogado, navbarContent.firstChild);
+    }
   }
-}
 }
 
 // Chamar a função quando a página carregar e quando a janela for redimensionada

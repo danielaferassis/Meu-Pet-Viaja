@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         const card = montaGlider(element.cidade, element.nome, element.foto, element.alt, element.descricao, element.id, element.tipo);
                         estabelecimentosCarrossel += card;
                     });
-                    estabelecimentosCarrossel += '</div></div><button class="glider-prev" id="prev-est"><i class="fa-solid fa-chevron-left fa-lg"></i></button><button class="glider-next" aria-disabled="true" id="next-est"><i class="fa-solid fa-chevron-right fa-l"></i></button><div role="tablist" class="dots"></div>';
+                    estabelecimentosCarrossel += '</div></div><button class="glider-prev" id="prev-est"><i class="fa-solid fa-chevron-left fa-lg"></i></button><button class="glider-next" aria-disabled="true" id="next-est"><i class="fa-solid fa-chevron-right fa-lg"></i></button><div role="tablist" class="dots"></div>';
                     wrapperEstabelecimentos.innerHTML = estabelecimentosCarrossel;
 
                     // Inicializa o Glider

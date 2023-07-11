@@ -113,9 +113,9 @@ A documentação dos testes é dividida nas seguintes seções:
 |**Link do vídeo do teste realizado:** | https://drive.google.com/file/d/1HHsiQ_ozbxNuG9HzpWj9ChW_dBNcsDjd/view?usp=sharing |
 |**Resultado obtido** | Sucesso |
 
-|**Caso de Teste**                                 |**CT-05 - Inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais**                                         |
+|**Caso de Teste**                                 |**CT-05 - Consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais**                                         |
 |---|---|
-|**Requisito Associado** | RF-007 - Disponibilizar página em que o usuário poderá inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais.|
+|**Requisito Associado** | RF-007 - Disponibilizar página em que o usuário poderá consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais.|
 |**Link do vídeo do teste realizado:** | https://drive.google.com/file/d/1Ppz360lX1KVxpL-6E3bYHzif1tOpKIfW/view?usp=drive_link |
 |**Resultado obtido** | Sucesso |
 

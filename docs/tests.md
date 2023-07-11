@@ -49,7 +49,6 @@ A documentação dos testes é dividida nas seguintes seções:
 **Caso de Teste** | **CT-05 - Inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais**
  :--------------: | ------------
 **Procedimento**  | Usuário acessa a página "Homepage" e consegue visualizar os depoimentos sobre os estabelecimentos na seção "Depoimentos".
-
 **Requisitos associados** | RF-007
 **Resultado esperado** | Espera-se que o usuário consiga enviar o depoimento através do formulário contido na página...
 **Dados de entrada** | Inserção de dados válidos no formulário de depoimento.

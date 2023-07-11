@@ -46,12 +46,11 @@ A documentação dos testes é dividida nas seguintes seções:
 **Resultado esperado** | Espera-se que o usuário consiga:<br>1) realizar a pesquisa, utilizando os filtros por tipo de estabelecimento e por cidade;<br>2) selecionar o ponto turístico desejado;<br>3) ser redirecionado para a página das informações do ponto turístico selecionado.
 **Página** | Destinos em MG
 
-**Caso de Teste** | **CT-05 - Inserir e consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais**
+**Caso de Teste** | **CT-05 - Consultar depoimentos/feedback sobre hospedagens e estabelecimentos pet friendly em Minas Gerais**
  :--------------: | ------------
 **Procedimento**  | Usuário acessa a página "Homepage" e consegue visualizar os depoimentos sobre os estabelecimentos na seção "Depoimentos".
 **Requisitos associados** | RF-007
-**Resultado esperado** | Espera-se que o usuário consiga enviar o depoimento através do formulário contido na página...
-**Dados de entrada** | Inserção de dados válidos no formulário de depoimento.
+**Resultado esperado** | Espera-se que o usuário consiga visualizar o depoimento na seção "Depoimentos" contida na página "Homepage".
 **Página** | Homepage
 
 **Caso de Teste** | **CT-06 - Cadastrar novo estabelecimento**

@@ -223,40 +223,53 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 
 ## Registro de Testes de Usabilidade
 
-Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando.
+Cenário 1: Você é uma pessoa que deseja viajar para Ouro Preto com o seu pet. Encontre no site as informações sobre a viagem de onibus com o pet e as informações sobre a cidade de Ouro Preto e os seus estabelecimentos pet friendly.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27.87 segundos                  |
-| 2       | SIM             | 5                    | 17.11 segundos                  |
-| 3       | SIM             | 5                    | 39.09 segundos                  |
+| 1       | SIM             | 5                    | 54.27 segundos                  |
+| 2       | SIM             | 5                    | 59.43 segundos                  |
+| 3       | SIM             | 5                    | 69.31 segundos                  |
 |  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
+| **Média**     | 0%           | 5                | 61,00 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 25.23 segundos |
 
 
-    Comentários dos usuários: Achei o site muito bom e intuitivo. 
-    Não tive dificuldades e acho que ficou bem intuitivo.
+    Comentários dos usuários: Fiquei satisfeito com a facilidade de navegação e usabilidade do site. Encontrei as informações que precisava sem dificuldades, e a interface tornou a experiência agradável.
 
 
 
 
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço.
+Cenário 2:  Você é uma pessoa que viajou para uma cidade mineira e deseja deixar o seu depoimento sobre um estabelecimento pet friendly. Faça login na sua conta do site e deixe o seu depoimento no estabelecimento visitado.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22.54 segundos                          |
-| 2       | SIM             | 5                    | 31.42 segundos                          |
-| 3       | SIM             | 5                    | 36.21 segundos                          |
+| 1       | SIM             | 5                    | 67.86 segundos                          |
+| 2       | SIM             | 4                    | 73.75 segundos                          |
+| 3       | SIM             | 5                    | 69.51 segundos                          |
 |  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| **Média**     | 0%           | 4,66                | 70,29 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 31.94 segundos |
 
 
-    Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam 
-    redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros, 
-    tanto na hora da pesquisa, quanto depois dela, nos resultados.
+    Comentários dos usuários: O site foi bem projetado, com uma organização clara e fácil de entender. Foi simples realizar as tarefas propostas, e encontrei todas as funcionalidades de maneira rápida e eficiente, mas acredito que poderia 
 
+
+
+    
+Cenário 3: Você é um dono de um local pet friendly e deseja cadastrar seu estabelecimento no site para conseguir mais clientes e maior visibilidade.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 36.06 segundos                          |
+| 2       | SIM             | 5                    | 39.76 segundos                          |
+| 3       | SIM             | 5                    | 41.62 segundos                          |
+|  |  |  |  |
+| **Média**     | 0%           | 5                | 39,20 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 15.19 segundos |
+
+
+    Comentários dos usuários: A usabilidade do site foi muito boa, os botões e links estavam bem posicionados, facilitando a navegação e evitando confusões, porem o endereço poderia ser preenchido automaticamente ao digitar o CEP.
 
 
 
@@ -269,7 +282,7 @@ Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos
 
 Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
 
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
+Contudo, tendo em vista que a diferença foi relevante (por exemplo, 70.29 segundos — média usuários — contra 31.94 segundos — especialista — no cenário dois), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
 
 
 
